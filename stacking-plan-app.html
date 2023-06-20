@@ -11,7 +11,7 @@
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 	<div id="stacking-plan-app" class="stacking-plan">
-		
+
 		<!-- STACKING PLAN UNITS -->
 		<div class="sp-interior">
 
@@ -596,6 +596,31 @@
 				<path class="sp-exterior__river-letter" d="M3252.89,1792.36l9.32-.79,1.25,14.7c2.96-10.64,11.58-18.44,22.81-16.3l-.62,8.34c-12.75-.57-21.45,8.89-20.36,21.73l2.46,28.96-9.98,.85-4.88-57.47Z"/>
 			</g>
 		</svg>
+
+
+		<!-- STACKING PLAN INFO -->
+		<div class="sp-info-pane">
+			<div class="sp-info-pane__inner">
+				<div class="sp-info-pane__header">
+					test
+				</div>
+				
+				<div class="sp-info-pane__body">
+					test
+				</div>
+				
+				<div class="sp-info-pane__footer">
+					<button>Inquire for Availability</button>
+				</div>
+			</div>
+
+			<button class="sp-info-pane__close">
+				<span>Close</span>
+				<svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.5626 13.11-.4527.4526c-.2499.2499-.6552.2499-.9052 0l-5.20469-5.20484-5.20481 5.20474c-.24991.25-.65518.25-.905139 0l-.452593-.4526c-.249957-.2499-.249957-.6552 0-.9052l5.204792-5.20469-5.204792-5.20481c-.249957-.24991-.249957-.65518 0-.905139l.452583-.452583c.249959-.249958.655239-.249958.905149 0l5.20481 5.204782 5.20469-5.204792c.25-.249957.6553-.249957.9052 0l.4527.452583c.2499.249959.2499.655239 0 .905149l-5.20484 5.20481 5.20484 5.20469c.2499.25.2499.6553 0 .9053z" fill="#000"/></svg>
+			</button>
+
+		</div>
+		
 	</div>
 
 	<script>
@@ -734,6 +759,77 @@
 		}
 
 		/**
+		 * Stacking Plan Info Pane
+		 */
+		.sp-info-pane {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 33vw;
+			height: 100%;
+			padding-left: 1.5em;
+		}
+
+		.sp-info-pane__inner {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+
+			background-color: #373030;
+		}
+
+		.sp-info-pane__close {
+			transform: rotate(270deg) translateX(-100%);
+			transform-origin: 0 0;
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 1.5em;
+			font-size: 1em;
+
+			border: 0;
+			padding: 0.1875em 0.4em;
+			background: #E5DDC7;
+		}
+			.sp-info-pane__close span {
+				display: inline-block;
+				margin-top: 0.3em;
+
+				font-family: 'IvyEpic', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 0.875em;
+				text-transform: uppercase;
+				color: #000;
+			}
+
+			.sp-info-pane__close svg {
+				margin-left: 0.375rem;
+			}
+
+		.sp-info-pane__header {
+			background-color: #A78056;
+		}
+
+		.sp-info-pane__body {
+			border-bottom: 1px solid #A78056;
+			border-left: 1px solid #A78056;
+			background-color: #000;
+		}
+
+		.sp-info-pane__footer {
+			
+			margin-top: auto;
+			background-color: #373030;
+		}
+
+		/**
 		 * Stacking Plan Interior
 		 */
 		
@@ -790,6 +886,7 @@
 			background: transparent;
 			cursor: pointer;
 			line-height: 1;
+			font-size: 1em;
 			color: #e5ddc7;
 		}
 			.sp-interior__nav-arrow:hover {
