@@ -613,7 +613,7 @@
 				<div class="sp-info-pane__inner">
 					<header class="sp-info-pane__header">
 						<h2 class="sp-info-pane__heading">
-							{{ currentFloorPlanName }}
+							{{ currentFloorPlan.name }}
 						</h2>
 						<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
 					</header>
@@ -727,7 +727,6 @@
 					cmsFloorplans.forEach((item) => {
 						let floorplanData = {},
 								floorplanID;
-						// console.log(item.dataset)
 
 						for(let dataName in item.dataset) {
 							// console.log(dataName, item.dataset[dataName])
@@ -738,6 +737,15 @@
 							}
 						}
 
+						// Add Images to object
+						floorplanData.imgWhite = item.querySelector('.fp-cms-img-white')
+						floorplanData.imgBlack = item.querySelector('.fp-cms-img-black')
+
+						// Formats Into:
+						// { the-key: {Object Data},
+						// 	 the-legacy: {Object Data},
+						// 	 etc...
+						// }
 						this.floorplans[floorplanID] = floorplanData
 					})
 				},
@@ -799,8 +807,8 @@
 			 * @type {Object}
 			 */
 			computed: {
-				currentFloorPlanName() {
-					return this.floorplans[this.activeFloorPlanID].name
+				currentFloorPlan() {
+					return this.floorplans[this.activeFloorPlanID]
 				}
 			}
 
@@ -809,6 +817,11 @@
 
 
 	<style type="text/css">
+
+		#stacking-plan-app {
+			position: relative;
+		}
+
 		.fade-enter-active,
 		.fade-leave-active {
 		  transition: opacity 0.5s ease;
