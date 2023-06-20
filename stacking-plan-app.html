@@ -599,19 +599,31 @@
 
 
 		<!-- STACKING PLAN INFO -->
-		<div class="sp-info-pane">
+		<article class="sp-info-pane">
+
 			<div class="sp-info-pane__inner">
-				<div class="sp-info-pane__header">
-					test
-				</div>
+				<header class="sp-info-pane__header">
+					<h2 class="sp-info-pane__heading">The Bow</h2>
+					<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
+				</header>
 				
-				<div class="sp-info-pane__body">
-					test
-				</div>
+				<main class="sp-info-pane__body">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</main>
 				
-				<div class="sp-info-pane__footer">
-					<button>Inquire for Availability</button>
-				</div>
+				<footer class="sp-info-pane__footer">
+					<button 
+						class="sp-button"
+					>
+						Inquire for Availability
+					</button>
+
+					<button 
+						class="sp-button sp-button--alt"
+					>
+						View Gallery
+					</button>
+				</footer>
 			</div>
 
 			<button class="sp-info-pane__close">
@@ -619,7 +631,7 @@
 				<svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.5626 13.11-.4527.4526c-.2499.2499-.6552.2499-.9052 0l-5.20469-5.20484-5.20481 5.20474c-.24991.25-.65518.25-.905139 0l-.452593-.4526c-.249957-.2499-.249957-.6552 0-.9052l5.204792-5.20469-5.204792-5.20481c-.249957-.24991-.249957-.65518 0-.905139l.452583-.452583c.249959-.249958.655239-.249958.905149 0l5.20481 5.204782 5.20469-5.204792c.25-.249957.6553-.249957.9052 0l.4527.452583c.2499.249959.2499.655239 0 .905149l-5.20484 5.20481 5.20484 5.20469c.2499.25.2499.6553 0 .9053z" fill="#000"/></svg>
 			</button>
 
-		</div>
+		</article>
 		
 	</div>
 
@@ -759,9 +771,54 @@
 		}
 
 		/**
+		 * Button
+		 */
+		.sp-button {
+			display: inline-block;
+			width: 100%;
+			padding: 0.75rem 1.5rem;
+			margin-bottom: 1.6rem;
+			border-style: solid;
+			border-width: 1px;
+			border-top-color: #F7F6F1;
+			border-right-color: #F7F6F1;
+			border-bottom-color: #F7F6F1;
+			border-left-color: #F7F6F1;
+			background-color: #F7F6F1;
+			transition-property: border-radius;
+			transition-duration: 200ms;
+			transition-timing-function: ease;
+			color: #000;
+			font-size: 0.875rem;
+			text-align: center;
+			letter-spacing: 0.0625rem;
+			text-transform: uppercase;
+		}
+			.sp-button:hover {
+				border-top-right-radius: 2.5rem;
+				border-bottom-left-radius: 2.5rem;
+			}
+
+			.sp-button--small {
+				padding: 0.5rem 1.25rem;
+			}
+
+			.sp-button--alt{
+				border-top-color: #F7F6F1;
+				border-right-color: #F7F6F1;
+				border-bottom-color: #F7F6F1;
+				border-left-color: #F7F6F1;
+				background: rgba(255, 255, 255, 0.1);
+				color: #F7F6F1;
+			}
+
+
+		/**
 		 * Stacking Plan Info Pane
 		 */
 		.sp-info-pane {
+			--padding-outer: 2rem;
+
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -814,17 +871,43 @@
 			}
 
 		.sp-info-pane__header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			padding: 1rem var(--padding-outer);
 			background-color: #A78056;
 		}
+			.sp-info-pane__heading {
+				margin: 0 1rem 0 0;
+				font-family: 'Utile Display', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 2.5375em;
+				line-height: 130%;
+				color: #000000;
+			}
+
+			.sp-info-pane__unit {
+				margin-top: 1em;
+				font-family: 'IvyEpic', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 1em;
+				line-height: 150%;
+				text-align: center;
+				color: #000000;
+			}
 
 		.sp-info-pane__body {
 			border-bottom: 1px solid #A78056;
 			border-left: 1px solid #A78056;
+			padding: var(--padding-outer);
 			background-color: #000;
 		}
 
 		.sp-info-pane__footer {
-			
+			padding: var(--padding-outer);
 			margin-top: auto;
 			background-color: #373030;
 		}
