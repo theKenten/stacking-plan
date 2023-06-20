@@ -613,7 +613,7 @@
 				<div class="sp-info-pane__inner">
 					<header class="sp-info-pane__header">
 						<h2 class="sp-info-pane__heading">
-							{{ activeFloorPlan }}
+							{{ currentFloorPlanName }}
 						</h2>
 						<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
 					</header>
@@ -664,7 +664,7 @@
 					// Default to level 3
 					activeLevel: 3,
 					activeUnit: 301,
-					activeFloorPlan: 'the-bow-a',
+					activeFloorPlanID: 'the-bow-a',
 
 					levelTop: 9,
 					levelBottom: 3,
@@ -725,8 +725,7 @@
 
 					// Loop through the residences
 					cmsFloorplans.forEach((item) => {
-						let floorplan = {},
-								floorplanData = {},
+						let floorplanData = {},
 								floorplanID;
 						// console.log(item.dataset)
 
@@ -739,14 +738,8 @@
 							}
 						}
 
-						floorplan[floorplanID] = floorplanData;
-
-						floorplans.push(floorplan)
+						this.floorplans[floorplanID] = floorplanData
 					})
-
-					// console.log(cmsResidences)
-					// console.log(residences)
-					this.floorplans = floorplans
 				},
 
 				closeInfoPane() {
@@ -795,15 +788,8 @@
 				},
 
 				changeActiveFloorPan(unit) {
-					this.activeFloorPlan = unit.dataset.unitFloorplan
-					this.activeFloorPlanName = getFloorPlanName(unit)
+					this.activeFloorPlanID = unit.dataset.unitFloorplan
 				},
-
-
-				getFloorPlanName(unit) {
-
-				},
-
 			},
 
 			/**
@@ -813,7 +799,9 @@
 			 * @type {Object}
 			 */
 			computed: {
-
+				currentFloorPlanName() {
+					return this.floorplans[this.activeFloorPlanID].name
+				}
 			}
 
 		}).mount('#stacking-plan-app')
