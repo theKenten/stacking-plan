@@ -44,33 +44,71 @@
 					class="sp-interior__level"
 					data-interior-level="3" 
 				>
-					<g id="units_00000021825405577887971730000008941943873484887220_">
+					<g>
 						<polygon 
-							data-unit-number="304" data-unit-floorplan="the-riley-d" class="sp-interior__unit" points="4412.7,2734.1 4745.5,3728.9 3186.1,4250.7 
-							2853.3,3256.1"/>
+							:class="{ 'active' : isActiveUnit(304) }"
+							data-unit-number="304" 
+							data-unit-floorplan="the-riley-d" 
+							class="sp-interior__unit" 
+							points="4412.7,2734.1 4745.5,3728.9 3186.1,4250.7 
+							2853.3,3256.1"
+						/>
 						<polygon 
-							data-unit-number="305" data-unit-floorplan="the-riley-a" class="sp-interior__unit" points="1346.4,3760 1530.8,4311 1688.2,4258.3 
-							1836.7,4702.1 3186.1,4250.7 2853.3,3256.1"/>
+							:class="{ 'active' : isActiveUnit(305) }"
+							data-unit-number="305" 
+							data-unit-floorplan="the-riley-a" 
+							class="sp-interior__unit" points="1346.4,3760 1530.8,4311 1688.2,4258.3 
+							1836.7,4702.1 3186.1,4250.7 2853.3,3256.1"
+						/>
 						<polygon 
-							data-unit-number="302" data-unit-floorplan="the-broadview-a" class="sp-interior__unit" points="1748.1,4960.6 3254.9,4456.5 3764.3,5979 
-							2257.3,6482.7"/>
+							:class="{ 'active' : isActiveUnit(302) }"
+							data-unit-number="302" 
+							data-unit-floorplan="the-broadview-a" 
+							class="sp-interior__unit" points="1748.1,4960.6 3254.9,4456.5 3764.3,5979 
+							2257.3,6482.7"
+						/>
 						<polygon 
-							data-unit-number="301" data-unit-floorplan="the-bow-a" class="sp-interior__unit" points="1129.2,3728.3 272.8,4013.9 524.6,4764.9 
+							:class="{ 'active' : isActiveUnit(301) }"
+							data-unit-number="301" 
+							data-unit-floorplan="the-bow-a" 
+							class="sp-interior__unit" points="1129.2,3728.3 272.8,4013.9 524.6,4764.9 
 							336.9,4827.5 627.8,5697.3 595.6,5708.1 819.9,6378.6 852.1,6367.8 900.1,6511 1431.3,6759.3 1930.3,6592.5 1767.9,6110.4 
-							2095.3,6000.2 1833.1,5214.8 1304.8,5391.5 1052.2,4636.5 1394.1,4522.2"/>
+							2095.3,6000.2 1833.1,5214.8 1304.8,5391.5 1052.2,4636.5 1394.1,4522.2"
+						/>
 						<polygon 
-							data-unit-number="303" data-unit-floorplan="the-metro" class="sp-interior__unit" points="5513.3,3699.3 6023.2,5223.3 3764.3,5979 
-							3254.9,4456.5"/>
+							:class="{ 'active' : isActiveUnit(303) }"
+							data-unit-number="303" 
+							data-unit-floorplan="the-metro" 
+							class="sp-interior__unit" points="5513.3,3699.3 6023.2,5223.3 3764.3,5979 
+							3254.9,4456.5"
+						/>
+
 						<g>
-							<rect	data-unit-number="306" data-unit-floorplan="the-plaza-a" x="0" y="1466.5" class="sp-interior__unit" width="1028.2" height="1334"/>
+							<rect	
+								:class="{ 'active' : isActiveUnit(306) }"
+								data-unit-number="306" 
+								data-unit-floorplan="the-plaza-a" x="0" y="1466.5" 
+								class="sp-interior__unit" width="1028.2" height="1334"
+							/>
 							<polygon 
-								data-unit-number="307" data-unit-floorplan="the-hayden" class="sp-interior__unit" points="1317.1,0 1317,915.1 1028,915.1 1028,1466.5 
-								-0.1,1466.5 -0.1,525.4 506.9,0 "/>
+								:class="{ 'active' : isActiveUnit(307) }"
+								data-unit-number="307" 
+								data-unit-floorplan="the-hayden" 
+								class="sp-interior__unit" points="1317.1,0 1317,915.1 1028,915.1 1028,1466.5 
+							-0.1,1466.5 -0.1,525.4 506.9,0"
+							/>
+							<polygon 							
+								:class="{ 'active' : isActiveUnit(308) }"
+								data-unit-number="308" 
+								data-unit-floorplan="the-plaza-b" 
+								class="sp-interior__unit" points="2813.9,0 2817.9,971.7 1321.1,971.7 1321.1,0.1"
+							/>
 							<polygon 
-								data-unit-number="308" data-unit-floorplan="the-plaza-b" class="sp-interior__unit" points="2813.9,0 2817.9,971.7 1321.1,971.7 1321.1,0.1 			
-					"/>
-							<polygon 
-								data-unit-number="309" data-unit-floorplan="the-plaza-c" class="sp-interior__unit" points="4317,0 4317,971.7 2808.2,964.8 2813.9,0 "/>
+								:class="{ 'active' : isActiveUnit(309) }"
+								data-unit-number="309" 
+								data-unit-floorplan="the-plaza-c" 
+								class="sp-interior__unit" points="4317,0 4317,971.7 2808.2,964.8 2813.9,0"
+							/>
 						</g>
 					</g>
 				</g>
@@ -364,12 +402,16 @@
 			 * @type {Object}
 			 */
 			methods: {
-				unitClick( id ) {
-					return id == this.$store.getters.pageId;
-				},
-
 				isActiveLevel(level) {
 					return level === this.activeLevel;
+				},
+
+				isActiveUnit(unit) {
+					return unit === this.activeUnit;
+				},
+
+				unitClick(id) {
+					return id == this.$store.getters.pageId;
 				},
 			},
 
