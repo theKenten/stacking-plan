@@ -678,7 +678,7 @@
 		</Transition>
 		
 
-		<FormInquire />
+		<FormInquire :selectedResidence="currentFloorPlan.name"/>
 	</div>
 
 </template>
