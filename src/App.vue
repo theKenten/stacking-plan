@@ -320,7 +320,7 @@
 							<polygon 
 								:class="{ 'active' : isActiveUnit(607) }"
 								data-unit-number="607" 
-								data-unit-floorplan="-c" 
+								data-unit-floorplan="the-riley-c" 
 								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
 							/>
 							<polygon 
