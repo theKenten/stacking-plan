@@ -18,7 +18,7 @@ export default {
 		return {
 			// Default to level 3
 			activeLevel: 3,
-			activeUnit: 301,
+			activeUnit: null,
 			activeFloorPlanID: 'the-bow-a',
 
 			levelTop: 9,
@@ -148,11 +148,13 @@ export default {
 
 			this.activeLevel = parseInt(level)
 
-			// Change the active unit to 01 unit of the floor
-			let unitNumber = level + '01';
-			let unit = document.querySelector(`[data-unit-number="${unitNumber}"]`);
+			this.closeInfoPane()
 
-			this.changeActiveUnit(unit)
+			// // Change the active unit to 01 unit of the floor
+			// let unitNumber = level + '01';
+			// let unit = document.querySelector(`[data-unit-number="${unitNumber}"]`);
+
+			// this.changeActiveUnit(unit)
 		},
 
 		changeActiveUnit(unit) {
