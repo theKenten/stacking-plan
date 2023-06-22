@@ -172,15 +172,40 @@
 		.sp-info-pane__body ul {
 			padding-left: 1em;
 			margin: 0;
+			padding-left: 0.15em;
+			list-style-type: none;
 		}
 
 		.sp-info-pane__body li {
 			margin-bottom: 1em;
 		}
+			.sp-info-pane__body li:before {
+				content: '';
+				display: inline-block;
+				margin-right: 1em;
+				border-radius: 100%;
+				background-color: #CCAA68;
+				width: 0.625em;
+				height: 0.625em;
+			}
 
-		.sp-info-pane__body-inner {
-			display: flex;
-		}
+			.sp-info-pane__body li:last-child {
+				margin-bottom: 0;
+			}
+
+			.sp-info-pane__body-inner {
+				display: flex;
+			}
+
+			.sp-info-pane__img-wrap {
+				position: relative;
+			}
+
+			.sp-info-pane__magnify-icon {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
 
 		.sp-info-pane__details {
 			flex-shrink: 0;
