@@ -80,22 +80,23 @@
  * Stacking Plan Info Pane
  */
 .sp-info-pane {
-	--padding-outer: 1.5em;
+	--padding-outer: 2em;
 
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 29em;
-	height: 100%;
-	max-height: 100vh;
-	padding-left: 1.5em;
+	padding-left: 1.5rem;
 }
 	
-/*	@media (min-width: 1024px) {
+	@media (min-width: 768px) {
 		.sp-info-pane {
-			--padding-outer: 2em;
+			
+			width: 29em;
+			height: 100%;
+			max-height: 100vh;
+			padding-left: 1.5em;
 		}
-	}*/
+	}
 
 .sp-info-pane__inner {
 	display: flex;
@@ -162,7 +163,7 @@
 	background-color: #A78056;
 }
 	.sp-info-pane__heading {
-		margin: 0 1rem 0 0;
+		margin: 0 0.25em 0 0;
 		font-family: 'Utile Display', sans-serif;
 		font-style: normal;
 		font-weight: 400;
@@ -317,10 +318,14 @@
  */
 
 .sp-interior {
-	display: inline-block;
 	position: relative;
 	margin: 1em;
 }
+	@media (min-width: 768px) {
+		.sp-interior {
+			display: inline-block;
+		}
+	}
 
 .sp-interior__compass {
 	position: absolute;
@@ -331,9 +336,14 @@
 }
 
 .sp-interior__svg {
-	width: 27.5em;
+	width: 100%;
 	height: auto;
 }
+	@media (min-width: 768px) {
+		.sp-interior__svg {
+			width: 27.5em;
+		}
+	}
 
 .sp-interior__base {
 	opacity:0.4;
@@ -431,6 +441,11 @@
 	width: 100%;
 	height: auto;
 }
+	@media (min-width: 768px) {
+		.sp-exterior {
+			display: block;
+		}
+	}
 
 .sp-exterior__level,
 .sp-exterior__level:active,
