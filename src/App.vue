@@ -596,6 +596,8 @@
 				class="sp-info-pane"
 			>
 
+				<div @click="closeInfoPane" class="sp-info-pane__back"></div>
+
 				<div class="sp-info-pane__inner">
 					<header class="sp-info-pane__header">
 						<button 
