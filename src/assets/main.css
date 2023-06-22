@@ -81,7 +81,7 @@
 	 * Stacking Plan Info Pane
 	 */
 	.sp-info-pane {
-		--padding-outer: 2rem;
+		--padding-outer: 2em;
 
 		position: absolute;
 		top: 0;
