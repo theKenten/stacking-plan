@@ -653,6 +653,22 @@
 						>
 							View Gallery
 						</button>
+
+						<a 
+							v-if="currentFloorPlan.pdf"
+							:href="currentFloorPlan.pdf"
+							target="_blank"
+							class="sp-info-pane__btn"
+						>
+							<div class="sp-info-pane__btn-inner">
+								Download Floor Plan
+								
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5 4H3.25C2.00736 4 1 5.00736 1 6.25V16.75C1 17.9926 2.00736 19 3.25 19H13.75C14.9926 19 16 17.9926 16 16.75V8.5M5.5 14.5L19 1M19 1L13.75 1M19 1V6.25" stroke="#CCAA68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</a>
+
 					</footer>
 				</div>
 
@@ -764,6 +780,12 @@ export default {
 				// Add Images to object
 				floorplanData.imgWhite = item.querySelector('.fp-cms-img-white')
 				floorplanData.imgBlack = item.querySelector('.fp-cms-img-black')
+
+				// Add PDF to object
+				floorplanData.pdf = item.querySelector('.fp-cms-pdf').getAttribute("href")
+				
+				// remove # values
+				floorplanData.pdf = floorplanData.pdf === '#' ? null : floorplanData.pdf
 
 				// Formats Into:
 				// { the-key: {Object Data},

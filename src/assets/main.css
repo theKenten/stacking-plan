@@ -269,7 +269,31 @@
 		padding: var(--padding-outer);
 		margin-top: auto;
 		background-color: #373030;
+		text-align: center;
 	}
+
+	/**
+	 * Download floor plan button
+	 */
+	.sp-info-pane__btn {
+		display: inline-block;
+		color: var(--brushed-gold, #CCAA68);
+		font-size: 1em;
+		font-family: IvyEpic, sans-serif;
+		line-height: 150%;
+		text-decoration-line: underline;
+	}
+		.sp-info-pane__btn:hover {
+			text-decoration: none;
+		}
+
+		.sp-info-pane__btn-inner {
+			display: flex;
+			align-content: center;
+		}
+			.sp-info-pane__btn-inner svg {
+				margin-left: 0.5em;
+			}
 
 	/**
 	 * Stacking Plan Interior
