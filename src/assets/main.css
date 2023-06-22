@@ -1,9 +1,14 @@
 
-	#stacking-plan-app {
+	#app {
 		position: relative;
 		font-family: 'IvyEpic', sans-serif;
+		overflow: hidden;
 	}
 
+
+	/**
+	 * Vue Fade Enter Transition
+	 */
 	.fade-enter-active,
 	.fade-leave-active {
 		transition: opacity 0.5s ease;
@@ -12,6 +17,20 @@
 	.fade-enter-from,
 	.fade-leave-to {
 		opacity: 0;
+	}
+
+	/**
+	 * Vue Slide Enter Transition
+	 */
+
+	.slide-enter-active,
+	.slide-leave-active {
+		transition: all 0.4s ease;
+	}
+
+	.slide-enter-from,
+	.slide-leave-to {
+		transform: translateX(100%);
 	}
 
 	/**
@@ -201,11 +220,27 @@
 				position: relative;
 			}
 
+
+			.sp-info-pane__img {
+				transition: all 0.3s ease;
+				width: 100%;
+				height: auto;
+			}
+
 			.sp-info-pane__magnify-icon {
+				transition: transform 0.3s ease;
 				position: absolute;
 				bottom: 0;
-				right: 0;
+				right: 1em;
+				width: 1.5em;
+				height: 1.5em;
 			}
+				.sp-info-pane__img-zoom:hover .sp-info-pane__magnify-icon {
+					transform: scale(1.3);
+				}
+				.sp-info-pane__img-zoom:hover .sp-info-pane__img {
+					transform: scale(1.03);
+				}
 
 		.sp-info-pane__details {
 			flex-shrink: 0;
@@ -229,10 +264,6 @@
 			color: #A78056;
 		}
 
-		.sp-info-pane__img {
-			width: 100%;
-			height: auto;
-		}
 
 	.sp-info-pane__footer {
 		padding: var(--padding-outer);
@@ -389,3 +420,12 @@
 	.sp-exterior__river-letter {
 		fill: #a78056;
 	}
+
+
+/**
+ * Fancybox
+ */
+
+.fancybox__container {
+	font-family: 'IvyEpic', sans-serif;
+}

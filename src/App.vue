@@ -1,6 +1,6 @@
 <template>
 	
-	<div id="app" class="stacking-plan">
+	<div id="app">
 
 		<!-- STACKING PLAN UNITS -->
 		<div class="sp-interior">
@@ -590,7 +590,7 @@
 
 		<!-- STACKING PLAN INFO -->
 
-		<Transition name="fade">
+		<Transition name="slide">
 			<article 
 				v-show="activeUnit"
 				class="sp-info-pane"
@@ -615,13 +615,16 @@
 					<main class="sp-info-pane__body">
 						<div class="sp-info-pane__body-inner">
 							<div class="sp-info-pane__img-wrap">
-								<img 
-									:src="currentFloorPlan.imgWhite.src" 
-									class="sp-info-pane__img" 
-									:alt="`${currentFloorPlan.name} - Floor Plan`" 
-								/>
 
-								<svg class="sp-info-pane__magnify-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m10.5 3.75c-3.72792 0-6.75 3.02208-6.75 6.75 0 3.7279 3.02208 6.75 6.75 6.75 1.8642 0 3.5506-.7547 4.773-1.977 1.2223-1.2224 1.977-2.9088 1.977-4.773 0-3.72792-3.0221-6.75-6.75-6.75zm-8.25 6.75c0-4.55635 3.69365-8.25 8.25-8.25 4.5563 0 8.25 3.69365 8.25 8.25 0 2.0078-.718 3.8491-1.9101 5.2793l4.6904 4.6904c.2929.2929.2929.7677 0 1.0606s-.7677.2929-1.0606 0l-4.6904-4.6904c-1.4302 1.1921-3.2715 1.9101-5.2793 1.9101-4.55635 0-8.25-3.6937-8.25-8.25zm8.25-3.75c.4142 0 .75.33579.75.75v2.25h2.25c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-2.25v2.25c0 .4142-.3358.75-.75.75s-.75-.3358-.75-.75v-2.25h-2.25c-.41421 0-.75-.3358-.75-.75s.33579-.75.75-.75h2.25v-2.25c0-.41421.3358-.75.75-.75z" fill="#ccaa68" fill-rule="evenodd"/></svg>
+								<a :href="currentFloorPlan.imgWhite.src" class="sp-info-pane__img-zoom" data-fancybox :data-caption="currentFloorPlan.name">
+									<img 
+										:src="currentFloorPlan.imgWhite.src" 
+										class="sp-info-pane__img" 
+										:alt="`${currentFloorPlan.name} - Floor Plan`" 
+									/>
+
+									<svg class="sp-info-pane__magnify-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m10.5 3.75c-3.72792 0-6.75 3.02208-6.75 6.75 0 3.7279 3.02208 6.75 6.75 6.75 1.8642 0 3.5506-.7547 4.773-1.977 1.2223-1.2224 1.977-2.9088 1.977-4.773 0-3.72792-3.0221-6.75-6.75-6.75zm-8.25 6.75c0-4.55635 3.69365-8.25 8.25-8.25 4.5563 0 8.25 3.69365 8.25 8.25 0 2.0078-.718 3.8491-1.9101 5.2793l4.6904 4.6904c.2929.2929.2929.7677 0 1.0606s-.7677.2929-1.0606 0l-4.6904-4.6904c-1.4302 1.1921-3.2715 1.9101-5.2793 1.9101-4.55635 0-8.25-3.6937-8.25-8.25zm8.25-3.75c.4142 0 .75.33579.75.75v2.25h2.25c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-2.25v2.25c0 .4142-.3358.75-.75.75s-.75-.3358-.75-.75v-2.25h-2.25c-.41421 0-.75-.3358-.75-.75s.33579-.75.75-.75h2.25v-2.25c0-.41421.3358-.75.75-.75z" fill="#ccaa68" fill-rule="evenodd"/></svg>
+								</a>
 							</div>
 							
 							<div class="sp-info-pane__details">
@@ -662,6 +665,9 @@
 
 
 <script>
+import { Fancybox } from "@fancyapps/ui";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 
@@ -716,6 +722,12 @@ export default {
 		exteriorLevels.forEach(el => el.addEventListener('click', event => {
 			this.exteriorLevelClick(el)
 		}));
+
+
+		Fancybox.bind("[data-fancybox]", {
+		  // Your custom options
+		});
+
 	},
 
 	/**
