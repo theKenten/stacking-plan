@@ -4,6 +4,9 @@
 	overflow: hidden;
 }
 
+.sp-no-scroll {
+	overflow: hidden;
+}
 
 /**
  * Vue Fade Enter Transition
@@ -80,32 +83,44 @@
  * Stacking Plan Info Pane
  */
 .sp-info-pane {
-	--padding-outer: 2em;
-
-	position: absolute;
+	--padding-outer: 1rem;
+	--close-btn-height: 2rem;
+	overflow-y: auto;
+	position: fixed;
 	top: 0;
 	right: 0;
-	padding-left: 1.5rem;
+
+	height: 100%;
+	width: 100%;
+	padding-left: var(--close-btn-height);
 }
 	
 	@media (min-width: 768px) {
 		.sp-info-pane {
+			--padding-outer: 2em;
+			--close-btn-height: 1.5em;
 			
+			position: absolute;
 			width: 31em;
 			height: 100%;
 			max-height: 100vh;
-			padding-left: 1.5em;
+			padding-left: var(--close-btn-height);
 		}
 	}
 
 .sp-info-pane__inner {
+
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
 
 	background-color: #373030;
 }
+	@media (min-width: 768px) {
+		.sp-info-pane__inner {
+			height: 100%;
+		}
+	}
 
 .sp-info-pane__close {
 	transition: all .25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -119,38 +134,47 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 1.5em;
-	width: 5.3125em;
-	font-size: 1em;
+	height: var(--close-btn-height);
+	width: 5.3125rem;
+	font-size: 1rem;
 
 	border: 0;
-	padding: 0.1875em 0.4em;
+	padding: 0.187rem 0.4rem;
 	background: #E5DDC7;
 	cursor: pointer;
 }
-	.sp-info-pane__close:hover {
-		height: 2em;
-		left: -0.5em;
-		padding: 0.1875em 0.4em 0.375em;
+
+	@media (min-width: 768px) {
+		.sp-info-pane__close {
+			height: 1.5em;
+			font-size: 1em;
+			padding: 0.1875em 0.4em;
+		}
+
+		.sp-info-pane__close:hover {
+			height: 2em;
+			left: -0.5em;
+			padding: 0.1875em 0.4em 0.375em;
+		}
 	}
 
-	.sp-info-pane__close span {
-		display: inline-block;
-		margin-top: 0.3em;
+.sp-info-pane__close span {
+	display: inline-block;
+	margin-top: 0.3em;
 
-		font-family: 'IvyEpic', sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 0.875em;
-		text-transform: uppercase;
-		color: #000;
-	}
+	font-family: 'IvyEpic', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.875em;
+	text-transform: uppercase;
+	color: #000;
+}
 
-	.sp-info-pane__close svg {
-		margin-left: 0.375em;
-		width: 0.875em;
-		height: 0.875em;
-	}
+.sp-info-pane__close svg {
+	margin-left: 0.375em;
+	width: 0.875em;
+	height: 0.875em;
+}
 
 
 
@@ -158,109 +182,144 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 
 	padding: 1em var(--padding-outer);
 	background-color: #A78056;
 }
 	.sp-info-pane__heading {
 		margin: 0 0.25em 0 0;
-		font-family: 'Utile Display', sans-serif;
+		font-family: utile-display,'Utile Display', sans-serif;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 2.5375em;
+		font-size: 2.5375rem;
 		line-height: 130%;
 		color: #000000;
 	}
+		@media (min-width: 768px) {
+			.sp-info-pane__heading {
+				font-size: 2.5375em;
+			}
+		}
 
 	.sp-info-pane__unit {
-		margin-top: 1em;
+		margin-top: auto;
 		font-family: 'IvyEpic', sans-serif;
 		font-style: normal;
 		font-weight: 400;
-		font-size: 1em;
+		font-size: 1rem;
 		line-height: 150%;
 		color: #000000;
 	}
+		@media (min-width: 768px) {
+			.sp-info-pane__unit {
+				font-size: 1em;
+			}
+		}
 
 .sp-info-pane__body {
-	overflow-y: auto;
-
 	display: flex;
 	height: 100%;
 	align-items: center;
 
 	border-bottom: 1px solid #A78056;
 	border-left: 1px solid #A78056;
-	padding: 10em var(--padding-outer);
+	padding: 2rem var(--padding-outer);
 	background-color: #000;
 
 	font-family: 'IvyEpic', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 150%;
 	color: #fff;
 }
-	.sp-info-pane__body ul {
-		padding-left: 1em;
-		margin: 0;
-		padding-left: 0.15em;
-		list-style-type: none;
+	@media (min-width: 768px) {
+		.sp-info-pane__body {
+			overflow-y: auto;
+			padding: 10em var(--padding-outer);
+			font-size: 1em;
+		}
 	}
 
-	.sp-info-pane__body li {
+.sp-info-pane__body ul {
+	padding-left: 1em;
+	margin: 0;
+	padding-left: 0.15em;
+	list-style-type: none;
+}
+
+.sp-info-pane__body li {
+	position: relative;
+	margin-bottom: 1em;
+	padding-left: 1.5em;
+}
+	.sp-info-pane__body li:before {			
+		content: '';
+
+		position: absolute;
+		top: 0.5em;
+		left: 0;
+
+		display: inline-block;
+		margin-right: 1em;
+		border-radius: 100%;
+		background-color: #CCAA68;
+		width: 0.625em;
+		height: 0.625em;
+	}
+
+	.sp-info-pane__body li:last-child {
+		margin-bottom: 0;
+	}
+
+	.sp-info-pane__body-inner {
+	}
+		@media (min-width: 768px) {
+			.sp-info-pane__body-inner {
+				display: flex;
+			}
+		}
+
+	.sp-info-pane__img-wrap {
 		position: relative;
-		margin-bottom: 1em;
-		padding-left: 1.5em;
+		margin-bottom: 2rem;
 	}
-		.sp-info-pane__body li:before {			
-			content: '';
-
-			position: absolute;
-			top: 0.5em;
-			left: 0;
-
-			display: inline-block;
-			margin-right: 1em;
-			border-radius: 100%;
-			background-color: #CCAA68;
-			width: 0.625em;
-			height: 0.625em;
-		}
-
-		.sp-info-pane__body li:last-child {
-			margin-bottom: 0;
-		}
-
-		.sp-info-pane__body-inner {
-			display: flex;
-		}
-
-		.sp-info-pane__img-wrap {
-			position: relative;
-		}
-
-
-		.sp-info-pane__img {
-			transition: all 0.3s ease;
-			width: 100%;
-			height: auto;
-		}
-
-		.sp-info-pane__magnify-icon {
-			transition: transform 0.3s ease;
-			position: absolute;
-			bottom: 0;
-			right: 1em;
-			width: 1.5em;
-			height: 1.5em;
-		}
-			.sp-info-pane__img-zoom:hover .sp-info-pane__magnify-icon {
-				transform: scale(1.3);
+		@media (min-width: 768px) {
+			.sp-info-pane__img-wrap {
+				margin-bottom: 0;
 			}
-			.sp-info-pane__img-zoom:hover .sp-info-pane__img {
-				transform: scale(1.03);
+		}
+
+
+	.sp-info-pane__img {
+		transition: all 0.3s ease;
+		width: 100%;
+		height: auto;
+	}
+
+	.sp-info-pane__magnify-icon {
+		transition: transform 0.3s ease;
+		position: absolute;
+		bottom: 0;
+		right: 1rem;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+		.sp-info-pane__img-zoom:hover .sp-info-pane__magnify-icon {
+			transform: scale(1.3);
+		}
+		.sp-info-pane__img-zoom:hover .sp-info-pane__img {
+			transform: scale(1.03);
+		}
+
+		@media (min-width: 768px) {
+			.sp-info-pane__magnify-icon {
+				right: 1em;
+				width: 1.5em;
+				height: 1.5em;
 			}
+		}
 
 	.sp-info-pane__details {
 		flex-shrink: 0;
