@@ -93,9 +93,10 @@ export default {
 					// console.log(dataName, item.dataset[dataName])
 					if (dataName === 'id') {
 						floorplanID = item.dataset[dataName];
-					} else {
-						floorplanData[dataName] = item.dataset[dataName]
 					}
+					
+					floorplanData[dataName] = item.dataset[dataName]
+					
 				}
 
 				// Add Images to object
@@ -107,6 +108,10 @@ export default {
 				
 				// remove # values
 				floorplanData.pdf = floorplanData.pdf === '#' ? null : floorplanData.pdf
+
+				// Get Gallery Images
+				floorplanData.gallery = Array.from(item.querySelectorAll('.fp-cms-gallery-img'))
+				// console.log(item.querySelectorAll('.fp-cms-gallery-img'))
 
 				// Formats Into:
 				// { the-key: {Object Data},
@@ -123,8 +128,8 @@ export default {
 		},
 
 		exteriorLevelClick(el) {
-			console.log(el)
-			console.log(el.dataset.exteriorLevel)
+			// console.log(el)
+			// console.log(el.dataset.exteriorLevel)
 
 			let exteriorLevel = el.dataset.exteriorLevel
 			this.changeActiveLevel(exteriorLevel)

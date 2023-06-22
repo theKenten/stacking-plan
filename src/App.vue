@@ -652,12 +652,27 @@
 							Inquire for Availability
 						</button>
 
-						<button 
+						<a 
 							v-if="currentFloorPlan.gallery"
 							class="sp-button sp-button--alt"
+							:href="currentFloorPlan.gallery[0].src"
+							:data-fancybox="currentFloorPlan.id"
 						>
 							View Gallery
-						</button>
+						</a>
+
+						<div 
+							v-if="currentFloorPlan.gallery"
+							style="display: none;"
+						>
+							<a 
+								v-for="(item, i) in currentFloorPlan.gallery" 
+								:key="`gallery-${i}`"
+								:href="item.src"
+								:data-fancybox="currentFloorPlan.id" 
+								:data-caption="currentFloorPlan.gallery.alt"
+							></a>
+						</div>
 
 						<a 
 							v-if="currentFloorPlan.pdf"
