@@ -651,6 +651,7 @@
 						</button>
 
 						<button 
+							v-if="currentFloorPlan.gallery"
 							class="sp-button sp-button--alt"
 						>
 							View Gallery
