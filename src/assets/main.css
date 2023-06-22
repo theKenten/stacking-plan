@@ -41,8 +41,8 @@
 .sp-button {
 	display: inline-block;
 	width: 100%;
-	padding: 0.75em 1.5em;
-	margin-bottom: 1.6em;
+	padding: 0.75rem 1.5rem;
+	margin-bottom: 1.6rem;
 	border-style: solid;
 	border-width: 1px;
 	border-top-color: #F7F6F1;
@@ -54,9 +54,9 @@
 	transition-duration: 200ms;
 	transition-timing-function: ease;
 	color: #000;
-	font-size: 0.875em;
+	font-size: 0.875rem;
 	text-align: center;
-	letter-spacing: 0.0625em;
+	letter-spacing: 0.0625rem;
 	text-transform: uppercase;
 	cursor: pointer;
 }
@@ -65,18 +65,28 @@
 		border-bottom-left-radius: 2.5em;
 	}
 
-	.sp-button--small {
-		padding: 0.5em 1.25em;
+	@media (min-width: 768px) {
+		.sp-button {
+			padding: 0.75em 1.5em;
+			margin-bottom: 1.6em;
+			border-top-right-radius: 2.5em;
+			border-bottom-left-radius: 2.5em;
+			letter-spacing: 0.0625em;
+		}
 	}
 
-	.sp-button--alt{
-		border-top-color: #F7F6F1;
-		border-right-color: #F7F6F1;
-		border-bottom-color: #F7F6F1;
-		border-left-color: #F7F6F1;
-		background: rgba(255, 255, 255, 0.1);
-		color: #F7F6F1;
-	}
+.sp-button--small {
+	padding: 0.5em 1.25em;
+}
+
+.sp-button--alt{
+	border-top-color: #F7F6F1;
+	border-right-color: #F7F6F1;
+	border-bottom-color: #F7F6F1;
+	border-left-color: #F7F6F1;
+	background: rgba(255, 255, 255, 0.1);
+	color: #F7F6F1;
+}
 
 
 /**
@@ -100,6 +110,7 @@
 			--padding-outer: 2em;
 			--close-btn-height: 1.5em;
 			
+			overflow: visible;
 			position: absolute;
 			width: 31em;
 			height: 100%;
@@ -146,6 +157,7 @@
 
 	@media (min-width: 768px) {
 		.sp-info-pane__close {
+			width: 5.3125em;
 			height: 1.5em;
 			font-size: 1em;
 			padding: 0.1875em 0.4em;
