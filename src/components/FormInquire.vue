@@ -49,7 +49,7 @@
 					<option value="The Legacy">The Legacy</option>
 					<option value="The Key">The Key</option>
 			</select></div>
-			<div class="form-field-wrapper"><label class="label-text" for="Agent">Which best describes you?</label>
+			<div class="form-field-wrapper"><label class="field-label" for="Agent">Which best describes you?</label>
 				<select name="agent" id="agent" class="form-input is-select-input w-select" required>
 					<option value="">Select one...</option>
 					<option value="false">Buyer</option>
@@ -138,7 +138,7 @@ export default {
 		width: 100%;
 		max-width: 50ch;
 		color: #000;
-		padding: 4rem 2rem;
+		padding: 3rem 2rem 4rem;
 	}
 
 	.sp-form-inquire__heading {
