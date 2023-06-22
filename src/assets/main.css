@@ -397,21 +397,32 @@
 
 .sp-interior {
 	position: relative;
-	margin: 1em;
+	margin: 1rem;
 }
 	@media (min-width: 768px) {
 		.sp-interior {
 			display: inline-block;
+			margin: 1em;
 		}
 	}
 
 .sp-interior__compass {
 	position: absolute;
-	top: 0;
-	right: -6.625em;
-	width: 5.5625em;
-	height: 5.5625em;
+	top: calc(2.5rem + 1rem);
+	right: 0;
+	width: 2.5rem;
+	height: 2.5rem;
 }
+	@media (min-width: 768px) {
+		.sp-interior__compass {
+			position: absolute;
+			top: 0;
+			bottom: auto;
+			right: -6.625em;
+			width: 5.5625em;
+			height: 5.5625em;
+		}
+	}
 
 .sp-interior__svg {
 	width: 100%;
@@ -442,9 +453,15 @@
 	display: flex;
 
 	position: absolute;
-	top: 1em;
-	right: 1em;
+	top: 0;
+	right: 0;
 }
+	@media (min-width: 768px) {
+		.sp-interior__controls {
+			top: 1em;
+			right: 1em;
+		}
+	}
 
 .sp-interior__nav {
 	display: flex;
@@ -455,19 +472,38 @@
 	transition: all .25s cubic-bezier(.4,0,.2,1);
 	opacity: 1;
 	border: 0;
-	padding: 0.1em 0.5em;
+	padding: 0.2rem 0.5rem;
 	background: transparent;
 	cursor: pointer;
 	line-height: 1;
-	font-size: 1em;
+	font-size: 1rem;
 	color: #e5ddc7;
 }
+	.sp-interior__nav-arrow svg {
+		width: 0.9375rem;
+		height: auto;
+	}
+
 	.sp-interior__nav-arrow:hover {
 		color: #CCAA68;
 	}
 
 	.sp-interior__nav-arrow.disabled {
 		opacity: 0;
+	}
+
+	@media (min-width: 768px) {
+		.sp-interior__nav-arrow {
+			font-size: 1em;
+			padding: 0.1em 0.5em;
+			width: 0.7625em;
+			height: 0.4375em;
+		}
+
+		.sp-interior__nav-arrow svg {
+			width: 0.7625rem;
+			height: 0.4375rem;
+		}
 	}
 
 	.sp-interior__nav-down {
@@ -477,18 +513,27 @@
 .sp-interior__text {
 	display: inline-block;
 	align-self: center;
-	margin-top: 0.4em;
+	margin-top: 0.4rem;
+	margin-right: 0.4rem;
 
 	font-family: 'IvyEpic', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.6em;
+	font-size: 1rem;
 	line-height: 1;
 
-	letter-spacing: 0.0625em;
+	letter-spacing: 0.0625rem;
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
+	@media (min-width: 768px) {
+		.sp-interior__text {
+			margin-top: 0.4em;
+			margin-right: 0;
+			font-size: 1.6em;
+			letter-spacing: 0.0625em;
+		}
+	}
 
 /* Interior Unit  */
 .sp-interior__unit {
@@ -516,12 +561,17 @@
  */
 
 .sp-exterior {
-	width: 100%;
+	position: relative;
+	left: -7%;
+	
+	width: 120%;
 	height: auto;
 }
 	@media (min-width: 768px) {
 		.sp-exterior {
 			display: block;
+			width: 100%;
+			left: 0;
 		}
 	}
 
