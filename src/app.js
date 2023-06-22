@@ -1,10 +1,14 @@
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import FormInquire from './components/FormInquire.vue'
+// import TheWelcome from './components/TheWelcome.vue'
 
 export default {
+
+	components: {
+		FormInquire
+	},
 
 	/**
 	 * Data attached to the component

@@ -644,6 +644,8 @@
 					<footer class="sp-info-pane__footer">
 						<button 
 							class="sp-button"
+							data-fancybox 
+							data-src="#sp-form-inquire"
 						>
 							Inquire for Availability
 						</button>
@@ -674,7 +676,9 @@
 
 			</article>
 		</Transition>
-			
+		
+
+		<FormInquire />
 	</div>
 
 </template>
