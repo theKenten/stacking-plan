@@ -6,20 +6,210 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Vite App</title>
 
+		<link rel="stylesheet" href="https://assets.website-files.com/64931133b38d12d506bcf7fd/css/the-kenten-50212d839f2fbf5417b4209cbf9a.webflow.d81480655.css">
+
+		<link rel="stylesheet" href="https://uploads-ssl.webflow.com/635aae0d25d447bfc72ef508/css/the-kenten.webflow.371d96672.min.css">
+
+		
 
 		<style>
 			/* https://wizardry-technique.webflow.io/?designWidth=1440&maxWidthToggle=on&maxWidth=1920&scaleType=Proportional&bodyUnit=VW&minWidthToggle=on&minWidth=991&scaleDirection=Scale%20Down&desktopLargeS=&desktopLargeF=0&desktopSmallS=992&desktopSmallF=12&tabletS=991&tabletF=12&mobileS=0&mobileF=10&screenWidth=1200&emFontSize=1.2&classOrElement=&projectName=Kenten */
 			body {
+				font-size: 1.1111111111111112vw;
+			}
+
+			/* Max Font Size */
+			@media screen and (min-width: 1920px) {
+				body {
+					font-size: 21.333333333333332px;
+				}
+			}
+
+			/* Container Max Width */
+			.container {
+				max-width: 1920px;
+			}
+
+			/* Min Font Size */
+			@media screen and (max-width: 991px) {
+				body {
+					font-size: 11.011111111111111px;
+				}
+			}
+
+			@media screen and (max-width: 1200px) {
+				p {
+					font-size: 16px;
+				}
+			}
+
+			/* Snippet gets rid of top margin on first element in any rich text*/
+			.w-richtext>:first-child {
+				margin-top: 0;
+			}
+
+			/* Snippet gets rid of bottom margin on last element in any rich text*/
+			.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+				margin-bottom: 0;
+			}
+
+			/* Snippet makes all link elements listed below to inherit color from their parent */
+			a, .w-tab-link, .w-nav-link, .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link {
+				color: inherit;
+			}
+
+			/* Snippet prevents all click and hover interaction with an element */
+			.clickable-off {
+				pointer-events: none;
+			}
+
+			/* Snippet enables all click and hover interaction with an element */
+			.clickable-on {
+				pointer-events: auto;
+			}
+
+			/* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/
+			.div-square::after {
+				content: "";
+				display: block;
+				padding-bottom: 100%;
+			}
+
+			/*Hide focus outline for main content element*/
+			main:focus-visible {
+				outline: -webkit-focus-ring-color auto 0px;
+			}
+
+			/* Make sure containers never lose their center alignment*/
+			.container-medium, .container-small, .container-large {
+				margin-right: auto !important;
+				margin-left: auto !important;
+			}
+
+			/*Reset selects, buttons, and links styles*/
+			.w-input, .w-select, a {
+				color: inherit;
+				text-decoration: inherit;
+				font-size: inherit;
+			}
+
+			/*Apply "..." after 3 lines of text */
+			.text-style-3lines {
+				display: -webkit-box;
+				overflow: hidden;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
+
+			/* Apply "..." after 2 lines of text */
+			.text-style-2lines {
+				display: -webkit-box;
+				overflow: hidden;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+
+			/* Apply "..." at 100% width */
+			.truncate-width {
+				width: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			/* Removes native scrollbar */
+			.no-scrollbar {
+			-ms-overflow-style: none;
+			// IE 10+ overflow: -moz-scrollbars-none;
+			// Firefox }
+
+			.no-scrollbar: :-webkit-scrollbar {
+				display: none;
+				// Safari and Chrome }
+
+				/* Link color inherits from parent font color  */ a {
+					color: inherit;
+				}
+
+				/* Disable / enable clicking on an element and its children  */
+				.no-click {
+					pointer-events: none;
+				}
+
+				.can-click {
+					pointer-events: auto;
+				}
+
+				/* Target any element with a certain "word" in the class name  */
+				[class*="spacer"] {
+				}
+
+				.menu_link.w--current .menu_link-bg {
+					opacity: 1;
+				}
+
+				.navbar, .navbar3_container, .bg-inherit {
+					background-color: inherit;
+				}
+
+				.mbm, .nav-links {
+					mix-blend-mode: difference;
+				}
+
+				a.nav-links.w--current, a.mbm.w--current, a.mbm:hover, a.nav-links:hover {
+					mix-blend-mode: normal;
+				}
+
+				.aspect-ratio-1-1 {
+					aspect-ratio: 1/1;
+				}
+
+				.aspect-ratio-4-3 {
+					aspect-ratio: 4/3;
+				}
+
+				.aspect-ratio-3-2, .amen-hover-img {
+					aspect-ratio: 3/2;
+				}
+
+				.aspect-ratio-16-9, .video-entertainment {
+					aspect-ratio: 16/9;
+				}
+
+				/** tablet **/
+				@media screen and (max-width: 991px) {
+					.nav-links {
+						mix-blend-mode: normal;
+					}
+				}
+
+		/**
+		* Fix button hover flicker due to border radius hover
+		**/
+			.button {
+				position: relative;
+			}
+
+			.button:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
+		<style>
+
+			body {
 			 font-size: 1.1111111111111112vw;
 			 background-color: #000; margin: 0;
-			}
-			/* Max Font Size */
-			@media screen and (min-width:1920px) {
-			 body {font-size: 21.333333333333332px;}
 			}
 
 			.fp-collection { display:none; }
 		</style>
+
 	</head>
 	<body>
 		<div class="fp-collection w-dyn-list"><div role="list" class="fp-collection-list w-dyn-items"><div data-id="the-sable" data-sqft="2,044" data-name="The Sable" data-bedrooms="2" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234a782e0fd7aea5b3d_648ff7ed78f750da0d5b1617_SGCO-Web-Floorplan-A262-U6A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234a782e0fd7aea5b45_648ff7eb9900bc3e3202ede0_SGCO-Web-Floorplan-A262-U6A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-riley-b" data-sqft="1,293" data-name="The Riley B" data-bedrooms="2" data-bathrooms="2" data-views="Courtyard" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234c7b2fdc4722016ec_648ff73c7a5a9e037e2aa32e_SGCO-Web-Floorplan-A255-U2B-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233c7b2fdc4722016c8_648ff73abe41dca54bfac836_SGCO-Web-Floorplan-A255-U2B-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-riley-e" data-sqft="1,416" data-name="The Riley E" data-bedrooms="2" data-bathrooms="2" data-views="Courtyard" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234c7b2fdc472201935_648ff77f5c11ef18611034fc_SGCO-Web-Floorplan-A25-U2E-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234c7b2fdc472201953_648ff77d161baec858f070a7_SGCO-Web-Floorplan-A25-U2E-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-riley-d" data-sqft="1,503" data-name="The Riley D" data-bedrooms="2" data-bathrooms="2" data-views="Courtyard" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234f3d3c2052b42d80b_648ff76b161baec858f05c21_SGCO-Web-Floorplan-A257-U2D-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936234f3d3c2052b42d810_648ff76a28f8db1f1497de4c_SGCO-Web-Floorplan-A257-U2D-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-plaza-c" data-sqft="1,151" data-name="The Plaza C" data-bedrooms="2" data-bathrooms="2" data-views="Kensington" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233410d895a0d5000ab_648ff69b1719cb17518e5841_SGCO-Web-Floorplan-A269-TH04-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233410d895a0d5000d4_648ff69cf8719a50eb2fca9c_SGCO-Web-Floorplan-A269-TH04-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-legacy" data-sqft="4,559" data-name="The Legacy" data-bedrooms="3" data-bathrooms="3.5" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233ed71a78a9cd96d85_648ff813dea3f5805b358571_SGCO-Web-Floorplan-A264-U8A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936232ed71a78a9cd96d64_648ff8142773c750c8f91fe0_SGCO-Web-Floorplan-A264-U8A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-riley-c" data-sqft="1,369" data-name="The Riley C" data-bedrooms="2" data-bathrooms="2" data-views="Kensington" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233c01fdc00d2e3270d_648ff75e04af85ab6bf5634a_SGCO-Web-Floorplan-A256-U2C-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233c01fdc00d2e3270a_648ff75d9787b240eeeece9d_SGCO-Web-Floorplan-A256-U2C-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-plaza-b" data-sqft="1,155" data-name="The Plaza B" data-bedrooms="2" data-bathrooms="2" data-views="Kensington" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233f3d3c2052b42d77d_648ff67f28f8db1f14971e51_SGCO-Web-Floorplan-A268-TH03-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936233f3d3c2052b42d79d_648ff67c05004b68e11e3c99_SGCO-Web-Floorplan-A268-TH03-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-riley-a" data-sqft="1,383" data-name="The Riley A" data-bedrooms="2" data-bathrooms="2" data-views="Courtyard" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/6493623341c0079c8659a6bf_648ff72c9c5194ad7337ab4d_SGCO-Web-Floorplan-A254-U2A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/6493623341c0079c8659a6bc_648ff72bfb56e48f60de0cbc_SGCO-Web-Floorplan-A254-U2A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-metro" data-sqft="3,127" data-name="The Metro" data-bedrooms="2 or 3" data-bathrooms="2.5 or 3" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362329143e2cad3ff05d9_648ff7dd2773c750c8f8f327_SGCO-Web-Floorplan-A261-U5A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362329143e2cad3ff059b_648ff7dcbae11a1c1eafc687_SGCO-Web-Floorplan-A261-U5A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-corner" data-sqft="2,729" data-name="The Corner" data-bedrooms="3" data-bathrooms="3.5" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362328103fa54529fdca4_648ff7f82674443d225d590e_SGCO-Web-Floorplan-A263-U7A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362328103fa54529fdc79_648ff7f5f0758ca30fb1ef58_SGCO-Web-Floorplan-A263-U7A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-plaza-a" data-sqft="1,115" data-name="The Plaza A" data-bedrooms="2" data-bathrooms="2" data-views="Kensington" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936232f358fe3f1377d261_648ff654a358ad4819779cdc_SGCO-Web-Floorplan-A266-TH01-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/6493623261eb9da0c4618e6c_648ff6561529194f09361894_SGCO-Web-Floorplan-A267-TH02-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-key" data-sqft="4,715" data-name="The Key" data-bedrooms="3" data-bathrooms="3.5" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936232b22277a670d22ade_648ff82605004b68e11f929a_SGCO-Web-Floorplan-A265-U9A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936232b22277a670d22b44_648ff82505004b68e11f91e8_SGCO-Web-Floorplan-A265-U9A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-hayden" data-sqft="1,264" data-name="The Hayden" data-bedrooms="2" data-bathrooms="2" data-views="Kensington" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/6493623261eb9da0c4618e8f_648ff66dbe41dca54bfa363a_SGCO-Web-Floorplan-A267-TH02-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/6493623261eb9da0c4618e6c_648ff6561529194f09361894_SGCO-Web-Floorplan-A267-TH02-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-bow-a" data-sqft="2,213" data-name="The Bow A" data-bedrooms="2 or 3" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936231daf97867a9ed1186_648ff6b7be41dca54bfa6fb8_SGCO-Web-Floorplan-A251-U1A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936231daf97867a9ed118f_648ff6b935d6666c4a7e43ac_SGCO-Web-Floorplan-A251-U1A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="https://assets.website-files.com/64931133b38d12d506bcf805/649362718103fa5452a04dfa_6493504e159068ed1be0e96b_SGCO_10087-SalesSheets-bow-a.pdf" target="_blank" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-bow-b" data-sqft="2,349" data-name="The Bow B" data-bedrooms="2 or 3" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362315894f15bf2347a0e_648ff6fca358ad4819780b12_SGCO-Web-Floorplan-A252-U1B-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362315894f15bf23479de_648ff6fd340fdc6f79e70e71_SGCO-Web-Floorplan-A253-U1C-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="https://assets.website-files.com/64931133b38d12d506bcf805/6493627e5894f15bf234caf3_64935041fd6cf162e2bfc14e_SGCO_10087-SalesSheets-bow-b.pdf" target="_blank" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-broadview-b" data-sqft="1,905" data-name="The Broadview B" data-bedrooms="2" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362310d68f51d26ddba8a_648ff7aec67475da7bb2671f_SGCO-Web-Floorplan-A260-U3B-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362310d68f51d26ddba8f_648ff7cf1b1f075794e519a1_SGCO-Web-Floorplan-A260-U3B-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-bow-c" data-sqft="2,522" data-name="The Bow C" data-bedrooms="2 or 3" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362319bd1ff056fa01194_648ff70ef75399278bb5c7cc_SGCO-Web-Floorplan-A253-U1C-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/649362315894f15bf23479de_648ff6fd340fdc6f79e70e71_SGCO-Web-Floorplan-A253-U1C-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div><div data-id="the-broadview-a" data-sqft="1,988" data-name="The Broadview A" data-bedrooms="2" data-bathrooms="2" data-views="City &amp; River" role="listitem" class="fp-item w-dyn-item"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936231b20201cdba60655e_648ff7921529194f09370592_SGCO-Web-Floorplan-A259-U3A-W%25402x.png" loading="lazy" alt="" class="fp-cms-img-white"><img src="https://assets.website-files.com/64931133b38d12d506bcf805/64936231b20201cdba606564_648ff78b26e1ee06c2abd143_SGCO-Web-Floorplan-A259-U3A-B%25402x.png" loading="lazy" alt="" class="fp-cms-img-black"><a href="#" class="fp-cms-pdf w-inline-block"></a></div></div></div>

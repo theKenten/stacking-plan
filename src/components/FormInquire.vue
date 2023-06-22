@@ -1,5 +1,7 @@
 <template>
-	<div id="sp-form-inquire" style="display:none; max-width:500px;">
+	<div id="sp-form-inquire" style="display:none;">
+
+		<h3 class="sp-form-inquire__heading heading-style-h3">Contact Us</h3>
 
 		<form id="spark-residence-form" action="https://spark.re/sable-gate/the-kenten/register/residence-inquire" accept-charset="UTF-8" method="post">
 
@@ -56,8 +58,7 @@
 			</div>
 			<div class="form-field-wrapper">
 				<label for="contact_comments" class="field-label">Message</label>
-				<textarea placeholder="Additional comments or questions" data-enhance="false" name="contact[comments]" id="contact_comments" class="form-input is-text-area">
-				</textarea>
+				<textarea placeholder="Additional comments or questions" data-enhance="false" name="contact[comments]" id="contact_comments" class="form-input is-text-area"></textarea>
 			</div>
 
 			<a onclick="submitRegistrationForm(this);" class="button submit" href="javascript:void(0);">Submit</a>
@@ -132,8 +133,28 @@ export default {
 </script>
 
 
-<style scoped>
-	.sp-form-inquire {
+<style>
+	#sp-form-inquire {
+		width: 100%;
+		max-width: 50ch;
+		color: #000;
+		padding: 4rem 2rem;
+	}
 
+	.sp-form-inquire__heading {
+		margin-bottom: 0.463461157em;
+	}
+
+	#sp-form-inquire .field-label {
+		color: #000;
+	}
+
+	#sp-form-inquire input::placeholder,
+	#sp-form-inquire textarea::placeholder {
+		color: #000;
+	}
+
+	#sp-form-inquire .submit {
+		width: 100%;
 	}
 </style>
