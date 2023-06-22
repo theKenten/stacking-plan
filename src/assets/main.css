@@ -103,7 +103,7 @@
 	--close-btn-height: 2rem;
 	overflow-y: auto;
 	position: fixed;
-	z-index: 10000;
+	z-index: 1010;
 
 	top: 0;
 	right: 0;
@@ -184,12 +184,12 @@
 			font-size: 1em;
 			padding: 0.1875em 0.4em;
 		}
-
+/*
 		.sp-info-pane__close:hover {
 			height: 2em;
 			left: -0.5em;
 			padding: 0.1875em 0.4em 0.375em;
-		}
+		}*/
 	}
 
 .sp-info-pane__close span {
@@ -238,6 +238,7 @@
 
 	.sp-info-pane__unit {
 		margin-top: auto;
+		margin-bottom: 0.35rem;
 		font-family: 'IvyEpic', sans-serif;
 		font-style: normal;
 		font-weight: 400;
@@ -248,6 +249,7 @@
 		@media (min-width: 768px) {
 			.sp-info-pane__unit {
 				font-size: 1em;
+				margin-bottom: 0.35em;
 			}
 		}
 
@@ -391,7 +393,7 @@
 .sp-info-pane__btn {
 	display: inline-block;
 	color: var(--brushed-gold, #CCAA68);
-	font-size: 1em;
+	font-size: 1rem;
 	font-family: IvyEpic, sans-serif;
 	line-height: 150%;
 	text-decoration-line: underline;
@@ -400,18 +402,35 @@
 		text-decoration: none;
 	}
 
-	.sp-info-pane__btn-inner {
-		display: flex;
-		align-content: center;
-	}
-		.sp-info-pane__btn-inner svg {
-			margin-left: 0.5em;
+	@media (min-width: 768px) {
+		.sp-info-pane__btn {
+			font-size: 1em;
 		}
+	}
 
-.sp-info-pane__btn svg {
-	width: 1.25em;
-	height: 1.25em;
+.sp-info-pane__btn-inner {
+	display: flex;
+	align-content: center;
 }
+	.sp-info-pane__btn-inner svg {
+		margin-left: 0.5rem;
+	}
+
+	.sp-info-pane__btn svg {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+
+	@media (min-width: 768px) {
+			.sp-info-pane__btn-inner svg {
+				margin-left: 0.5em;
+			}
+
+			.sp-info-pane__btn svg {
+				width: 1.25em;
+				height: 1.25em;
+			}
+	}
 
 /**
  * Stacking Plan Interior

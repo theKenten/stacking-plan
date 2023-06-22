@@ -647,7 +647,7 @@
 						<button 
 							class="sp-button"
 							data-fancybox 
-							data-src="#sp-form-inquire"
+							data-src="#spark-registration-form"
 						>
 							Inquire for Availability
 						</button>

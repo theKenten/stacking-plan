@@ -1,7 +1,7 @@
 <template>
-	<div id="sp-form-inquire" style="display:none;">
+	<div id="spark-registration-form" style="display:none;">
 
-		<h3 class="sp-form-inquire__heading heading-style-h3">Contact Us</h3>
+		<h3 class="spark-registration-form__heading heading-style-h3">Contact Us</h3>
 
 		<form id="spark-residence-form" action="https://spark.re/sable-gate/the-kenten/register/residence-inquire" accept-charset="UTF-8" method="post">
 
@@ -65,9 +65,13 @@
 
 			<input type="hidden" name="source" id="source" value="Website" autocomplete="off" >
 			<input type="hidden" name="redirect_success" id="redirect_success" value="https://www.thekenten.ca/thank-you" autocomplete="off" >
+
 			<input type="hidden" name="redirect_error" id="redirect_error" value="" autocomplete="off" >
 			<input type="text" name="are_you_simulated" id="are_you_simulated" placeholder="Leave this field blank" style="display:none;">
 			<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" class="g-recaptcha-response" autocomplete="off" >
+
+
+			<div class="error-message" style="display:none;"></div>
 		</form>
 
 	</div>
@@ -134,27 +138,29 @@ export default {
 
 
 <style>
-	#sp-form-inquire {
+	#spark-registration-form {
 		width: 100%;
 		max-width: 50ch;
-		color: #000;
 		padding: 3rem 2rem 4rem;
+		background-color: #373030;
+		color: #fff;
 	}
 
-	.sp-form-inquire__heading {
+	.spark-registration-form__heading {
 		margin-bottom: 0.463461157em;
+		color: #fff;
 	}
 
-	#sp-form-inquire .field-label {
+	#spark-registration-form .field-label {
+
+	}
+
+	#spark-registration-form input::placeholder,
+	#spark-registration-form textarea::placeholder {
 		color: #000;
 	}
 
-	#sp-form-inquire input::placeholder,
-	#sp-form-inquire textarea::placeholder {
-		color: #000;
-	}
-
-	#sp-form-inquire .submit {
+	#spark-registration-form .submit {
 		width: 100%;
 	}
 </style>
