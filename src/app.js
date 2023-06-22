@@ -119,6 +119,7 @@ export default {
 
 		closeInfoPane() {
 			this.activeUnit = null
+			document.querySelector('body').classList.remove('sp-no-scroll')
 		},
 
 		exteriorLevelClick(el) {
@@ -131,6 +132,7 @@ export default {
 
 		unitClick(el) {
 			this.changeActiveUnit(el)
+			document.querySelector('body').classList.add('sp-no-scroll')
 		},
 
 		increaseLevel() {

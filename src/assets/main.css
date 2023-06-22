@@ -4,9 +4,12 @@
 	overflow: hidden;
 }
 
-.sp-no-scroll {
-	overflow: hidden;
+@media (max-width: 767px) {
+	.sp-no-scroll {
+		overflow: hidden;
+	}
 }
+
 
 /**
  * Vue Fade Enter Transition
@@ -100,6 +103,8 @@
 	--close-btn-height: 2rem;
 	overflow-y: auto;
 	position: fixed;
+	z-index: 10000;
+
 	top: 0;
 	right: 0;
 
