@@ -445,7 +445,7 @@
 							<polygon 
 								:class="{ 'active' : isActiveUnit(807) }"
 								data-unit-number="807" 
-								data-unit-floorplan="-c" 
+								data-unit-floorplan="the-riley-c" 
 								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
 							/>
 							<polygon 
@@ -666,7 +666,7 @@
 							style="display: none;"
 						>
 							<a 
-								v-for="(item, i) in currentFloorPlan.gallery" 
+								v-for="(item, i) in currentFloorPlan.gallery.slice(1)" 
 								:key="`gallery-${i}`"
 								:href="item.src"
 								:data-fancybox="currentFloorPlan.id" 
