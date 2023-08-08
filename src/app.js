@@ -125,7 +125,7 @@ export default {
 		},
 
 		toggleInfoPane() {
-			this.isInfoPaneClosed ? this.openInfoPane() : this.closeInfoPane;
+			this.isInfoPaneClosed ? this.openInfoPane() : this.closeInfoPane();
 		},
 
 		openInfoPane() {
@@ -190,6 +190,7 @@ export default {
 
 		changeActiveFloorPan(unit) {
 			this.activeFloorPlanID = unit.dataset.unitFloorplan
+			this.openInfoPane()
 		},
 	},
 
