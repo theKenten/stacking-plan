@@ -590,112 +590,105 @@
 
 		<!-- STACKING PLAN INFO -->
 
-		<Transition name="slide">
-			<article 
-				v-show="activeUnit"
-				class="sp-info-pane"
-			>
+		<article 
+			:class="{
+				'sp-info-pane--opened' : infoPaneState === 'opened',
+				'sp-info-pane--closed' : infoPaneState === 'closed',
+				'sp-info-pane--disabled' : infoPaneState === 'disabled',
+			}"
+			class="sp-info-pane"
+		>
+			<div @click="closeInfoPane" class="sp-info-pane__back"></div>
+			<div class="sp-info-pane__inner">
+				<header class="sp-info-pane__header">
+					<button 
+						@click="toggleInfoPane"
+						class="sp-info-pane__close"
+					>
+						<span v-html="activeUnit ? 'Close' : 'Open'"></span>
 
-				<div @click="closeInfoPane" class="sp-info-pane__back"></div>
-
-				<div class="sp-info-pane__inner">
-					<header class="sp-info-pane__header">
-						<button 
-							@click="closeInfoPane"
-							class="sp-info-pane__close"
-						>
-							<span>Close</span>
-							<svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.5626 13.11-.4527.4526c-.2499.2499-.6552.2499-.9052 0l-5.20469-5.20484-5.20481 5.20474c-.24991.25-.65518.25-.905139 0l-.452593-.4526c-.249957-.2499-.249957-.6552 0-.9052l5.204792-5.20469-5.204792-5.20481c-.249957-.24991-.249957-.65518 0-.905139l.452583-.452583c.249959-.249958.655239-.249958.905149 0l5.20481 5.204782 5.20469-5.204792c.25-.249957.6553-.249957.9052 0l.4527.452583c.2499.249959.2499.655239 0 .905149l-5.20484 5.20481 5.20484 5.20469c.2499.25.2499.6553 0 .9053z" fill="#000"/></svg>
-						</button>
-
-						<h2 class="sp-info-pane__heading">
-							{{ currentFloorPlan.name }}
-						</h2>
-						<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
-					</header>
-					
-					<main class="sp-info-pane__body">
-						<div class="sp-info-pane__body-inner">
-							<div class="sp-info-pane__img-wrap">
-
-								<a :href="currentFloorPlan.imgWhite.src" class="sp-info-pane__img-zoom" data-fancybox :data-caption="currentFloorPlan.name">
-									<img 
-										:src="currentFloorPlan.imgWhite.src" 
-										class="sp-info-pane__img" 
-										:alt="`${currentFloorPlan.name} - Floor Plan`" 
-									/>
-
-									<svg class="sp-info-pane__magnify-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m10.5 3.75c-3.72792 0-6.75 3.02208-6.75 6.75 0 3.7279 3.02208 6.75 6.75 6.75 1.8642 0 3.5506-.7547 4.773-1.977 1.2223-1.2224 1.977-2.9088 1.977-4.773 0-3.72792-3.0221-6.75-6.75-6.75zm-8.25 6.75c0-4.55635 3.69365-8.25 8.25-8.25 4.5563 0 8.25 3.69365 8.25 8.25 0 2.0078-.718 3.8491-1.9101 5.2793l4.6904 4.6904c.2929.2929.2929.7677 0 1.0606s-.7677.2929-1.0606 0l-4.6904-4.6904c-1.4302 1.1921-3.2715 1.9101-5.2793 1.9101-4.55635 0-8.25-3.6937-8.25-8.25zm8.25-3.75c.4142 0 .75.33579.75.75v2.25h2.25c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-2.25v2.25c0 .4142-.3358.75-.75.75s-.75-.3358-.75-.75v-2.25h-2.25c-.41421 0-.75-.3358-.75-.75s.33579-.75.75-.75h2.25v-2.25c0-.41421.3358-.75.75-.75z" fill="#ccaa68" fill-rule="evenodd"/></svg>
-								</a>
-							</div>
-							
-							<div class="sp-info-pane__details">
-								<h3 class="sp-info-pane__subheading">Details</h3>
-							
-								<ul>
-									<li v-if="currentFloorPlan.sqft">{{ currentFloorPlan.sqft }} sq ft</li>
-									<li v-if="currentFloorPlan.bedrooms">{{ currentFloorPlan.bedrooms }} bedrooms</li>
-									<li v-if="currentFloorPlan.bathrooms">{{ currentFloorPlan.bathrooms }} bathrooms</li>
-									<li v-if="currentFloorPlan.views">{{ currentFloorPlan.views }} view(s)</li>
-									<li>Options available</li>
-								</ul>
-							</div>
+						<svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.5626 13.11-.4527.4526c-.2499.2499-.6552.2499-.9052 0l-5.20469-5.20484-5.20481 5.20474c-.24991.25-.65518.25-.905139 0l-.452593-.4526c-.249957-.2499-.249957-.6552 0-.9052l5.204792-5.20469-5.204792-5.20481c-.249957-.24991-.249957-.65518 0-.905139l.452583-.452583c.249959-.249958.655239-.249958.905149 0l5.20481 5.204782 5.20469-5.204792c.25-.249957.6553-.249957.9052 0l.4527.452583c.2499.249959.2499.655239 0 .905149l-5.20484 5.20481 5.20484 5.20469c.2499.25.2499.6553 0 .9053z" fill="#000"/></svg>
+					</button>
+					<h2 class="sp-info-pane__heading">
+						{{ currentFloorPlan.name }}
+					</h2>
+					<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
+				</header>
+				
+				<main class="sp-info-pane__body">
+					<div class="sp-info-pane__body-inner">
+						<div class="sp-info-pane__img-wrap">
+							<a :href="currentFloorPlan.imgWhite.src" class="sp-info-pane__img-zoom" data-fancybox :data-caption="currentFloorPlan.name">
+								<img 
+									:src="currentFloorPlan.imgWhite.src" 
+									class="sp-info-pane__img" 
+									:alt="`${currentFloorPlan.name} - Floor Plan`" 
+								/>
+								<svg class="sp-info-pane__magnify-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m10.5 3.75c-3.72792 0-6.75 3.02208-6.75 6.75 0 3.7279 3.02208 6.75 6.75 6.75 1.8642 0 3.5506-.7547 4.773-1.977 1.2223-1.2224 1.977-2.9088 1.977-4.773 0-3.72792-3.0221-6.75-6.75-6.75zm-8.25 6.75c0-4.55635 3.69365-8.25 8.25-8.25 4.5563 0 8.25 3.69365 8.25 8.25 0 2.0078-.718 3.8491-1.9101 5.2793l4.6904 4.6904c.2929.2929.2929.7677 0 1.0606s-.7677.2929-1.0606 0l-4.6904-4.6904c-1.4302 1.1921-3.2715 1.9101-5.2793 1.9101-4.55635 0-8.25-3.6937-8.25-8.25zm8.25-3.75c.4142 0 .75.33579.75.75v2.25h2.25c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-2.25v2.25c0 .4142-.3358.75-.75.75s-.75-.3358-.75-.75v-2.25h-2.25c-.41421 0-.75-.3358-.75-.75s.33579-.75.75-.75h2.25v-2.25c0-.41421.3358-.75.75-.75z" fill="#ccaa68" fill-rule="evenodd"/></svg>
+							</a>
 						</div>
-					</main>
-					
-					<footer class="sp-info-pane__footer">
-						<button 
-							class="sp-button"
-							data-fancybox 
-							data-src="#spark-registration-form"
-						>
-							Inquire for Availability
-						</button>
-
-						<a 
-							v-if="currentFloorPlan.gallery"
-							class="sp-button sp-button--alt"
-							:href="currentFloorPlan.gallery[0].src"
-							:data-fancybox="currentFloorPlan.id"
-						>
-							View Gallery
-						</a>
-
-						<div 
-							v-if="currentFloorPlan.gallery"
-							style="display: none;"
-						>
-							<!-- Slice 1 to remove the double first gallery image
-							which is pulled above in currentFloorPlan.gallery[0].src -->
-							<a 
-								v-for="(item, i) in currentFloorPlan.gallery.slice(1)" 
-								:key="`gallery-${i}`"
-								:href="item.src"
-								:data-fancybox="currentFloorPlan.id" 
-								:data-caption="currentFloorPlan.gallery.alt"
-							></a>
+						
+						<div class="sp-info-pane__details">
+							<h3 class="sp-info-pane__subheading">Details</h3>
+						
+							<ul>
+								<li v-if="currentFloorPlan.sqft">{{ currentFloorPlan.sqft }} sq ft</li>
+								<li v-if="currentFloorPlan.bedrooms">{{ currentFloorPlan.bedrooms }} bedrooms</li>
+								<li v-if="currentFloorPlan.bathrooms">{{ currentFloorPlan.bathrooms }} bathrooms</li>
+								<li v-if="currentFloorPlan.views">{{ currentFloorPlan.views }} view(s)</li>
+								<li>Options available</li>
+							</ul>
 						</div>
-
+					</div>
+				</main>
+				
+				<footer class="sp-info-pane__footer">
+					<button 
+						class="sp-button"
+						data-fancybox 
+						data-src="#spark-registration-form"
+					>
+						Inquire for Availability
+					</button>
+					<a 
+						v-if="currentFloorPlan.gallery"
+						class="sp-button sp-button--alt"
+						:href="currentFloorPlan.gallery[0].src"
+						:data-fancybox="currentFloorPlan.id"
+					>
+						View Gallery
+					</a>
+					<div 
+						v-if="currentFloorPlan.gallery"
+						style="display: none;"
+					>
+						<!-- Slice 1 to remove the double first gallery image
+						which is pulled above in currentFloorPlan.gallery[0].src -->
 						<a 
-							v-if="currentFloorPlan.pdf"
-							:href="currentFloorPlan.pdf"
-							target="_blank"
-							class="sp-info-pane__btn"
-						>
-							<div class="sp-info-pane__btn-inner">
-								Download Floor Plan
-								
-								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M11.5 4H3.25C2.00736 4 1 5.00736 1 6.25V16.75C1 17.9926 2.00736 19 3.25 19H13.75C14.9926 19 16 17.9926 16 16.75V8.5M5.5 14.5L19 1M19 1L13.75 1M19 1V6.25" stroke="#CCAA68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-								</svg>
-							</div>
-						</a>
-
-					</footer>
-				</div>
-
-			</article>
-		</Transition>
+							v-for="(item, i) in currentFloorPlan.gallery.slice(1)" 
+							:key="`gallery-${i}`"
+							:href="item.src"
+							:data-fancybox="currentFloorPlan.id" 
+							:data-caption="currentFloorPlan.gallery.alt"
+						></a>
+					</div>
+					<a 
+						v-if="currentFloorPlan.pdf"
+						:href="currentFloorPlan.pdf"
+						target="_blank"
+						class="sp-info-pane__btn"
+					>
+						<div class="sp-info-pane__btn-inner">
+							Download Floor Plan
+							
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.5 4H3.25C2.00736 4 1 5.00736 1 6.25V16.75C1 17.9926 2.00736 19 3.25 19H13.75C14.9926 19 16 17.9926 16 16.75V8.5M5.5 14.5L19 1M19 1L13.75 1M19 1V6.25" stroke="#CCAA68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</a>
+				</footer>
+			</div>
+		</article>
 		
 
 		<FormInquire :selectedResidence="currentFloorPlan.name"/>

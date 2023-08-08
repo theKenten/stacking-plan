@@ -112,6 +112,22 @@
 	width: 100%;
 	padding-left: var(--close-btn-height);
 }
+	.sp-info-pane__inner {
+		transition: all 0.4s ease;
+		transform: translateX(100%);
+	}
+
+	.sp-info-pane--opened .sp-info-pane__inner {
+		transform: translateX(0);
+	}
+
+	.sp-info-pane--closed .sp-info-pane__inner {
+		transform: translateX(0);
+	}
+
+	.sp-info-pane--disabled .sp-info-pane__inner {
+		transform: translateX(calc(100% + var(--close-btn-height)));
+	}
 	
 	@media (min-width: 768px) {
 		.sp-info-pane {
