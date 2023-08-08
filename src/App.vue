@@ -665,6 +665,8 @@
 							v-if="currentFloorPlan.gallery"
 							style="display: none;"
 						>
+							<!-- Slice 1 to remove the double first gallery image
+							which is pulled above in currentFloorPlan.gallery[0].src -->
 							<a 
 								v-for="(item, i) in currentFloorPlan.gallery.slice(1)" 
 								:key="`gallery-${i}`"
