@@ -17,7 +17,7 @@ export default defineConfig({
 				manualChunks: undefined,
 
 				// served to jsdelivr at
-				// https://cdn.jsdelivr.net/gh/theKenten/stacking-plan/dist/assets/index.js
+				// https://cdn.jsdelivr.net/gh/theKenten/stacking-plan@latest/dist/index.js
 				entryFileNames: 'index.js',
 			},
 		},
