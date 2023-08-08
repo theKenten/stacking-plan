@@ -13,7 +13,12 @@ export default defineConfig({
 	build: {
 		rollupOptions: {
 			output: {
+				// combine into a singular JS file
 				manualChunks: undefined,
+
+				// served to jsdelivr at
+				// https://cdn.jsdelivr.net/gh/theKenten/stacking-plan/dist/assets/index.js
+				entryFileNames: 'index.js',
 			},
 		},
 	},
