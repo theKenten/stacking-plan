@@ -25,6 +25,8 @@ export default {
 			levelBottom: 3,
 
 			floorplans: {},
+
+			isInfoPaneClosed: false
 		}
 	},
 
@@ -122,7 +124,22 @@ export default {
 			})
 		},
 
+		toggleInfoPane() {
+			this.isInfoPaneClosed ? this.openInfoPane() : this.closeInfoPane();
+		},
+
+		openInfoPane() {
+			this.isInfoPaneClosed = false;
+		},
+
 		closeInfoPane() {
+			this.isInfoPaneClosed = true;
+			document.querySelector('body').classList.remove('sp-no-scroll')
+		},
+
+		// Go completely offscreen because there is not active unit
+		// Occurs when switching floors
+		disableInfoPane() {
 			this.activeUnit = null
 			document.querySelector('body').classList.remove('sp-no-scroll')
 		},
@@ -155,7 +172,7 @@ export default {
 
 			this.activeLevel = parseInt(level)
 
-			this.closeInfoPane()
+			this.disableInfoPane()
 
 			// // Change the active unit to 01 unit of the floor
 			// let unitNumber = level + '01';
@@ -173,6 +190,7 @@ export default {
 
 		changeActiveFloorPan(unit) {
 			this.activeFloorPlanID = unit.dataset.unitFloorplan
+			this.openInfoPane()
 		},
 	},
 
@@ -185,6 +203,18 @@ export default {
 	computed: {
 		currentFloorPlan() {
 			return this.floorplans[this.activeFloorPlanID]
+		},
+
+		infoPaneState() {
+			let state = 'disabled'; // Disabled by default
+
+			if ( this.activeUnit && this.isInfoPaneClosed )
+				state = 'closed';
+
+			if ( this.activeUnit && ! this.isInfoPaneClosed )
+				state = 'opened';
+
+			return state;
 		}
 	}
 
