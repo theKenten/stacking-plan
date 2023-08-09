@@ -1,6 +1,6 @@
 <template>
 	
-	<div id="app">
+	<div>
 
 		<!-- STACKING PLAN UNITS -->
 		<div class="sp-interior">
