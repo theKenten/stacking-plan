@@ -1,7 +1,10 @@
 #app {
 	position: relative;
 	font-family: 'IvyEpic', sans-serif;
-	overflow: hidden;
+
+	/* Used instead of overflow: hidden to hide the overflowing
+	x axis. Overflow: hidden would make the sticky pane stop working */
+	overflow: clip;
 }
 
 @media (max-width: 767px) {
@@ -103,6 +106,7 @@
 	--close-btn-height: 2rem;
 	overflow-y: auto;
 	position: fixed;
+	z-index: 1000;
 
 	top: 0;
 	right: 0;
@@ -138,7 +142,6 @@
 			position: absolute;
 			width: 31em;
 			height: 100%;
-			max-height: 100vh;
 			padding-left: var(--close-btn-height);
 		}
 	}
@@ -168,6 +171,9 @@
 }
 	@media (min-width: 768px) {
 		.sp-info-pane__inner {
+			max-height: 100vh;
+			position: sticky;
+			top: 0;
 			height: 100%;
 		}
 	}
