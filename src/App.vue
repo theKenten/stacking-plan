@@ -519,21 +519,50 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(902) }"
-								data-unit-number="902" 
-								data-unit-floorplan="the-key" 
-								class="sp-interior__unit" points="4768.6,3953.6 5277.8,5475.7 8054.5,4546.7 
-								8473.8,3955.1 8473.8,2785.7 6970.4,2793.9 6952.3,2740 6821.5,2783.8 7047.3,3458.8 6742.5,3560.8 6682.8,3382.6 6422.6,3469.6 
-								6401.7,3407.2"
+								:class="{ 'active' : isActiveUnit(907) }"
+								class="sp-interior__unit" 
+								data-unit-number="907" 
+								data-unit-floorplan="the-riley-p"
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(906) }"
+								class="sp-interior__unit" 
+								data-unit-number="906" 
+								data-unit-floorplan="the-sable-p"
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(903) }"
+								class="sp-interior__unit" 
+								data-unit-number="903" 
+								data-unit-floorplan="the-key"
+								points="5822,5159.6 7774.5,4506.3 8179.3,3935.3 8179.3,2806.5 
+								6728.1,2814.4 6710.7,2762.4 6584.4,2804.7 6802.4,3456.3 6508.1,3554.7 6450.5,3382.7 6199.4,3466.7 6179.2,3406.4 5317.3,3694.8 
+									"/>
 							<polygon 
 								:class="{ 'active' : isActiveUnit(901) }"
+								class="sp-interior__unit" 
 								data-unit-number="901" 
-								data-unit-floorplan="the-legacy" 
-								class="sp-interior__unit" points="1595.3,4460 1329.2,3664.8 273.8,4018.1 
-								524.7,4768.2 337,4831 627.9,5700.7 595.7,5711.5 820,6381.9 852.2,6371.1 900.2,6514.3 1431.4,6762.6 3764.3,5982.1 3255,4460 
-								1762.4,4959.4 1847.4,5213.6 1304.9,5395.1 1052.8,4641.5"
+								data-unit-floorplan="the-legacy"
+								points="1634.7,4706 1283,3655 264.2,3996.1 506.5,4720.1 
+								325.3,4780.8 606.1,5620.2 575,5630.6 791.5,6277.7 822.6,6267.3 868.9,6405.5 1381.6,6645.2 3633.4,5891.8 3141.9,4422.6 
+								1701.1,4904.7 1336.6,5019.3 1417.5,5274.6 1259.6,5325.2 1109.9,4877.8"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(902) }"
+								class="sp-interior__unit" 
+								data-unit-number="902" 
+								data-unit-floorplan="the-metro"
+								points="3141.9,4422.6 3633.4,5891.8 5822,5159.6 
+								5317.3,3694.8"
+							/>
+
 						</g>
 					</g>
 				</Transition>
