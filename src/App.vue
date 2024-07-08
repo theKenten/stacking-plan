@@ -234,56 +234,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(506) }"
-								data-unit-number="506" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.8,2488.8 5487.7,3483.7 3186.1,4253.7 
-								2853.3,3259.1"
-							/>
-							<polygon 
 								:class="{ 'active' : isActiveUnit(507) }"
+								class="sp-interior__unit" 
 								data-unit-number="507" 
 								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.6,3758.5 1693.5,4753.6 3186.1,4253.7 
-								2853.3,3259.1"
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(501) }"
-								data-unit-number="501" 
-								data-unit-floorplan="the-bow-b" 
-								class="sp-interior__unit" points="1329.2,3664.6 272.8,4016.9 524.6,4767.9 
-								336.9,4830.6 627.8,5700.4 595.6,5711.1 819.9,6381.6 852.1,6370.8 900.1,6514 1431.3,6762.3 1930.3,6595.5 1767.9,6113.4 
-								2109.9,5998.3 1847.3,5213.1 1304.8,5394.6 1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(506) }"
+								class="sp-interior__unit" 
+								data-unit-number="506" 
+								data-unit-floorplan="the-sable" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(502) }"
-								data-unit-number="502" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9453 1159.4119)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(505) }"
+								class="sp-interior__unit" 
+								data-unit-number="505" 
+								data-unit-floorplan="the-corner" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(504) }"
+								class="sp-interior__unit" 
+								data-unit-number="504" 
+								data-unit-floorplan="the-broadview-b" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
 							/>
 							
 							<rect 
 								:class="{ 'active' : isActiveUnit(503) }"
+								class="sp-interior__unit" 
 								data-unit-number="503" 
-								data-unit-floorplan="the-broadview-a" x="3468.4" y="4164.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7111 1610.3495)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
+								data-unit-floorplan="the-broadview-a" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(504) }"
-								data-unit-number="504" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.5,3473 4768.4,3953.1 5277.9,5475.7 
-								6896.7,4933.5 6768.3,4549.9 6662.1,4585.5 6512,4137 6434.3,4163"
+								:class="{ 'active' : isActiveUnit(502) }"
+								class="sp-interior__unit" 
+								data-unit-number="502" 
+								data-unit-floorplan="the-broadview-c" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(505) }"
-								data-unit-number="505" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.5,3473 6433.8,4163.4 6512.1,4137.2 
-								6662,4585.5 6768.3,4549.9 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8461.9,2785.9 6970.3,2793.6 6952.2,2739.7 6821.4,2783.3 
-								7045.5,3453.2 6738.3,3556 6685.7,3399 6413.7,3490 6387.4,3411.5"
+								:class="{ 'active' : isActiveUnit(501) }"
+								class="sp-interior__unit" 
+								data-unit-number="501" 
+								data-unit-floorplan="the-bow-b" 
+								points="1282.9,3654.9 263.3,3995 506.4,4719.9 325.1,4780.3 
+								606,5619.9 574.8,5630.3 791.4,6277.5 822.5,6267.1 868.7,6405.3 1381.5,6644.9 2192.6,6373.9 1703.7,4912.6 1473.4,4989.3 
+								1406.8,4783.9 1634.7,4706"
 							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -298,53 +312,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(606) }"
-								data-unit-number="606" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.7,2488.8 5487.6,3483.7 3186,4253.8 
-								2853.2,3259.1"
-							/>
-							<polygon 
 								:class="{ 'active' : isActiveUnit(607) }"
+								class="sp-interior__unit" 
 								data-unit-number="607" 
 								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(601) }"
-								data-unit-number="601" 
-								data-unit-floorplan="the-bow-c" 
-								class="sp-interior__unit" points="1329.1,3664.7 272.8,4016.9 524.6,4768 336.8,4830.6 
-								627.8,5700.4 595.5,5711.2 819.9,6381.6 852.1,6370.9 900,6514.1 1431.2,6762.3 2271.6,6481.5 1847.2,5213.1 1304.8,5394.6 1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(606) }"
+								class="sp-interior__unit" 
+								data-unit-number="606" 
+								data-unit-floorplan="the-sable" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(602) }"
-								data-unit-number="602" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9575 1159.4003)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(605) }"
+								class="sp-interior__unit" 
+								data-unit-number="605" 
+								data-unit-floorplan="the-corner" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(604) }"
+								class="sp-interior__unit" 
+								data-unit-number="604" 
+								data-unit-floorplan="the-broadview-b" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
 							/>
 							
 							<rect 
 								:class="{ 'active' : isActiveUnit(603) }"
+								class="sp-interior__unit" 
 								data-unit-number="603" 
-								data-unit-floorplan="the-broadview-a" x="3468.3" y="4164.9" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7233 1610.3379)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
+								data-unit-floorplan="the-broadview-a" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(604) }"
-								data-unit-number="604" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.4,3473 4768.4,3953.2 5277.8,5475.7 
-								6896.6,4933.6 6768.3,4550 6662,4585.5 6512,4137 6434.3,4163"
+								:class="{ 'active' : isActiveUnit(602) }"
+								class="sp-interior__unit" 
+								data-unit-number="602" 
+								data-unit-floorplan="the-broadview-c" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(605) }"
-								data-unit-number="605" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.4,3473 6433.8,4163.5 6512.1,4137.3 
-								6662,4585.6 6768.3,4550 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7 6970.3,2793.6 6952.2,2739.8 6821.3,2783.4 7045.5,3453.3 6738.2,3556.1 6685.7,3399 6413.7,3490.1 6387.4,3411.5"
+								:class="{ 'active' : isActiveUnit(601) }"
+								class="sp-interior__unit" 
+								data-unit-number="601" 
+								data-unit-floorplan="the-bow-b" 
+								points="1282.9,3654.9 263.3,3995 506.4,4719.9 325.1,4780.3 
+								606,5619.9 574.8,5630.3 791.4,6277.5 822.5,6267.1 868.7,6405.3 1381.5,6644.9 2192.6,6373.9 1703.7,4912.6 1473.4,4989.3 
+								1406.8,4783.9 1634.7,4706"
 							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -359,55 +390,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(706) }"
-								data-unit-number="706" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.7,2488.8 5487.6,3483.7 3186,4253.8 
-								2853.2,3259.1"
-							/>
-							<polygon 
 								:class="{ 'active' : isActiveUnit(707) }"
+								class="sp-interior__unit" 
 								data-unit-number="707" 
 								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(701) }"
-								data-unit-number="701" 
-								data-unit-floorplan="the-bow-c" 
-								class="sp-interior__unit" points="1329.1,3664.7 272.8,4016.9 524.6,4768 336.8,4830.6 
-								627.8,5700.4 595.5,5711.2 819.9,6381.6 852.1,6370.9 900,6514.1 1431.2,6762.3 2271.6,6481.5 1847.2,5213.1 1304.8,5394.6 
-								1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(706) }"
+								class="sp-interior__unit" 
+								data-unit-number="706" 
+								data-unit-floorplan="the-sable" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(702) }"
-								data-unit-number="702" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9575 1159.4003)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(705) }"
+								class="sp-interior__unit" 
+								data-unit-number="705" 
+								data-unit-floorplan="the-corner" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(704) }"
+								class="sp-interior__unit" 
+								data-unit-number="704" 
+								data-unit-floorplan="the-broadview-b" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
 							/>
 							
 							<rect 
 								:class="{ 'active' : isActiveUnit(703) }"
+								class="sp-interior__unit" 
 								data-unit-number="703" 
-								data-unit-floorplan="the-broadview-a" x="3468.3" y="4164.9" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7233 1610.3379)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
+								data-unit-floorplan="the-broadview-a" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(704) }"
-								data-unit-number="704" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.4,3473 4768.4,3953.2 5277.8,5475.7 
-								6896.6,4933.6 6768.3,4550 6662,4585.5 6512,4137 6434.3,4163"
+								:class="{ 'active' : isActiveUnit(702) }"
+								class="sp-interior__unit" 
+								data-unit-number="702" 
+								data-unit-floorplan="the-broadview-c" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
 							/>
-							
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(705) }"
-								data-unit-number="705" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.4,3473 6433.8,4163.5 6512.1,4137.3 6662,4585.6 6768.3,4550 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7
-							6970.3,2793.6 6952.2,2739.8 6821.3,2783.4 7045.5,3453.3 6738.2,3556.1 6685.7,3399 6413.7,3490.1 6387.4,3411.5"
+								:class="{ 'active' : isActiveUnit(701) }"
+								class="sp-interior__unit" 
+								data-unit-number="701" 
+								data-unit-floorplan="the-bow-b" 
+								points="1282.9,3654.9 263.3,3995 506.4,4719.9 325.1,4780.3 
+								606,5619.9 574.8,5630.3 791.4,6277.5 822.5,6267.1 868.7,6405.3 1381.5,6644.9 2192.6,6373.9 1703.7,4912.6 1473.4,4989.3 
+								1406.8,4783.9 1634.7,4706"
 							/>
+
 						</g>
 					</g>
 				</Transition>
