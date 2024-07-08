@@ -532,7 +532,7 @@
 				</g>
 
 				<!-- Building -->
-				<image style="overflow:visible;" xlink:href="stacking-plan-building-v2.webp"  transform="matrix(0.3333 0 0 0.3333 5.832127e-02 -4.364001e-02)"></image>
+				<image href="https://uploads-ssl.webflow.com/635aae0d25d447bfc72ef508/668c4792d2dcf6a5495b7b2d_stacking-plan-building-v2.webp" transform="matrix(0.3333 0 0 0.3333 5.832127e-02 -4.364001e-02)" />
 
 
 
