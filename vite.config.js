@@ -1,6 +1,10 @@
 import { fileURLToPath, URL } from 'node:url'
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js"
 
+// Handlebars - allows import of static html files
+import { resolve } from 'path'
+import handlebars from '@agilebot/vite-plugin-handlebars'
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -8,7 +12,11 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
 	plugins: [
 		vue(),
-		cssInjectedByJsPlugin()
+		// Handlebars - allows import of static html files
+		handlebars({
+			partialDirectory: resolve(__dirname, 'src/partials'),
+	    }),
+		cssInjectedByJsPlugin(),
 	],
 	build: {
 		rollupOptions: {
