@@ -245,7 +245,7 @@
 
 #sp-info-pane__toggle-icon {
   width: 1.0625em;
-  height: 1.8125em;
+  height: 1.7em;
   position: relative;
   margin: 3.75em auto;
   -webkit-transform: rotate(0deg);
@@ -262,7 +262,7 @@
 #sp-info-pane__toggle-icon span {
   display: block;
   position: absolute;
-  height: 0.15625em;
+  height: 0.11em;
   width: 100%;
   background: #000;
   border-radius: 0.5625em;
