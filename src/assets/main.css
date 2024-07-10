@@ -581,14 +581,15 @@
 
 
 #sp-level-base__footprint {
-	stroke:#666666;
+	stroke: #666666;
 	stroke-width:7.7219;
 	stroke-miterlimit:9.6524;
+	fill: #121111;
 }
 
 .sp-interior__base {
 	opacity:0.4;
-	fill:#373030;
+	fill: #373030;
 }
 
 .sp-interior__base-2 {
