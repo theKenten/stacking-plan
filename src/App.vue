@@ -6,6 +6,17 @@
 		<div class="sp-interior">
 
 			<svg class="sp-interior__compass" enable-background="new 0 0 89.9 95.6" height="95.6" viewBox="0 0 89.9 95.6" width="89.9" xmlns="http://www.w3.org/2000/svg"><g fill="#ccaa68"><path d="m87.9 51.7c-.5 22.9-19.1 41.4-42 42v2c24.1-.5 43.4-19.9 44-44z"/><path d="m44 93.6c-22.9-.5-41.5-19.1-42-42h-2c.5 24.1 19.9 43.4 44 44z"/><path d="m45 16.8-24.2 60.3 24.2-7.4 24.2 7.4zm-20.8 57.2 20.8-51.8v45.4z"/><path d="m51.2.1v14h-2.2l-8.4-9.2h-.1l.2 6c0 1.3.1 2.1.3 3.1h-2.1v-14h2.1l8.4 9.3h.1l-.2-6c0-1.2-.1-2.4-.3-3.2z"/><path d="m52 6.2v2c20.1 3.3 35.5 20.5 36 41.4h2c-.5-21.9-16.8-40.1-38-43.4z"/><path d="m38 6.2c-21.2 3.3-37.5 21.5-38 43.5h2c.5-20.9 15.9-38.1 36-41.4z"/></g></svg>
+			
+			<div class="sp-interior-legend">
+				<div class="sp-interior-legend__item">
+					<div class="sp-legend-marker sp-legend-marker--available"></div>
+					<span>Available</span>
+				</div>
+				<div class="sp-interior-legend__item">
+					<div class="sp-legend-marker sp-legend-marker--sold"></div>
+					<span>Sold</span>
+				</div>
+			</div>
 
 			<div class="sp-interior__controls">
 				<span class="sp-interior__text">Floor {{ activeLevel }}</span>
@@ -32,7 +43,6 @@
 					</button>
 				</div>
 			</div>
-
 
 			<svg class="sp-interior__svg" enable-background="new 0 0 8192 6768.9" viewBox="0 0 8192 6768.9" width="8192px" height="6768.9px">
 
