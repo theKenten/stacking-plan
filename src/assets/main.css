@@ -599,8 +599,11 @@
 
 
 .sp-interior-legend {
+	display: grid;
+	row-gap: 0.75em;
+
 	position: absolute;
-	top: calc(2.5rem + 1rem);
+	top: 61vw;
 	right: 0;
 }
 	@media (min-width: 768px) {
@@ -646,8 +649,8 @@
 
 .sp-interior__compass {
 	position: absolute;
-	top: calc(2.5rem + 1rem);
-	right: 0;
+	top: 13.5vw;
+	right: 11vw;
 	width: 2.5rem;
 	height: 2.5rem;
 }
@@ -700,8 +703,8 @@
 	display: flex;
 
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 2.5vw;
+	right: 5vw;
 }
 	@media (min-width: 768px) {
 		.sp-interior__controls {
