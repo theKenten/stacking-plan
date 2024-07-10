@@ -1,3 +1,7 @@
+:root {
+	--lengend-right: -0.625em;
+}
+
 #app {
 	position: relative;
 	font-family: 'IvyEpic', sans-serif;
@@ -579,7 +583,7 @@
 			position: absolute;
 			top: 7.25em;
 			bottom: auto;
-			right: -1.5em;
+			right: var(--lengend-right);
 			transform: translateX(100%);
 		}
 	}
@@ -620,10 +624,11 @@
 }
 	@media (min-width: 768px) {
 		.sp-interior__compass {
+			transform: translateX(100%);
 			position: absolute;
 			top: 0.25em;
 			bottom: auto;
-			right: -6.625em;
+			right: var(--lengend-right);
 			width: 5.5625em;
 			height: 5.5625em;
 		}
@@ -724,7 +729,7 @@
 .sp-interior__text {
 	display: inline-block;
 	align-self: center;
-	margin-top: 0.4rem;
+	margin-top: 0.3rem;
 	margin-right: 0.4rem;
 
 	font-family: 'IvyEpic', sans-serif;
