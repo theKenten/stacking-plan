@@ -680,7 +680,7 @@
 					</button>
 					<div class="sp-info-pane__header-inner">
 						<h2 class="sp-info-pane__heading">
-							{{ currentFloorPlan.name }}
+							{{ floorPlanName }}
 						</h2>
 						<div class="sp-info-pane__unit">
 							<div class="sp-info-pane__unit-number">{{ activeUnit }}</div>
@@ -709,6 +709,7 @@
 								<li v-if="currentFloorPlan.sqft">{{ currentFloorPlan.sqft }} sq ft</li>
 								<li v-if="currentFloorPlan.bedrooms">{{ currentFloorPlan.bedrooms }} bedrooms</li>
 								<li v-if="currentFloorPlan.bathrooms">{{ currentFloorPlan.bathrooms }} bathrooms</li>
+								<li v-if="currentFloorPlan.otherFeature">{{ currentFloorPlan.otherFeature }} view(s)</li>
 								<li v-if="currentFloorPlan.views">{{ currentFloorPlan.views }} view(s)</li>
 								<li>Options available</li>
 							</ul>

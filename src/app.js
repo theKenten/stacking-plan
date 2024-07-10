@@ -248,6 +248,11 @@ export default {
 			return this.floorplans[this.activeFloorPlanID]
 		},
 
+		floorPlanName() {
+			let floorplan = this.floorplans[this.activeFloorPlanID];
+			return floorplan.nameOverride != '' ? floorplan.nameOverride : floorplan.name;
+		},
+
 		infoPaneState() {
 			let state = 'disabled'; // Disabled by default
 
