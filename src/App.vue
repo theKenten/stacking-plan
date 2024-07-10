@@ -79,7 +79,7 @@
 					>
 					<g>
 						<polygon 
-							:class="{ 'active' : isActiveUnit(307) }"
+							:class="{ 'active' : isActiveUnit(307) }, getUnitState(307)"
 							data-unit-number="307" 
 							data-unit-floorplan="the-riley-a" 
 							class="sp-interior__unit" 
@@ -88,7 +88,7 @@
 						/>
 
 						<polygon 
-							:class="{ 'active' : isActiveUnit(306) }"
+							:class="{ 'active' : isActiveUnit(306) }, getUnitState(306)"
 							data-unit-number="306" 
 							data-unit-floorplan="the-riley-d" 
 							class="sp-interior__unit" 
@@ -97,7 +97,7 @@
 						/>
 
 						<polygon 
-							:class="{ 'active' : isActiveUnit(305) }"
+							:class="{ 'active' : isActiveUnit(305) }, getUnitState(305)"
 							data-unit-number="305" 
 							data-unit-floorplan="the-corner-b" 
 							class="sp-interior__unit" 
@@ -107,7 +107,7 @@
 						/>
 
 						<polygon 
-							:class="{ 'active' : isActiveUnit(304) }"
+							:class="{ 'active' : isActiveUnit(304) }, getUnitState(304)"
 							data-unit-number="304" 
 							data-unit-floorplan="the-broadview-b" 
 							class="sp-interior__unit" 
@@ -116,7 +116,7 @@
 						/>
 
 						<rect 
-							:class="{ 'active' : isActiveUnit(303) }"
+							:class="{ 'active' : isActiveUnit(303) }, getUnitState(303)"
 							data-unit-number="303" 
 							data-unit-floorplan="the-broadview-a" 
 							class="sp-interior__unit" x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)"
@@ -124,7 +124,7 @@
 							/>
 
 						<polygon 
-							:class="{ 'active' : isActiveUnit(302) }"
+							:class="{ 'active' : isActiveUnit(302) }, getUnitState(302)"
 							data-unit-number="302" 
 							data-unit-floorplan="the-broadview-c" 
 							class="sp-interior__unit" 
@@ -133,7 +133,7 @@
 						/>
 
 						<polygon 
-							:class="{ 'active' : isActiveUnit(301) }"
+							:class="{ 'active' : isActiveUnit(301) }, getUnitState(301)"
 							data-unit-number="301" 
 							data-unit-floorplan="the-bow-a" 
 							class="sp-interior__unit" 
@@ -155,7 +155,7 @@
 					>
 						<g >
 							<polygon id="unit__407--fp__the-riley-b" 
-								:class="{ 'active' : isActiveUnit(407) }"
+								:class="{ 'active' : isActiveUnit(407) }, getUnitState(407)"
 								class="sp-interior__unit" 
 								data-unit-number="407" 
 								data-unit-floorplan="the-riley-b" 
@@ -164,7 +164,7 @@
 							/>
 
 							<polygon id="unit__406--fp__the-riley-e" 
-								:class="{ 'active' : isActiveUnit(406) }"
+								:class="{ 'active' : isActiveUnit(406) }, getUnitState(406)"
 								class="sp-interior__unit" 
 								data-unit-number="406" 
 								data-unit-floorplan="the-riley-e" 
@@ -173,7 +173,7 @@
 							/>
 
 							<polygon id="unit__405--fp__the-corner" 
-								:class="{ 'active' : isActiveUnit(405) }"
+								:class="{ 'active' : isActiveUnit(405) }, getUnitState(405)"
 								class="sp-interior__unit" 
 								data-unit-number="405" 
 								data-unit-floorplan="the-corner" 
@@ -183,7 +183,7 @@
 							/>
 
 							<polygon id="unit__404--fp__the-broadview-b" 
-								:class="{ 'active' : isActiveUnit(404) }"
+								:class="{ 'active' : isActiveUnit(404) }, getUnitState(404)"
 								class="sp-interior__unit" 
 								data-unit-number="404" 
 								data-unit-floorplan="the-broadview-b" 
@@ -193,7 +193,7 @@
 
 							
 							<rect id="unit__403--fp__the-broadview-a" 
-								:class="{ 'active' : isActiveUnit(403) }"
+								:class="{ 'active' : isActiveUnit(403) }, getUnitState(403)"
 								class="sp-interior__unit" 
 								data-unit-number="403" 
 								data-unit-floorplan="the-broadview-a" 
@@ -202,7 +202,7 @@
 							/>
 
 							<polygon id="unit__402--fp__the-broadview-c" 
-								:class="{ 'active' : isActiveUnit(402) }"
+								:class="{ 'active' : isActiveUnit(402) }, getUnitState(402)"
 								class="sp-interior__unit" 
 								data-unit-number="402" 
 								data-unit-floorplan="the-broadview-c" 
@@ -211,7 +211,7 @@
 							/>
 
 							<polygon id="unit__401--fp__the-bow-a" 
-								:class="{ 'active' : isActiveUnit(401) }"
+								:class="{ 'active' : isActiveUnit(401) }, getUnitState(401)"
 								class="sp-interior__unit" 
 								data-unit-number="401" 
 								data-unit-floorplan="the-bow-a" 
@@ -234,7 +234,7 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(507) }"
+								:class="{ 'active' : isActiveUnit(507) }, getUnitState(507)"
 								class="sp-interior__unit" 
 								data-unit-number="507" 
 								data-unit-floorplan="the-riley-c" 
@@ -243,7 +243,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(506) }"
+								:class="{ 'active' : isActiveUnit(506) }, getUnitState(506)"
 								class="sp-interior__unit" 
 								data-unit-number="506" 
 								data-unit-floorplan="the-sable" 
@@ -252,7 +252,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(505) }"
+								:class="{ 'active' : isActiveUnit(505) }, getUnitState(505)"
 								class="sp-interior__unit" 
 								data-unit-number="505" 
 								data-unit-floorplan="the-corner" 
@@ -262,7 +262,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(504) }"
+								:class="{ 'active' : isActiveUnit(504) }, getUnitState(504)"
 								class="sp-interior__unit" 
 								data-unit-number="504" 
 								data-unit-floorplan="the-broadview-b" 
@@ -271,7 +271,7 @@
 							/>
 							
 							<rect 
-								:class="{ 'active' : isActiveUnit(503) }"
+								:class="{ 'active' : isActiveUnit(503) }, getUnitState(503)"
 								class="sp-interior__unit" 
 								data-unit-number="503" 
 								data-unit-floorplan="the-broadview-a" 
@@ -280,7 +280,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(502) }"
+								:class="{ 'active' : isActiveUnit(502) }, getUnitState(502)"
 								class="sp-interior__unit" 
 								data-unit-number="502" 
 								data-unit-floorplan="the-broadview-c" 
@@ -289,7 +289,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(501) }"
+								:class="{ 'active' : isActiveUnit(501) }, getUnitState(501)"
 								class="sp-interior__unit" 
 								data-unit-number="501" 
 								data-unit-floorplan="the-bow-b" 
@@ -312,7 +312,7 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(607) }"
+								:class="{ 'active' : isActiveUnit(607) }, getUnitState(607)"
 								class="sp-interior__unit" 
 								data-unit-number="607" 
 								data-unit-floorplan="the-riley-c" 
@@ -321,7 +321,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(606) }"
+								:class="{ 'active' : isActiveUnit(606) }, getUnitState(606)"
 								class="sp-interior__unit" 
 								data-unit-number="606" 
 								data-unit-floorplan="the-sable" 
@@ -330,7 +330,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(605) }"
+								:class="{ 'active' : isActiveUnit(605) }, getUnitState(605)"
 								class="sp-interior__unit" 
 								data-unit-number="605" 
 								data-unit-floorplan="the-corner" 
@@ -340,7 +340,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(604) }"
+								:class="{ 'active' : isActiveUnit(604) }, getUnitState(604)"
 								class="sp-interior__unit" 
 								data-unit-number="604" 
 								data-unit-floorplan="the-broadview-b" 
@@ -349,7 +349,7 @@
 							/>
 							
 							<rect 
-								:class="{ 'active' : isActiveUnit(603) }"
+								:class="{ 'active' : isActiveUnit(603) }, getUnitState(603)"
 								class="sp-interior__unit" 
 								data-unit-number="603" 
 								data-unit-floorplan="the-broadview-a" 
@@ -358,7 +358,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(602) }"
+								:class="{ 'active' : isActiveUnit(602) }, getUnitState(602)"
 								class="sp-interior__unit" 
 								data-unit-number="602" 
 								data-unit-floorplan="the-broadview-c" 
@@ -367,7 +367,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(601) }"
+								:class="{ 'active' : isActiveUnit(601) }, getUnitState(601)"
 								class="sp-interior__unit" 
 								data-unit-number="601" 
 								data-unit-floorplan="the-bow-b" 
@@ -390,7 +390,7 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(707) }"
+								:class="{ 'active' : isActiveUnit(707) }, getUnitState(707)"
 								class="sp-interior__unit" 
 								data-unit-number="707" 
 								data-unit-floorplan="the-riley-c" 
@@ -399,7 +399,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(706) }"
+								:class="{ 'active' : isActiveUnit(706) }, getUnitState(706)"
 								class="sp-interior__unit" 
 								data-unit-number="706" 
 								data-unit-floorplan="the-sable" 
@@ -408,7 +408,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(705) }"
+								:class="{ 'active' : isActiveUnit(705) }, getUnitState(705)"
 								class="sp-interior__unit" 
 								data-unit-number="705" 
 								data-unit-floorplan="the-corner" 
@@ -418,7 +418,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(704) }"
+								:class="{ 'active' : isActiveUnit(704) }, getUnitState(704)"
 								class="sp-interior__unit" 
 								data-unit-number="704" 
 								data-unit-floorplan="the-broadview-b" 
@@ -427,7 +427,7 @@
 							/>
 							
 							<rect 
-								:class="{ 'active' : isActiveUnit(703) }"
+								:class="{ 'active' : isActiveUnit(703) }, getUnitState(703)"
 								class="sp-interior__unit" 
 								data-unit-number="703" 
 								data-unit-floorplan="the-broadview-a" 
@@ -436,7 +436,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(702) }"
+								:class="{ 'active' : isActiveUnit(702) }, getUnitState(702)"
 								class="sp-interior__unit" 
 								data-unit-number="702" 
 								data-unit-floorplan="the-broadview-c" 
@@ -445,7 +445,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(701) }"
+								:class="{ 'active' : isActiveUnit(701) }, getUnitState(701)"
 								class="sp-interior__unit" 
 								data-unit-number="701" 
 								data-unit-floorplan="the-bow-b" 
@@ -469,7 +469,7 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(805) }"
+								:class="{ 'active' : isActiveUnit(805) }, getUnitState(805)"
 								class="sp-interior__unit" 
 								data-unit-number="805" 
 								data-unit-floorplan="the-corner"
@@ -479,7 +479,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(804) }"
+								:class="{ 'active' : isActiveUnit(804) }, getUnitState(804)"
 								class="sp-interior__unit" 
 								data-unit-number="804" 
 								data-unit-floorplan="the-broadview-b"
@@ -488,7 +488,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(802) }"
+								:class="{ 'active' : isActiveUnit(802) }, getUnitState(802)"
 								class="sp-interior__unit" 
 								data-unit-number="802" 
 								data-unit-floorplan="the-broadview-c"
@@ -497,7 +497,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(801) }"
+								:class="{ 'active' : isActiveUnit(801) }, getUnitState(801)"
 								class="sp-interior__unit" 
 								data-unit-number="801" 
 								data-unit-floorplan="the-bow-b"
@@ -519,7 +519,7 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(907) }"
+								:class="{ 'active' : isActiveUnit(907) }, getUnitState(907)"
 								class="sp-interior__unit" 
 								data-unit-number="907" 
 								data-unit-floorplan="the-riley-p"
@@ -528,7 +528,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(906) }"
+								:class="{ 'active' : isActiveUnit(906) }, getUnitState(906)"
 								class="sp-interior__unit" 
 								data-unit-number="906" 
 								data-unit-floorplan="the-sable-p"
@@ -537,7 +537,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(903) }"
+								:class="{ 'active' : isActiveUnit(903) }, getUnitState(903)"
 								class="sp-interior__unit" 
 								data-unit-number="903" 
 								data-unit-floorplan="the-key"
@@ -545,7 +545,7 @@
 								6728.1,2814.4 6710.7,2762.4 6584.4,2804.7 6802.4,3456.3 6508.1,3554.7 6450.5,3382.7 6199.4,3466.7 6179.2,3406.4 5317.3,3694.8 
 									"/>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(901) }"
+								:class="{ 'active' : isActiveUnit(901) }, getUnitState(901)"
 								class="sp-interior__unit" 
 								data-unit-number="901" 
 								data-unit-floorplan="the-legacy"
@@ -555,7 +555,7 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(902) }"
+								:class="{ 'active' : isActiveUnit(902) }, getUnitState(902)"
 								class="sp-interior__unit" 
 								data-unit-number="902" 
 								data-unit-floorplan="the-metro"
