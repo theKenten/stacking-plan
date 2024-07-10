@@ -349,7 +349,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 1em var(--padding-outer);
-	min-height: 5.3125rem;
+	/* min-height: 5.3125rem; */
 	background-color: #A78056;
 }	
 	@media (min-width: 768px) {
