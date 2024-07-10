@@ -243,7 +243,7 @@
 	height: 0.875em;
 }*/
 
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+#sp-info-pane__toggle-icon {
   width: 22px;
   height: 27px;
   position: relative;
@@ -259,7 +259,7 @@
   cursor: pointer;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+#sp-info-pane__toggle-icon span {
   display: block;
   position: absolute;
   height: 2px;
@@ -280,39 +280,39 @@
 
 /* Icon 3 */
 
-#nav-icon3 span:nth-child(1) {
-  top: 0px;
+#sp-info-pane__toggle-icon span:nth-child(1) {
+  top: 2px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
-  top: 7px;
+#sp-info-pane__toggle-icon span:nth-child(2),#sp-info-pane__toggle-icon span:nth-child(3) {
+  top: 8px;
 }
 
-#nav-icon3 span:nth-child(4) {
+#sp-info-pane__toggle-icon span:nth-child(4) {
   top: 14px;
 }
 
-#nav-icon3.open span:nth-child(1) {
+#sp-info-pane__toggle-icon.open span:nth-child(1) {
   top: 17px;
   width: 0%;
   left: 50%;
 }
 
-#nav-icon3.open span:nth-child(2) {
+#sp-info-pane__toggle-icon.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(3) {
+#sp-info-pane__toggle-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
+#sp-info-pane__toggle-icon.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
