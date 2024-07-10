@@ -138,7 +138,7 @@
 	 */
 	@media (max-width: 767px) {
 		.sp-info-pane {
-			z-index: 1000;
+			z-index: 900;
 			transition: all 0.4s ease;
 			transform: translateX(calc(100% + var(--close-btn-height)));
 		}
@@ -153,7 +153,7 @@
 	 */
 	@media (min-width: 768px) {
 		.sp-info-pane--opened {
-			z-index: 1000;
+			z-index: 900;
 		}
 
 		/* Disabled by default */
@@ -178,7 +178,7 @@
 
 .sp-info-pane__back {
 	position: absolute;
-	z-index: 1010;
+	z-index: 910;
 	width: 100vw;
 	height: 100vh;
 	left: calc(var(--close-btn-height) * -1);
@@ -191,7 +191,7 @@
 
 .sp-info-pane__inner {
 	position: relative;
-	z-index: 1010;
+	z-index: 910;
 
 	display: flex;
 	flex-direction: column;
