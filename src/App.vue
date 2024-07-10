@@ -678,10 +678,15 @@
 						</div>
 						
 					</button>
-					<h2 class="sp-info-pane__heading">
-						{{ currentFloorPlan.name }}
-					</h2>
-					<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
+					<div class="sp-info-pane__header-inner">
+						<h2 class="sp-info-pane__heading">
+							{{ currentFloorPlan.name }}
+						</h2>
+						<div class="sp-info-pane__unit">
+							<div class="sp-info-pane__unit-number">{{ activeUnit }}</div>
+							<div class="sp-info-pane__unit-type">{{ currentFloorPlan.type }}</div>
+						</div>
+					</div>
 				</header>
 				
 				<main class="sp-info-pane__body">
