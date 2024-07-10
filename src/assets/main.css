@@ -325,10 +325,16 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-
 	padding: 1em var(--padding-outer);
+	min-height: 5.3125rem;
 	background-color: #A78056;
-}
+}	
+	@media (min-width: 768px) {
+		.sp-info-pane__header {
+			min-height: 5.3125em;
+		}
+	}
+
 	.sp-info-pane__header-inner {
 		display: flex;
 		align-items: center;
