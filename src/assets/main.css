@@ -354,7 +354,7 @@
 }	
 	@media (min-width: 768px) {
 		.sp-info-pane__header {
-			min-height: 5.3125em;
+			/* min-height: 5.3125em; */
 		}
 	}
 
