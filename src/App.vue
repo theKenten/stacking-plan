@@ -707,7 +707,7 @@
 								<li v-if="currentFloorPlan.sqft">{{ currentFloorPlan.sqft }} sq ft</li>
 								<li v-if="currentFloorPlan.bedrooms">{{ currentFloorPlan.bedrooms }} bedrooms</li>
 								<li v-if="currentFloorPlan.bathrooms">{{ currentFloorPlan.bathrooms }} bathrooms</li>
-								<li v-if="currentFloorPlan.otherFeature">{{ currentFloorPlan.otherFeature }} view(s)</li>
+								<li v-if="currentFloorPlan.otherFeature">{{ currentFloorPlan.otherFeature }}</li>
 								<li v-if="currentFloorPlan.views">{{ currentFloorPlan.views }} view(s)</li>
 								<li>Options available</li>
 							</ul>
