@@ -538,9 +538,9 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(906) }, getUnitState(906)"
+								:class="{ 'active' : isActiveUnit(904) }, getUnitState(904)"
 								class="sp-interior__unit" 
-								data-unit-number="906" 
+								data-unit-number="904" 
 								data-unit-floorplan="the-sable-p"
 								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
 								2754.1,3263.5"
