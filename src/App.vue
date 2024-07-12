@@ -529,9 +529,9 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(907) }, getUnitState(907)"
+								:class="{ 'active' : isActiveUnit(905) }, getUnitState(905)"
 								class="sp-interior__unit" 
-								data-unit-number="907" 
+								data-unit-number="905" 
 								data-unit-floorplan="the-riley-p"
 								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
 								2754.1,3263.5"
