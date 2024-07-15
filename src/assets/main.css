@@ -800,8 +800,9 @@
 
 	.sp-interior__unit:hover {
 		cursor: pointer;
-		opacity: 0.5;
-		fill: #CCAA68;
+		/* opacity: 0.5; */
+		/* fill: #CCAA68; */
+		fill: rgba(204, 170, 104, 0.5);
 	}
 
 /* Interior Level Active  */
