@@ -478,9 +478,9 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(805) }, getUnitState(805)"
+								:class="{ 'active' : isActiveUnit(804) }, getUnitState(804)"
 								class="sp-interior__unit" 
-								data-unit-number="805" 
+								data-unit-number="804" 
 								data-unit-floorplan="the-corner"
 								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
 								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
@@ -488,9 +488,9 @@
 							/>
 
 							<polygon 
-								:class="{ 'active' : isActiveUnit(804) }, getUnitState(804)"
+								:class="{ 'active' : isActiveUnit(803) }, getUnitState(803)"
 								class="sp-interior__unit" 
-								data-unit-number="804" 
+								data-unit-number="803" 
 								data-unit-floorplan="the-broadview-b"
 								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
 								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
