@@ -167,6 +167,11 @@ export default {
 			return unit ? encodeURI(unit.state.toLowerCase()) : '';
 		},
 
+		getUnitFloorPlan(unit) {
+			unit = this.units[unit] ?? false;
+			return unit ? unit.floorplan : null;
+		},
+
 		toggleInfoPane() {
 			this.isInfoPaneClosed ? this.openInfoPane() : this.closeInfoPane();
 		},
