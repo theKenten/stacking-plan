@@ -877,5 +877,6 @@
 */
 
 .fancybox__container {
-font-family: 'IvyEpic', sans-serif;
+	font-family: 'IvyEpic', sans-serif;
+	z-index: 2000 !important;
 }
