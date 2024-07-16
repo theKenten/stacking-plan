@@ -602,10 +602,8 @@
  * Sold States Off
  */
 
-.sp-sold-hidden {
-	.sp-interior-legend {
-		display: none;
-	}
+.sp-sold-hidden .sp-interior-legend {
+	display: none;
 }
 
 
@@ -806,11 +804,9 @@
 	stroke-miterlimit:10;
 }
 
-#app:not(.sp-sold-hidden) {
-	.sp-interior__unit.sold {
-		pointer-events:none;
-		fill: #893A38;
-	}
+#app:not(.sp-sold-hidden) .sp-interior__unit.sold {
+	pointer-events:none;
+	fill: #893A38;	
 }
 
 	.sp-interior__unit:hover {
