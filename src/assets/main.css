@@ -138,7 +138,7 @@
 	 */
 	@media (max-width: 767px) {
 		.sp-info-pane {
-			z-index: 900;
+			z-index: 1100;
 			transition: all 0.4s ease;
 			transform: translateX(calc(100% + var(--close-btn-height)));
 		}
@@ -598,7 +598,20 @@
 	}
 
 
+/**
+ * Sold States Off
+ */
 
+.sp-sold-hidden {
+	.sp-interior-legend {
+		display: none;
+	}
+}
+
+
+/**
+ * Legend
+ */
 .sp-interior-legend {
 	display: grid;
 	row-gap: 0.75em;
@@ -793,15 +806,15 @@
 	stroke-miterlimit:10;
 }
 
-.sp-interior__unit.sold {
-	pointer-events:none;
-	fill: #893A38;
+#app:not(.sp-sold-hidden) {
+	.sp-interior__unit.sold {
+		pointer-events:none;
+		fill: #893A38;
+	}
 }
 
 	.sp-interior__unit:hover {
 		cursor: pointer;
-		/* opacity: 0.5; */
-		/* fill: #CCAA68; */
 		fill: rgba(204, 170, 104, 0.5);
 	}
 
