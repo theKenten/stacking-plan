@@ -6,6 +6,17 @@
 		<div class="sp-interior">
 
 			<svg class="sp-interior__compass" enable-background="new 0 0 89.9 95.6" height="95.6" viewBox="0 0 89.9 95.6" width="89.9" xmlns="http://www.w3.org/2000/svg"><g fill="#ccaa68"><path d="m87.9 51.7c-.5 22.9-19.1 41.4-42 42v2c24.1-.5 43.4-19.9 44-44z"/><path d="m44 93.6c-22.9-.5-41.5-19.1-42-42h-2c.5 24.1 19.9 43.4 44 44z"/><path d="m45 16.8-24.2 60.3 24.2-7.4 24.2 7.4zm-20.8 57.2 20.8-51.8v45.4z"/><path d="m51.2.1v14h-2.2l-8.4-9.2h-.1l.2 6c0 1.3.1 2.1.3 3.1h-2.1v-14h2.1l8.4 9.3h.1l-.2-6c0-1.2-.1-2.4-.3-3.2z"/><path d="m52 6.2v2c20.1 3.3 35.5 20.5 36 41.4h2c-.5-21.9-16.8-40.1-38-43.4z"/><path d="m38 6.2c-21.2 3.3-37.5 21.5-38 43.5h2c.5-20.9 15.9-38.1 36-41.4z"/></g></svg>
+			
+			<div class="sp-interior-legend">
+				<div class="sp-interior-legend__item">
+					<div class="sp-legend-marker sp-legend-marker--available"></div>
+					<span>Available</span>
+				</div>
+				<div class="sp-interior-legend__item">
+					<div class="sp-legend-marker sp-legend-marker--sold"></div>
+					<span>Sold</span>
+				</div>
+			</div>
 
 			<div class="sp-interior__controls">
 				<span class="sp-interior__text">Floor {{ activeLevel }}</span>
@@ -33,36 +44,33 @@
 				</div>
 			</div>
 
-
-			<svg class="sp-interior__svg" enable-background="new 0 0 8492.4 6768.9" height="6768.9" viewBox="0 0 8492.4 6768.9" width="8492.4" xmlns="http://www.w3.org/2000/svg">
+			<svg class="sp-interior__svg" enable-background="new 0 0 8192 6768.9" viewBox="0 0 8192 6768.9" width="8192px" height="6768.9px">
 
 				<!-- Base Level -->
 				<g id="sp-level-base">
-					<polygon 
+					<path 
 						id="sp-level-base__footprint" 
-						points="7845.2,0 506.9,0 0,528.5 0,3443.1 
-						691,3443.5 690.6,3880.2 273.8,4018.1 524.7,4768.2 337,4831 627.9,5700.7 595.7,5711.5 820,6381.9 852.2,6371.1 900.2,6514.3 
-						1431.4,6762.6 6068.1,5202.5 8054.5,4546.7 8473.8,3955.1 8473.8,528.5"
+						d="M7572.5,117.6H489.3L0,627.7V3441l667,0.4l-0.4,421.5l-402.3,133.1l242.3,724.1l-181.2,60.6
+		l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1l4283.2-1441.1l1917.3-633.1l404.7-571V627.7L7572.5,117.6z"
 					/>
-					<polyline 
+					<path 
 						id="sp-level-base__floors-3" 
-						class="sp-interior__base" points="4557.2,2689.2 4774.2,3346.3 5012.2,3266.6 5049,3376.7 6952.3,2740 6970.5,2785.7 
-						8473.8,2785.7 8473.8,3955 8054.5,4546.7 1431.4,6762.6 900.2,6514.3 852.2,6371 820,6381.8 595.7,5711.3 627.9,5700.7 337,4830.9 
-						524.7,4768.2 273.8,4017.9 690.5,3878.5 691,3443.3 0,3443.1 0,528.5 506.9,0 4317,0 4317,1127.1 4499.7,1127.2 4503.3,2527.9 
-						4557.2,2689.2"
+						class="sp-interior__base" d="M6710.7,2762.4l-1837.1,614.5l-35.5-106.2l-229.8,76.9l-209.4-634.3l-52.1-155.7l-3.5-1352
+		l-176.4-0.1V117.6H489.3L0,627.7V3441l667,0.3l0,0.2h0l-0.4,421.5L264.3,3996l242.2,724.1l0,0l0,0l-181.2,60.6l507.1,1515.7
+		c219.3,318,504.2,340.4,741.6,284l4283.2-1441.1l1917.3-633.1l68.2-96.3l336.5-474.9V2806.5H6728.2L6710.7,2762.4z"
 					/>
 					<path 
 						id="sp-level-base__floor-4" 
-						class="sp-interior__base" d="M6970.5,2785.7l-18.1-45.6L5049,3376.7l-36.8-110l-238,79.6l-216.9-657.1l-54-161.3l-3.6-1400.7
-						l-182.7-0.1V0h-3810L0,528.5v2914.6l691,0.3l-0.5,435.2l-416.7,139.4l251,750.3L337,4830.9l291,869.8l-32.3,10.6L820,6381.8
-						l32.2-10.8l47.9,143.4l531.2,248.3l6623.1-2215.9l419.3-591.7l0-1169.3H6970.5z M1359.7,3758.4l-109.3-326.8l0-1153.7l2862.7-11.2
-						l0.3,225.9l167.4,2.8l81.7,254.3L1359.7,3758.4z"
+						class="sp-interior__base" d="M6728.2,2806.5l-17.5-44l-1837.2,614.5l-35.5-106.2l-229.8,76.9l-209.4-634.3l-52.1-155.7
+		l-3.5-1352l-176.4-0.1V117.6H489.3L0,627.7V3441v0l667,0.4l-0.5,419.9l-402.2,134.6l0,0.1l0,0l242.3,724.1l-181.3,60.5l0.1,0.2l0,0
+		l507.1,1515.6c107.5,146.7,310.1,385.4,741.3,284.2l0.5,0.2l6200.4-2074.5l404.7-571.2V2806.5H6728.2z M1312.4,3745.4
+		L1312.4,3745.4L1206.9,3430l0-1113.6l2763.2-10.8l0.3,218.1l161.5,2.7l78.9,245.4L1312.4,3745.4z"
 					/>
-					<polygon 
+					<path 
 						id="sp-level-base__floors-5-9" 
-						class="sp-interior__base-2" points="273.8,4017.9 1329.3,3665 1360.7,3758.8 5154.9,2489.4 5411.3,3255.6 6952.3,2740 
-						6970.1,2785.7 8473.8,2785.7 8473.8,3955.1 8054.5,4546.7 1431.4,6762.6 900.2,6514.3 852.2,6371.1 820,6381.9 595.7,5711.5 
-						627.9,5700.7 337,4831 524.7,4768.2"
+						class="sp-interior__base-2" d="M8179.3,2806.5H6727.9l-17.2-44.1l-1487.5,497.7l-247.5-739.6L1313.4,3745.8l-30.3-90.6
+		l-616.5,206.2l0,1.6l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1l4283.2-1441.1
+		l1917.3-633.1l404.7-571V2806.5z"
 					/>
 				</g>
 
@@ -77,73 +85,73 @@
 						class="sp-interior__level"
 						data-interior-level="3" 
 					>
-						<g>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(304) }"
-								data-unit-number="304" 
-								data-unit-floorplan="the-riley-d" 
-								class="sp-interior__unit" 
-								points="4412.7,2734.1 4745.5,3728.9 3186.1,4250.7 
-								2853.3,3256.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(305) }"
-								data-unit-number="305" 
-								data-unit-floorplan="the-riley-a" 
-								class="sp-interior__unit" points="1346.4,3760 1530.8,4311 1688.2,4258.3 
-								1836.7,4702.1 3186.1,4250.7 2853.3,3256.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(302) }"
-								data-unit-number="302" 
-								data-unit-floorplan="the-broadview-a" 
-								class="sp-interior__unit" points="1748.1,4960.6 3254.9,4456.5 3764.3,5979 
-								2257.3,6482.7"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(301) }"
-								data-unit-number="301" 
-								data-unit-floorplan="the-bow-a" 
-								class="sp-interior__unit" points="1129.2,3728.3 272.8,4013.9 524.6,4764.9 
-								336.9,4827.5 627.8,5697.3 595.6,5708.1 819.9,6378.6 852.1,6367.8 900.1,6511 1431.3,6759.3 1930.3,6592.5 1767.9,6110.4 
-								2095.3,6000.2 1833.1,5214.8 1304.8,5391.5 1052.2,4636.5 1394.1,4522.2"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(303) }"
-								data-unit-number="303" 
-								data-unit-floorplan="the-metro" 
-								class="sp-interior__unit" points="5513.3,3699.3 6023.2,5223.3 3764.3,5979 
-								3254.9,4456.5"
+					<g>
+						<polygon 
+							:class="{ 'active' : isActiveUnit(307) }, getUnitState(307)"
+							class="sp-interior__unit" 
+							data-unit-number="307" 
+							:data-unit-floorplan="getUnitFloorPlan(307) ?? 'the-riley-a'" 
+							points="1299.6,3749.9 1477.5,4281.7 1629.5,4230.9 
+						1772.9,4659.3 3075.3,4223.5 2754.1,3263.5"
+						/>
+
+						<polygon 
+							:class="{ 'active' : isActiveUnit(306) }, getUnitState(306)"
+							class="sp-interior__unit" 
+							data-unit-number="306" 
+							:data-unit-floorplan="getUnitFloorPlan(306) ?? 'the-riley-d'" 
+							points="4259.3,2759.7 4580.5,3719.9 3075.3,4223.5 
+						2754.1,3263.5"
+						/>
+
+						<polygon 
+							:class="{ 'active' : isActiveUnit(305) }, getUnitState(305)"
+							class="sp-interior__unit" 
+							data-unit-number="305" 
+							:data-unit-floorplan="getUnitFloorPlan(305) ?? 'the-corner-b'" 
+							points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+						6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+						6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
+						/>
+
+						<polygon 
+							:class="{ 'active' : isActiveUnit(304) }, getUnitState(304)"
+							class="sp-interior__unit" 
+							data-unit-number="304" 
+							:data-unit-floorplan="getUnitFloorPlan(304) ?? 'the-broadview-b'" 
+							points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+						6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+						/>
+
+						<rect 
+							:class="{ 'active' : isActiveUnit(303) }, getUnitState(303)"
+							class="sp-interior__unit" 
+							data-unit-number="303" 
+							:data-unit-floorplan="getUnitFloorPlan(303) ?? 'the-broadview-a'" 
+							x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)"
+							width="1540.5" height="1549.7"
 							/>
 
-							<g>
-								<rect 
-									:class="{ 'active' : isActiveUnit(306) }"
-									data-unit-number="306" 
-									data-unit-floorplan="the-plaza-a" x="0" y="1466.5" 
-									class="sp-interior__unit" width="1028.2" height="1334"
-								/>
-								<polygon 
-									:class="{ 'active' : isActiveUnit(307) }"
-									data-unit-number="307" 
-									data-unit-floorplan="the-hayden" 
-									class="sp-interior__unit" points="1317.1,0 1317,915.1 1028,915.1 1028,1466.5 
-								-0.1,1466.5 -0.1,525.4 506.9,0"
-								/>
-								<polygon              
-									:class="{ 'active' : isActiveUnit(308) }"
-									data-unit-number="308" 
-									data-unit-floorplan="the-plaza-b" 
-									class="sp-interior__unit" points="2813.9,0 2817.9,971.7 1321.1,971.7 1321.1,0.1"
-								/>
-								<polygon 
-									:class="{ 'active' : isActiveUnit(309) }"
-									data-unit-number="309" 
-									data-unit-floorplan="the-plaza-c" 
-									class="sp-interior__unit" points="4317,0 4317,971.7 2808.2,964.8 2813.9,0"
-								/>
-							</g>
-						</g>
+						<polygon 
+							:class="{ 'active' : isActiveUnit(302) }, getUnitState(302)"
+							class="sp-interior__unit" 
+							data-unit-number="302" 
+							:data-unit-floorplan="getUnitFloorPlan(302) ?? 'the-broadview-c'" 
+							points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+						3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
+						/>
+
+						<path 
+							:class="{ 'active' : isActiveUnit(301) }, getUnitState(301)"
+							class="sp-interior__unit" 
+							data-unit-number="301" 
+							:data-unit-floorplan="getUnitFloorPlan(301) ?? 'the-bow-a'" 
+							d="M1680.6,4888.6l-220.3,77.6l-65.1-178.5l227.9-78.5l-97.7-287
+		l-179.8,63.4l-255.7-766.3l-825.7,276.8l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1l604.6-203.4
+		L1680.6,4888.6z"
+						/>
+
+					</g>
 					</g>
 				</Transition>
 
@@ -155,84 +163,73 @@
 						class="sp-interior__level" 
 						data-interior-level="4" 
 					>
-						<g>
+						<g >
 							<polygon 
-								:class="{ 'active' : isActiveUnit(304) }"
-								data-unit-number="406" 
-								data-unit-floorplan="the-riley-e" 
-								class="sp-interior__unit" points="4412.7,2737.2 4745.5,3732 3186.1,4253.7 
-								2853.3,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(407) }"
+								:class="{ 'active' : isActiveUnit(407) }, getUnitState(407)"
+								class="sp-interior__unit" 
 								data-unit-number="407" 
-								data-unit-floorplan="the-riley-b" 
-								class="sp-interior__unit" points="1346.4,3763.1 1530.8,4314 1688.2,4261.3 
-								1836.7,4705.2 3186.1,4253.7 2853.3,3259.1"
+								:data-unit-floorplan="getUnitFloorPlan(407) ?? 'the-riley-b'" 
+								points="1299.6,3749.9 1477.5,4281.7 1629.5,4230.9 
+								1772.9,4659.3 3075.3,4223.5 2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(402) }"
-								data-unit-number="402" 
-								data-unit-floorplan="the-broadview-a" 
-								class="sp-interior__unit" points="1748.1,4963.7 3254.9,4459.5 3764.3,5982.1 
-								2257.3,6485.7"
+								:class="{ 'active' : isActiveUnit(406) }, getUnitState(406)"
+								class="sp-interior__unit" 
+								data-unit-number="406" 
+								:data-unit-floorplan="getUnitFloorPlan(406) ?? 'the-riley-e'" 
+								points="4259.3,2759.7 4580.5,3719.9 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(405) }, getUnitState(405)"
+								class="sp-interior__unit" 
+								data-unit-number="405" 
+								:data-unit-floorplan="getUnitFloorPlan(405) ?? 'the-corner'" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(404) }, getUnitState(404)"
+								class="sp-interior__unit" 
+								data-unit-number="404" 
+								:data-unit-floorplan="getUnitFloorPlan(404) ?? 'the-broadview-b'" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+							/>
+
 							
 							<rect 
-								:class="{ 'active' : isActiveUnit(403) }"
+								:class="{ 'active' : isActiveUnit(403) }, getUnitState(403)"
+								class="sp-interior__unit" 
 								data-unit-number="403" 
-								data-unit-floorplan="the-broadview-a" x="3468.4" y="4164.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7109 1610.3495)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
+								:data-unit-floorplan="getUnitFloorPlan(403) ?? 'the-broadview-a'" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(404) }"
-								data-unit-number="404" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.5,3473 4768.4,3953.1 5277.9,5475.7 
-								6896.7,4933.5 6768.3,4549.9 6662.1,4585.5 6512,4137 6434.3,4163"
+								:class="{ 'active' : isActiveUnit(402) }, getUnitState(402)"
+								class="sp-interior__unit" 
+								data-unit-number="402" 
+								:data-unit-floorplan="getUnitFloorPlan(402) ?? 'the-broadview-c'" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
 							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(401) }"
+
+							<path 
+								:class="{ 'active' : isActiveUnit(401) }, getUnitState(401)"
+								class="sp-interior__unit" 
 								data-unit-number="401" 
-								data-unit-floorplan="the-bow-a" 
-								class="sp-interior__unit" points="1129.2,3731.4 272.8,4016.9 524.6,4767.9 
-								336.9,4830.6 627.8,5700.4 595.6,5711.1 819.9,6381.6 852.1,6370.8 900.1,6514 1431.3,6762.3 1930.3,6595.5 1767.9,6113.4 
-								2095.3,6003.2 1833.1,5217.8 1304.8,5394.6 1052.2,4639.6 1394.1,4525.2"
+								:data-unit-floorplan="getUnitFloorPlan(401) ?? 'the-bow-a'" 
+								d="M1680.6,4888.6l-220.3,77.6l-65.1-178.5l227.9-78.5l-97.7-287
+		l-179.8,63.4l-255.7-766.3l-825.7,276.8l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1l604.6-203.4
+		L1680.6,4888.6z"
 							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(405) }"
-								data-unit-number="405" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.5,3473 6433.8,4163.4 6512.1,4137.2 6662,4585.5 
-								6768.3,4549.9 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7 6970.3,2793.6 6952.2,2739.7 6821.4,2783.3 7045.5,3453.2 
-								6738.3,3556 6685.7,3399 6413.7,3490 6387.4,3411.5"
-							/>
-							<g>
-								<rect :class="{ 'active' : isActiveUnit(408) }"
-								data-unit-number="408" 
-								data-unit-floorplan="the-plaza-a" x="0" y="1466.5" 
-								class="sp-interior__unit" width="1028.2" height="1334"
-								/>
-								<polygon 
-									:class="{ 'active' : isActiveUnit(409) }"
-									data-unit-number="409" 
-									data-unit-floorplan="the-hayden" 
-									class="sp-interior__unit" points="1317.1,0 1317,915.1 1028,915.1 1028,1466.5 
-									-0.1,1466.5 -0.1,525.4 506.9,0 "
-								/>
-								<polygon 
-									:class="{ 'active' : isActiveUnit(410) }"
-									data-unit-number="410" 
-									data-unit-floorplan="the-plaza-b" 
-									class="sp-interior__unit" points="2813.9,0 2817.9,971.7 1321.1,971.7 1321.1,0.1"
-								/>
-								<polygon 
-									:class="{ 'active' : isActiveUnit(411) }"
-									data-unit-number="411" 
-									data-unit-floorplan="the-plaza-c" 
-									class="sp-interior__unit" points="4317,0 4317,971.7 2808.2,964.8 2813.9,0 "
-								/>
-							</g>
+
 						</g>
 					</g>
 				</Transition>
@@ -247,56 +244,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(506) }"
-								data-unit-number="506" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.8,2488.8 5487.7,3483.7 3186.1,4253.7 
-								2853.3,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(507) }"
+								:class="{ 'active' : isActiveUnit(507) }, getUnitState(507)"
+								class="sp-interior__unit" 
 								data-unit-number="507" 
-								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.6,3758.5 1693.5,4753.6 3186.1,4253.7 
-								2853.3,3259.1"
+								:data-unit-floorplan="getUnitFloorPlan(507) ?? 'the-riley-c'" 
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(501) }"
-								data-unit-number="501" 
-								data-unit-floorplan="the-bow-b" 
-								class="sp-interior__unit" points="1329.2,3664.6 272.8,4016.9 524.6,4767.9 
-								336.9,4830.6 627.8,5700.4 595.6,5711.1 819.9,6381.6 852.1,6370.8 900.1,6514 1431.3,6762.3 1930.3,6595.5 1767.9,6113.4 
-								2109.9,5998.3 1847.3,5213.1 1304.8,5394.6 1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(506) }, getUnitState(506)"
+								class="sp-interior__unit" 
+								data-unit-number="506" 
+								:data-unit-floorplan="getUnitFloorPlan(506) ?? 'the-sable'" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(502) }"
-								data-unit-number="502" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9453 1159.4119)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
-							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(503) }"
-								data-unit-number="503" 
-								data-unit-floorplan="the-broadview-a" x="3468.4" y="4164.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7111 1610.3495)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
-							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(504) }"
-								data-unit-number="504" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.5,3473 4768.4,3953.1 5277.9,5475.7 
-								6896.7,4933.5 6768.3,4549.9 6662.1,4585.5 6512,4137 6434.3,4163"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(505) }"
+								:class="{ 'active' : isActiveUnit(505) }, getUnitState(505)"
+								class="sp-interior__unit" 
 								data-unit-number="505" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.5,3473 6433.8,4163.4 6512.1,4137.2 
-								6662,4585.5 6768.3,4549.9 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8461.9,2785.9 6970.3,2793.6 6952.2,2739.7 6821.4,2783.3 
-								7045.5,3453.2 6738.3,3556 6685.7,3399 6413.7,3490 6387.4,3411.5"
+								:data-unit-floorplan="getUnitFloorPlan(505) ?? 'the-corner'" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(504) }, getUnitState(504)"
+								class="sp-interior__unit" 
+								data-unit-number="504" 
+								:data-unit-floorplan="getUnitFloorPlan(504) ?? 'the-broadview-b'" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+							/>
+							
+							<rect 
+								:class="{ 'active' : isActiveUnit(503) }, getUnitState(503)"
+								class="sp-interior__unit" 
+								data-unit-number="503" 
+								:data-unit-floorplan="getUnitFloorPlan(503) ?? 'the-broadview-a'" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(502) }, getUnitState(502)"
+								class="sp-interior__unit" 
+								data-unit-number="502" 
+								:data-unit-floorplan="getUnitFloorPlan(502) ?? 'the-broadview-c'" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
+							/>
+
+							<path 
+								:class="{ 'active' : isActiveUnit(501) }, getUnitState(501)"
+								class="sp-interior__unit" 
+								data-unit-number="501" 
+								:data-unit-floorplan="getUnitFloorPlan(501) ?? 'the-bow-b'" 
+								d="M1703.7,4912.6l-230.3,76.8l-66.6-205.4l227.9-77.9
+		l-351.8-1051.1l-616.4,205.5l0,2.5l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1
+		l618.1-208L1703.7,4912.6z"
+							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -311,53 +322,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(606) }"
-								data-unit-number="606" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.7,2488.8 5487.6,3483.7 3186,4253.8 
-								2853.2,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(607) }"
+								:class="{ 'active' : isActiveUnit(607) }, getUnitState(607)"
+								class="sp-interior__unit" 
 								data-unit-number="607" 
-								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
+								:data-unit-floorplan="getUnitFloorPlan(607) ?? 'the-riley-c'" 
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(601) }"
-								data-unit-number="601" 
-								data-unit-floorplan="the-bow-c" 
-								class="sp-interior__unit" points="1329.1,3664.7 272.8,4016.9 524.6,4768 336.8,4830.6 
-								627.8,5700.4 595.5,5711.2 819.9,6381.6 852.1,6370.9 900,6514.1 1431.2,6762.3 2271.6,6481.5 1847.2,5213.1 1304.8,5394.6 1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(606) }, getUnitState(606)"
+								class="sp-interior__unit" 
+								data-unit-number="606" 
+								:data-unit-floorplan="getUnitFloorPlan(606) ?? 'the-sable'" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(602) }"
-								data-unit-number="602" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9575 1159.4003)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
-							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(603) }"
-								data-unit-number="603" 
-								data-unit-floorplan="the-broadview-a" x="3468.3" y="4164.9" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7233 1610.3379)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
-							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(604) }"
-								data-unit-number="604" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.4,3473 4768.4,3953.2 5277.8,5475.7 
-								6896.6,4933.6 6768.3,4550 6662,4585.5 6512,4137 6434.3,4163"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(605) }"
+								:class="{ 'active' : isActiveUnit(605) }, getUnitState(605)"
+								class="sp-interior__unit" 
 								data-unit-number="605" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.4,3473 6433.8,4163.5 6512.1,4137.3 
-								6662,4585.6 6768.3,4550 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7 6970.3,2793.6 6952.2,2739.8 6821.3,2783.4 7045.5,3453.3 6738.2,3556.1 6685.7,3399 6413.7,3490.1 6387.4,3411.5"
+								:data-unit-floorplan="getUnitFloorPlan(605) ?? 'the-corner'" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(604) }, getUnitState(604)"
+								class="sp-interior__unit" 
+								data-unit-number="604" 
+								:data-unit-floorplan="getUnitFloorPlan(604) ?? 'the-broadview-b'" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+							/>
+							
+							<rect 
+								:class="{ 'active' : isActiveUnit(603) }, getUnitState(603)"
+								class="sp-interior__unit" 
+								data-unit-number="603" 
+								:data-unit-floorplan="getUnitFloorPlan(603) ?? 'the-broadview-a'" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(602) }, getUnitState(602)"
+								class="sp-interior__unit" 
+								data-unit-number="602" 
+								:data-unit-floorplan="getUnitFloorPlan(602) ?? 'the-broadview-c'" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
+							/>
+
+							<path 
+								:class="{ 'active' : isActiveUnit(601) }, getUnitState(601)"
+								class="sp-interior__unit" 
+								data-unit-number="601" 
+								:data-unit-floorplan="getUnitFloorPlan(601) ?? 'the-bow-b'" 
+								d="M1703.7,4912.6l-230.3,76.8l-66.6-205.4l227.9-77.9
+		l-351.8-1051.1l-616.4,205.5l0,2.5l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1
+		l618.1-208L1703.7,4912.6z"
+							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -372,55 +400,70 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(706) }"
-								data-unit-number="706" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.7,2488.8 5487.6,3483.7 3186,4253.8 
-								2853.2,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(707) }"
+								:class="{ 'active' : isActiveUnit(707) }, getUnitState(707)"
+								class="sp-interior__unit" 
 								data-unit-number="707" 
-								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
+								:data-unit-floorplan="getUnitFloorPlan(707) ?? 'the-riley-c'" 
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(701) }"
-								data-unit-number="701" 
-								data-unit-floorplan="the-bow-c" 
-								class="sp-interior__unit" points="1329.1,3664.7 272.8,4016.9 524.6,4768 336.8,4830.6 
-								627.8,5700.4 595.5,5711.2 819.9,6381.6 852.1,6370.9 900,6514.1 1431.2,6762.3 2271.6,6481.5 1847.2,5213.1 1304.8,5394.6 
-								1052.2,4639.6 1595.1,4458"
+								:class="{ 'active' : isActiveUnit(706) }, getUnitState(706)"
+								class="sp-interior__unit" 
+								data-unit-number="706" 
+								:data-unit-floorplan="getUnitFloorPlan(706) ?? 'the-sable'" 
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(702) }"
-								data-unit-number="702" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9575 1159.4003)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
-							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(703) }"
-								data-unit-number="703" 
-								data-unit-floorplan="the-broadview-a" x="3468.3" y="4164.9" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7233 1610.3379)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
-							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(704) }"
-								data-unit-number="704" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.4,3473 4768.4,3953.2 5277.8,5475.7 
-								6896.6,4933.6 6768.3,4550 6662,4585.5 6512,4137 6434.3,4163"
-							/>
-							
-							<polygon 
-								:class="{ 'active' : isActiveUnit(705) }"
+								:class="{ 'active' : isActiveUnit(705) }, getUnitState(705)"
+								class="sp-interior__unit" 
 								data-unit-number="705" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.4,3473 6433.8,4163.5 6512.1,4137.3 6662,4585.6 6768.3,4550 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7
-							6970.3,2793.6 6952.2,2739.8 6821.3,2783.4 7045.5,3453.3 6738.2,3556.1 6685.7,3399 6413.7,3490.1 6387.4,3411.5"
+								:data-unit-floorplan="getUnitFloorPlan(705) ?? 'the-corner'" 
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(704) }, getUnitState(704)"
+								class="sp-interior__unit" 
+								data-unit-number="704" 
+								:data-unit-floorplan="getUnitFloorPlan(704) ?? 'the-broadview-b'" 
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+							/>
+							
+							<rect 
+								:class="{ 'active' : isActiveUnit(703) }, getUnitState(703)"
+								class="sp-interior__unit" 
+								data-unit-number="703" 
+								:data-unit-floorplan="getUnitFloorPlan(703) ?? 'the-broadview-a'" 
+								x="3347.9" y="4137.6" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1345.9404 1560.5652)" 
+								width="1540.5" height="1549.7"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(702) }, getUnitState(702)"
+								class="sp-interior__unit" 
+								data-unit-number="702" 
+								:data-unit-floorplan="getUnitFloorPlan(702) ?? 'the-broadview-c'" 
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
+							/>
+
+							<path 
+								:class="{ 'active' : isActiveUnit(701) }, getUnitState(701)"
+								class="sp-interior__unit" 
+								data-unit-number="701" 
+								:data-unit-floorplan="getUnitFloorPlan(701) ?? 'the-bow-b'" 
+								d="M1703.7,4912.6l-230.3,76.8l-66.6-205.4l227.9-77.9
+		l-351.8-1051.1l-616.4,205.5l0,2.5l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1
+		l618.1-208L1703.7,4912.6z"
+							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -436,54 +479,41 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(806) }"
-								data-unit-number="806" 
-								data-unit-floorplan="the-sable" 
-								class="sp-interior__unit" points="5154.7,2488.8 5487.6,3483.7 3186,4253.8 
-								2853.2,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(807) }"
-								data-unit-number="807" 
-								data-unit-floorplan="the-riley-c" 
-								class="sp-interior__unit" points="1360.5,3758.6 1693.5,4753.6 3186,4253.8 2853.2,3259.1"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(801) }"
-								data-unit-number="801" 
-								data-unit-floorplan="the-bow-c" 
-								class="sp-interior__unit" points="1329.1,3664.7 272.8,4016.9 524.6,4768 336.8,4830.6 
-								627.8,5700.4 595.5,5711.2 819.9,6381.6 852.1,6370.9 900,6514.1 1431.2,6762.3 2271.6,6481.5 1847.2,5213.1 1304.8,5394.6 
-								1052.2,4639.6 1595.1,4458"
-							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(802) }"
-								data-unit-number="802" 
-								data-unit-floorplan="the-broadview-a" x="1976.2" y="4667.8" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1592.9575 1159.4003)" 
-								class="sp-interior__unit" width="1574" height="1605.5"
-							/>
-							
-							<rect 
-								:class="{ 'active' : isActiveUnit(803) }"
-								data-unit-number="803" 
-								data-unit-floorplan="the-broadview-a" x="3468.3" y="4164.9" transform="matrix(0.9483 -0.3173 0.3173 0.9483 -1355.7233 1610.3379)" 
-								class="sp-interior__unit" width="1596" height="1605.5"
-							/>
-							<polygon 
-								:class="{ 'active' : isActiveUnit(804) }"
+								:class="{ 'active' : isActiveUnit(804) }, getUnitState(804)"
+								class="sp-interior__unit" 
 								data-unit-number="804" 
-								data-unit-floorplan="the-broadview-b" 
-								class="sp-interior__unit" points="6203.4,3473 4768.4,3953.2 5277.8,5475.7 
-								6896.6,4933.6 6768.3,4550 6662,4585.5 6512,4137 6434.3,4163"
+								:data-unit-floorplan="getUnitFloorPlan(804) ?? 'the-corner'"
+								points="5987.8,3469.9 6210.2,4136.3 6285.8,4111.1 
+								6430.4,4543.8 6533.1,4509.4 6657.1,4880.1 7774.4,4506 8179.2,3935 8179.3,2806.5 6728,2814.1 6710.6,2762.1 6584.3,2804.2 
+								6800.6,3450.8 6504.1,3550.1 6453.3,3398.5 6190.8,3486.3 6165.4,3410.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(805) }"
-								data-unit-number="805" 
-								data-unit-floorplan="the-corner" 
-								class="sp-interior__unit" points="6203.4,3473 6433.8,4163.5 6512.1,4137.3 
-								6662,4585.6 6768.3,4550 6896.8,4934 8054.4,4546.4 8473.7,3954.8 8473.8,2785.7 6970.3,2793.6 6952.2,2739.8 6821.3,2783.4 
-								7045.5,3453.3 6738.2,3556.1 6685.7,3399 6413.7,3490.1 6387.4,3411.5"
+								:class="{ 'active' : isActiveUnit(803) }, getUnitState(803)"
+								class="sp-interior__unit" 
+								data-unit-number="803" 
+								:data-unit-floorplan="getUnitFloorPlan(803) ?? 'the-broadview-b'"
+								points="5987.8,3469.9 4602.7,3933.4 5094.4,5403 
+								6657,4879.7 6533.1,4509.4 6430.5,4543.8 6285.7,4110.9 6210.7,4135.9"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(802) }, getUnitState(802)"
+								class="sp-interior__unit" 
+								data-unit-number="802" 
+								:data-unit-floorplan="getUnitFloorPlan(802) ?? 'the-broadview-c'"
+								points="1936.9,5099.9 1856,4852.3 3141.8,4422.2 
+								3633.5,5891.8 2178.9,6377.9 1769.4,5154.1"
+							/>
+
+							<path 
+								:class="{ 'active' : isActiveUnit(801) }, getUnitState(801)"
+								class="sp-interior__unit" 
+								data-unit-number="801" 
+								:data-unit-floorplan="getUnitFloorPlan(801) ?? 'the-bow-b'"
+								d="M1703.7,4912.6l-230.3,76.8l-66.6-205.4l227.9-77.9
+		l-351.8-1051.1l-616.4,205.5l0,2.5l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6c107.5,146.8,310.2,385.6,741.7,284.1
+		l618.1-208L1703.7,4912.6z"
 							/>
 						</g>
 					</g>
@@ -499,21 +529,50 @@
 					>
 						<g>
 							<polygon 
-								:class="{ 'active' : isActiveUnit(902) }"
-								data-unit-number="902" 
-								data-unit-floorplan="the-key" 
-								class="sp-interior__unit" points="4768.6,3953.6 5277.8,5475.7 8054.5,4546.7 
-								8473.8,3955.1 8473.8,2785.7 6970.4,2793.9 6952.3,2740 6821.5,2783.8 7047.3,3458.8 6742.5,3560.8 6682.8,3382.6 6422.6,3469.6 
-								6401.7,3407.2"
+								:class="{ 'active' : isActiveUnit(905) }, getUnitState(905)"
+								class="sp-interior__unit" 
+								data-unit-number="905" 
+								:data-unit-floorplan="getUnitFloorPlan(905) ?? 'the-riley-p'"
+								points="1313.3,3745.5 1634.7,4706 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
 							<polygon 
-								:class="{ 'active' : isActiveUnit(901) }"
-								data-unit-number="901" 
-								data-unit-floorplan="the-legacy" 
-								class="sp-interior__unit" points="1595.3,4460 1329.2,3664.8 273.8,4018.1 
-								524.7,4768.2 337,4831 627.9,5700.7 595.7,5711.5 820,6381.9 852.2,6371.1 900.2,6514.3 1431.4,6762.6 3764.3,5982.1 3255,4460 
-								1762.4,4959.4 1847.4,5213.6 1304.9,5395.1 1052.8,4641.5"
+								:class="{ 'active' : isActiveUnit(904) }, getUnitState(904)"
+								class="sp-interior__unit" 
+								data-unit-number="904" 
+								:data-unit-floorplan="getUnitFloorPlan(904) ?? 'the-sable-p'"
+								points="4975.6,2519.9 5296.9,3480.2 3075.3,4223.5 
+								2754.1,3263.5"
 							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(903) }, getUnitState(903)"
+								class="sp-interior__unit" 
+								data-unit-number="903" 
+								:data-unit-floorplan="getUnitFloorPlan(903) ?? 'the-key'"
+								points="5822,5159.6 7774.5,4506.3 8179.3,3935.3 8179.3,2806.5 
+								6728.1,2814.4 6710.7,2762.4 6584.4,2804.7 6802.4,3456.3 6508.1,3554.7 6450.5,3382.7 6199.4,3466.7 6179.2,3406.4 5317.3,3694.8 
+									"/>
+							<path 
+								:class="{ 'active' : isActiveUnit(901) }, getUnitState(901)"
+								class="sp-interior__unit" 
+								data-unit-number="901" 
+								:data-unit-floorplan="getUnitFloorPlan(901) ?? 'the-legacy'"
+								d="M3141.9,4422.6l-1440.8,482.1l-364.5,114.6l80.9,255.4
+		l-157.9,50.5l-149.7-447.4l524.8-171.8L1283,3655l-616.5,206.4l0,1.6l-402.3,133.1l242.3,724.1l-181.2,60.6l507.1,1515.6
+		c107.5,146.8,310.2,385.6,741.7,284.1L3632.2,5888L3141.9,4422.6z"
+							/>
+
+							<polygon 
+								:class="{ 'active' : isActiveUnit(902) }, getUnitState(902)"
+								class="sp-interior__unit" 
+								data-unit-number="902" 
+								:data-unit-floorplan="getUnitFloorPlan(902) ?? 'the-metro'"
+								points="3141.9,4422.6 3633.4,5891.8 5822,5159.6 
+								5317.3,3694.8"
+							/>
+
 						</g>
 					</g>
 				</Transition>
@@ -525,66 +584,63 @@
 
 
 		<!-- STACKING PLAN EXTERIOR -->
-		<svg class="sp-exterior" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4790 2380" width="4790" height="2380">
+		<svg class="sp-exterior" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 679" width="1440px" height="679px">
 			<g>
+				<g id="background">
+					<rect x="-1.3" y="1.6" stroke="#000000" stroke-miterlimit="10" width="1442.4" height="679.8"/>
+				</g>
+
 				<!-- Building -->
-				<image href="https://uploads-ssl.webflow.com/635aae0d25d447bfc72ef508/648ffe25c67475da7bb801c3_stacking-plan-building.webp" />
+				<image href="https://uploads-ssl.webflow.com/635aae0d25d447bfc72ef508/668c4792d2dcf6a5495b7b2d_stacking-plan-building-v2.webp" transform="matrix(0.3333 0 0 0.3333 5.832127e-02 -4.364001e-02)" />
+
+
 
 				<!-- Floors -->
 				<polygon 
 					:class="{ 'active' : isActiveLevel(3) }"
 					data-exterior-level="3" 
-					class="sp-exterior__level" points="444 1143 450 1152 442 1298 436 1304 619 1311 922 1307 1081 1310 3071 1291 3067.48 1143 1922.35 1143 444 1143"
+					class="sp-exterior__level" points="123.8,391.4 118.9,339.7 241.7,341.2 1068.7,337.3 1071.5,383.9 159.9,394.4"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(4) }"
 					data-exterior-level="4" 
-					class="sp-exterior__level" points="453 981 458 990 451 1135 444 1140 444 1143 1922.35 1143 3067.48 1143 4034 1143 4026 1136 4020 1019 4025 1013 3930 1004 3065.71 995.92 1922 986 632 973 453 981"
+					class="sp-exterior__level" points="123.4,291.1 118.9,339.7 241.7,341.2 1068.7,337.3 1066.7,314.1 1071,313.9 
+		1073.2,299.3 1060.9,296.7 163.8,289.7 	"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(5) }"
 					data-exterior-level="5" 
-					class="sp-exterior__level" points="461 820 466 828 461 973 453 981 632 973 1922 986 3065.71 995.92 3930 1004 4025 1013 4025 1008.47 4018 1006 4012 889 4017 882 3924 863 3061 849 1926 830 641 805 461 820"
+					class="sp-exterior__level" points="123.4,291.1 126.8,241.6 166.9,238.2 1056.1,256.9 1070.6,262.9 1073.2,299.3 
+		1073.2,299.3 1060.9,296.7 163.8,289.7 	"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(6) }"
 					data-exterior-level="6" 
-					class="sp-exterior__level" points="467 659 474 669 467 814 461 820 641 805 1926 830 3061 849 3924 863 4017 882 4017 879.52 4012 875 4007 757 4010 757 4014 751 3918 722 3056 702 1926 672 646 636 467 659"
+					class="sp-exterior__level" points="130,193.6 126.8,241.6 166.9,238.2 1056.1,256.9 1070.6,262.9 1068.1,228.6 
+		1055.8,220.5 148.6,189.5 	"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(7) }"
 					data-exterior-level="7" 
-					class="sp-exterior__level" points="475 502 483 511 476 653 467 659 646 636 1926 672 3056 702 3918 722 4014 751 4014 747.17 4004 744 3998.2 626.5 4002.57 626.5 4006 621 3911 584 3053 557 1926 519 652 471 475 502"
+					class="sp-exterior__level" points="130,193.6 135.3,140.1 150.3,135.3 1052.3,177 1065.2,188.1 1068.1,228.6 1055.8,220.5 
+		148.6,189.5 	"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(8) }"
 					data-exterior-level="8" 
-					class="sp-exterior__level" points="484 330 490 341 484 494.13 475 499 475 502 652 471 1926 519 3053 557 3911 584 4006 621 4006 617.08 3998 614 3992 487 3995 487 3999 481 3903 435 3049 401 1928 352 663 291 484 330"
+					class="sp-exterior__level" points="138.5,84 135.3,140.1 150.3,135.3 1052.3,177 1065.2,188.1 1060.4,146.5 1048.3,132 
+		178.9,77.1 157.1,77.9 	"
 				/>
 				<polygon 
 					:class="{ 'active' : isActiveLevel(9) }"
 					data-exterior-level="9" 
-					class="sp-exterior__level" points="502 100 492 324 484 330 663 291 1928 352 3049 401 3903 435 3999 481 3999 477.33 3992 473 3983.23 290.5 3883 233 3669.5 222.5 3669.5 233.5 2691.5 178.5 2691.5 135.5 1879.5 86.5 1865.5 131.5 1209.5 93.5 1192.5 38.5 1151.28 38.5 1149.5 77.5 675.5 51.5 502 100"
+					class="sp-exterior__level" points="138.5,84 149,20.7 160,11.3 194.6,9.6 202.1,5.2 1026.8,71.9 1030.2,77 1041.8,80 
+		1054.9,98.9 1060.4,146.5 1048.3,132 178.9,77.1 157.1,77.9 	"
 				/>
 			</g>
 
 			<!-- River -->
-			<path class="sp-exterior__river" d="M8461.41,3432.96c-182.56-192.64-256.29-221.93-335.73-363.25-141.95-252.5-49.89-413.88-96.32-748.52-18.81-135.61-99.04-578.41-451.31-919.14-34.03-32.91-406.18-383.13-921.89-404.53-293.1-12.17-514.61,49.53-514.61,49.53-182,50.7-253.72,110.35-421.04,101.82-101.79-5.19-150.08-31.08-266.94-16.51-40.1,5-107.09,30.92-242.17,74.3-166.01,53.32-281.55,95.36-338.49,115.58-67.19,23.86-102.76,21.38-632.94,189.88-341.12,108.42-458.05,155.79-660.46,162.36-76.58,2.49-138.53-1.74-258.68,11.01-186.84,19.82-227.52,50.26-382.52,68.8-214.55,25.67-190.26-26.23-393.52,0-231.51,29.88-259.2,96.71-429.3,96.32-28.82-.07-91.72-2.13-151.36,35.77-51.06,32.46-55.15,65.88-88.06,96.32-70.56,65.26-169.48-1.34-360.5,8.26-195.16,9.8-264.69,22.04-399.03,13.76-77.7-4.79-152.7-18.79-302.71-46.78-388.2-72.45-478.45-126.7-539.38-176.12-54.96-44.58-38.44-46.6-99.07-96.32-163.29-133.9-341.2-166.85-426.55-181.63-138.38-23.95-473.04-53.87-502.22,37.15-44.57,138.99,646.77,486.57,1142.05,663.21,584.76,208.55,858.2,165.25,952.16,145.85,74.93-15.47,152.23-40.08,297.21-57.79,254.98-31.14,286.74,11.74,597.17,0,349.69-13.22,485.66-74.31,613.68-33.02,24.63,7.94,87.81,32.26,145.85,5.5,34.24-15.78,43.2-38.48,88.06-60.54,47.08-23.15,89.57-19.62,104.57-24.77,177.7-60.99,192.53-169.62,335.73-264.18,88.64-58.53,99.33-27.73,550.38-123.84,27.97-5.96,82.1-17.62,151.36-8.26,83.39,11.28,86.83,39.27,145.85,46.78,81.58,10.38,113.31-38.23,332.98-129.34,88.27-36.61,104.72-37.71,121.08-35.77,92.79,10.97,106.8,110.37,206.39,151.36,77.67,31.96,97.94-16.65,242.17-16.51,138.11,.13,169.53,44.76,355,74.3,142.24,22.66,143.9-.39,253.18,16.51,343.12,53.06,434.75,296.94,723.75,310.97,34.36,1.67,88.97,.93,159.61,24.77,108.45,36.59,125.07,87.35,217.4,140.35,157.15,90.2,220.81,7.31,371.51,104.57,33.55,21.66,123.26,81.3,145.85,181.63,11.4,50.63-4.11,67.99-2.75,115.58,3.42,119.74,106.71,187.95,242.17,327.48,99.5,102.49,161.76,187.23,228.41,277.94,166.1,226.06,143.81,287.28,239.42,399.03,211.25,246.92,623.55,302.79,675.6,216.03,39.87-66.46-118.91-237.07-421.04-555.89Zm-659.08-488.47c-34.25,15.21-90-36.72-115.58-60.54-48.21-44.9-62.83-86.61-107.32-187.13-88.91-200.83-116.27-227.92-140.35-244.92-54.21-38.27-99.19,4.08-162.36-41.28-26.95-19.35-37.75-38.25-82.56-68.8-31.35-21.37-58.79-17.09-74.3-41.28-13.23-20.62-4.34-34.47-11.01-55.04-15.64-48.28-92.8-59.05-165.12-79.81-68.31-19.6-127.3-64.96-195.39-85.31-478.83-143.1-616.43-203.64-798.06-264.18-15.06-5.02-46.53,2.31-88.06-5.5-72.98-13.73-98.46-42.36-165.12-60.54-49.86-13.6-89.45-12.26-126.59-11.01-147.8,4.99-200.89,16.51-266.94,33.02-21.83,5.46-35.15-29.69-71.55-38.53-6.11-1.48-20.7-4.62-66.05-2.75-77.7,3.2-90.46,14.69-110.08,2.75-25.73-15.65-38.18-56.35-27.52-85.31,7.33-19.9,22.78-26.68,74.3-52.29,127.76-63.49,137.55-73.85,181.63-82.56,30.47-6.02,33.34-2.74,74.3-11.01,70.64-14.26,119.54-37.21,134.84-44.03,76.67-34.16,480.72-185.3,831.08-162.36,35.53,2.33,95.85,8.1,187.13,8.26,129.78,.22,176.84,24.68,206.39,22.02,200.53-18.08,529.78,115.68,701.74,258.68,230.74,191.89,285.63,378.85,316.47,489.84,15.21,54.75,2.65,29.34,38.53,324.73,45.27,372.66,77.67,522.61,27.52,544.88Z"/>
-			
-			<!-- River Letters -->
-			<g>
-				<path class="sp-exterior__river-letter" d="M2601.43,1998.48l-25.2,.06-.02-8.47,60.97-.14,.02,8.47-25.2,.06,.16,71.65-10.57,.02-.16-71.65Z"/>
-				<path class="sp-exterior__river-letter" d="M2643.75,1987.22l9.97-.99,3.1,31.22c3.57-5.22,9.61-9.03,17.83-9.85,11.61-1.15,22.19,3.99,23.87,20.86l3.54,35.71-9.97,.99-3.44-34.62c-1.1-11.07-6.76-15.7-15.63-14.82-10.85,1.08-15.44,9.39-14.6,17.82l3.44,34.62-9.97,.99-8.13-81.95Z"/>
-				<path class="sp-exterior__river-letter" d="M2714.23,2033.12c-3.83-17.08,5.7-31.96,22.46-35.71,17.29-3.87,30.34,7.53,33.39,23.65l-46.08,10.32c3.34,12.9,14.03,19.31,25.84,16.66,9.24-2.07,15.35-8.52,18.24-16.27l4.96,1.48c-1.3,8.3-8.66,19.76-22.84,22.94-16.76,3.75-32.04-5.57-35.96-23.08Zm44.67-16.1c-3.16-9.56-10.51-15.69-20.82-13.38-9.45,2.12-15.66,10.16-15.05,21.42l35.88-8.04Z"/>
-				<path class="sp-exterior__river-letter" d="M2791.5,1959.99l29.01-10.73c15.39-5.69,27.33-3.53,32.1,9.38,3.05,8.26-.43,15.65-6.84,21.19,11.28-1.24,19.57,3.09,23.5,13.73,4.81,13.01-2.91,24.2-19.22,30.23l-30.77,11.37-27.79-75.17Zm41.75,22.12c8.78-3.24,13.12-11.19,10.52-18.21-2.98-8.05-10.1-10.82-20.84-6.85l-18.69,6.91,9.39,25.4,19.62-7.25Zm13.68,34.15c11.05-4.08,15.16-11.71,12.18-19.76-3.17-8.57-11.67-11.88-22.82-7.76l-20.13,7.44,10.23,27.67,20.55-7.59Z"/>
-				<path class="sp-exterior__river-letter" d="M2877.16,1983.69c-6.04-16.54,1.65-32.71,18.4-38.82,16.64-6.08,33.04,1.29,39.08,17.83s-1.75,32.74-18.4,38.82c-16.75,6.12-33.04-1.29-39.08-17.83Zm36.52,10.8c11.27-4.11,15.98-15.91,11.45-28.32-4.53-12.41-15.74-18.39-27.01-14.28-11.27,4.11-15.98,15.91-11.45,28.32,4.53,12.41,15.74,18.39,27.01,14.27Z"/>
-				<path class="sp-exterior__river-letter" d="M2967.38,1917.46l17.8,42.34-6.09,5.07-51.81-31.91,7.87-6.55,39.36,25.23-18.05-42.99,5.16-4.3,39.12,26.15-17.98-43.76,6.77-5.64,22.04,56.72-5.92,4.93-38.26-25.29Z"/>
-				<path class="sp-exterior__river-letter" d="M3014.99,1835.26l27.23-12.95c16.4-7.8,29.33-4.45,35.57,8.67,4.59,9.64,1.64,19.33-6.03,26.52l31.62,24.45-10.34,4.92-29.87-23.58-.79,.38-18.09,8.61,14.66,30.81-9.54,4.54-34.42-72.36Zm43.2,21.38c10.04-4.77,14.08-12.67,10.06-21.12-4.11-8.65-12.1-10.58-23.13-5.33l-17,8.09,12.67,26.64,17.39-8.27Z"/>
-				<path class="sp-exterior__river-letter" d="M3093.71,1800.98c3.35-1.09,6.82,.68,7.91,4.03s-.68,6.82-4.03,7.91c-3.35,1.09-6.82-.68-7.91-4.03s.68-6.82,4.03-7.91Zm2.61,24.39l9.53-3.1,17.84,54.85-9.53,3.1-17.84-54.85Z"/>
-				<path class="sp-exterior__river-letter" d="M3118.44,1817.86l10.36-2.59,28.54,40.63,6.06-49.28,8.54-2.14-8.54,61.59-8.44,2.11-36.53-50.32Z"/>
-				<path class="sp-exterior__river-letter" d="M3184.88,1831.01c-2.76-17.29,7.68-31.55,24.64-34.25,17.5-2.79,29.82,9.4,31.86,25.69l-46.64,7.44c2.53,13.09,12.8,20.14,24.76,18.24,9.35-1.49,15.85-7.55,19.22-15.11l4.86,1.79c-1.81,8.2-9.87,19.19-24.22,21.48-16.96,2.7-31.64-7.55-34.47-25.27Zm45.59-13.29c-2.56-9.74-9.51-16.32-19.95-14.65-9.57,1.53-16.26,9.17-16.36,20.45l36.31-5.79Z"/>
-				<path class="sp-exterior__river-letter" d="M3252.89,1792.36l9.32-.79,1.25,14.7c2.96-10.64,11.58-18.44,22.81-16.3l-.62,8.34c-12.75-.57-21.45,8.89-20.36,21.73l2.46,28.96-9.98,.85-4.88-57.47Z"/>
-			</g>
+			<path d="m2423.3 983.2c-52.3-55.2-73.4-63.6-96.2-104-40.6-72.3-14.3-118.5-27.6-214.4-5.4-38.8-28.4-165.7-129.3-263.2-9.7-9.4-116.3-109.7-264-115.9-83.9-3.5-147.4 14.2-147.4 14.2-52.1 14.5-72.7 31.6-120.6 29.2-29.1-1.5-43-8.9-76.4-4.7-11.5 1.4-30.7 8.9-69.3 21.3-47.6 15.3-80.6 27.3-97 33.1-19.2 6.8-29.4 6.1-181.3 54.4-97.7 31.1-131.2 44.6-189.2 46.5-21.9.7-39.7-.5-74.1 3.2-53.5 5.7-65.2 14.4-109.6 19.7-61.4 7.4-54.5-7.5-112.7 0-66.3 8.6-74.2 27.7-123 27.6-8.3 0-26.3-.6-43.3 10.2-14.6 9.3-15.8 18.9-25.2 27.6-20.2 18.7-48.5-.4-103.2 2.4-55.9 2.8-75.8 6.3-114.3 3.9-22.3-1.4-43.7-5.4-86.7-13.4-111.2-20.8-137-36.3-154.5-50.4-15.7-12.8-11-13.3-28.4-27.6-46.8-38.3-97.7-47.8-122.2-52-39.6-6.9-135.5-15.4-143.8 10.6-12.8 39.8 185.2 139.4 327.1 189.9 167.7 59.6 246 47.2 272.9 41.7 21.5-4.4 43.6-11.5 85.1-16.6 73-8.9 82.1 3.4 171 0 100.1-3.8 139.1-21.3 175.8-9.5 7.1 2.3 25.1 9.2 41.8 1.6 9.8-4.5 12.4-11 25.2-17.3 13.5-6.6 25.7-5.6 29.9-7.1 50.9-17.5 55.1-48.6 96.2-75.7 25.4-16.8 28.4-7.9 157.6-35.5 8-1.7 23.5-5 43.3-2.4 23.9 3.2 24.9 11.2 41.8 13.4 23.4 3 32.4-10.9 95.4-37 25.3-10.5 30-10.8 34.7-10.2 26.6 3.1 30.6 31.6 59.1 43.3 22.2 9.2 28-4.8 69.3-4.7 39.6 0 48.6 12.8 101.7 21.3 40.7 6.5 41.2-.1 72.5 4.7 98.3 15.2 124.5 85 207.3 89.1 9.8.5 25.5.3 45.7 7.1 31.1 10.5 35.8 25 62.3 40.2 45 25.8 63.2 2.1 106.4 29.9 9.6 6.2 35.3 23.3 41.8 52 3.3 14.5-1.2 19.5-.8 33.1 1 34.3 30.6 53.8 69.4 93.8 28.5 29.4 46.3 53.6 65.4 79.6 47.6 64.7 41.2 82.3 68.6 114.3 60.5 70.7 178.6 86.7 193.5 61.9 11.3-19-34.2-67.9-120.7-159.2zm-188.7-139.9c-9.8 4.4-25.8-10.5-33.1-17.3-13.8-12.9-18-24.8-30.7-53.6-25.5-57.5-33.3-65.3-40.2-70.1-15.5-11-28.4 1.2-46.5-11.8-7.7-5.5-10.8-11-23.6-19.7-9-6.1-16.8-4.9-21.3-11.8-3.8-5.9-1.2-9.9-3.2-15.8-4.5-13.8-26.6-16.9-47.3-22.9-19.6-5.6-36.5-18.6-56-24.4-137.1-41-176.5-58.3-228.6-75.7-4.3-1.4-13.3.7-25.2-1.6-20.9-3.9-28.2-12.1-47.3-17.3-14.3-3.9-25.6-3.5-36.3-3.2-42.3 1.4-57.5 4.7-76.4 9.5-6.2 1.6-10.1-8.5-20.5-11-1.8-.4-5.9-1.3-18.9-.8-22.2.9-25.9 4.2-31.5.8-7.4-4.5-10.9-16.1-7.9-24.4 2.1-5.7 6.5-7.6 21.3-15 36.6-18.2 39.4-21.2 52-23.6 8.7-1.7 9.5-.8 21.3-3.2 20.2-4.1 34.2-10.7 38.6-12.6 22-9.8 137.7-53.1 238-46.5 10.2.7 27.5 2.3 53.6 2.4 37.2.1 50.7 7.1 59.1 6.3 57.4-5.2 151.7 33.1 201 74.1 66.1 55 81.8 108.5 90.6 140.3 4.4 15.7.8 8.4 11 93 13 106.6 22.3 149.5 8 155.9z" fill="#373030"/><g fill="#a78056"><path d="m745 572.4h-7.2v-2.4h17.5v2.4h-7.2v20.5h-3z"/><path d="m757.2 569.1 2.9-.3.9 8.9c1-1.5 2.8-2.6 5.1-2.8 3.3-.3 6.4 1.1 6.8 6l1 10.2-2.9.3-1-9.9c-.3-3.2-1.9-4.5-4.5-4.2-3.1.3-4.4 2.7-4.2 5.1l1 9.9-2.9.3z"/><path d="m777.3 582.3c-1.1-4.9 1.6-9.2 6.4-10.2 5-1.1 8.7 2.2 9.6 6.8l-13.2 3c1 3.7 4 5.5 7.4 4.8 2.6-.6 4.4-2.4 5.2-4.7l1.4.4c-.4 2.4-2.5 5.7-6.5 6.6-4.8 1-9.1-1.7-10.3-6.7zm12.8-4.6c-.9-2.7-3-4.5-6-3.8-2.7.6-4.5 2.9-4.3 6.1z"/><path d="m799.5 561.3 8.3-3.1c4.4-1.6 7.8-1 9.2 2.7.9 2.4-.1 4.5-2 6.1 3.2-.4 5.6.9 6.7 3.9 1.4 3.7-.8 6.9-5.5 8.7l-8.8 3.3zm11.9 6.4c2.5-.9 3.8-3.2 3-5.2-.9-2.3-2.9-3.1-6-2l-5.4 2 2.7 7.3zm3.9 9.7c3.2-1.2 4.3-3.4 3.5-5.7-.9-2.5-3.3-3.4-6.5-2.2l-5.8 2.1 2.9 7.9z"/><path d="m824 568.1c-1.7-4.7.5-9.4 5.3-11.1s9.5.4 11.2 5.1-.5 9.4-5.3 11.1c-4.8 1.8-9.5-.3-11.2-5.1zm10.5 3.1c3.2-1.2 4.6-4.6 3.3-8.1-1.3-3.6-4.5-5.3-7.7-4.1s-4.6 4.6-3.3 8.1c1.2 3.6 4.4 5.3 7.7 4.1z"/><path d="m849.8 549.2 5.1 12.1-1.7 1.5-14.8-9.1 2.3-1.9 11.3 7.2-5.2-12.3 1.5-1.2 11.2 7.5-5.1-12.5 1.9-1.6 6.3 16.2-1.7 1.4z"/><path d="m863.5 525.6 7.8-3.7c4.7-2.2 8.4-1.3 10.2 2.5 1.3 2.8.5 5.5-1.7 7.6l9.1 7-3 1.4-8.6-6.8-.2.1-5.2 2.5 4.2 8.8-2.7 1.3zm12.4 6.1c2.9-1.4 4-3.6 2.9-6-1.2-2.5-3.5-3-6.6-1.5l-4.9 2.3 3.6 7.6z"/><path d="m886 515.8c1-.3 2 .2 2.3 1.2s-.2 2-1.2 2.3-2-.2-2.3-1.2c-.2-1 .3-2 1.2-2.3zm.8 7 2.7-.9 5.1 15.7-2.7.9z"/><path d="m893.1 520.6 3-.7 8.2 11.6 1.7-14.1 2.4-.6-2.4 17.6-2.4.6z"/><path d="m912.1 524.4c-.8-5 2.2-9 7.1-9.8 5-.8 8.5 2.7 9.1 7.4l-13.4 2.1c.7 3.7 3.7 5.8 7.1 5.2 2.7-.4 4.5-2.2 5.5-4.3l1.4.5c-.5 2.3-2.8 5.5-6.9 6.2-4.8.7-9-2.2-9.9-7.3zm13.1-3.8c-.7-2.8-2.7-4.7-5.7-4.2-2.7.4-4.7 2.6-4.7 5.9z"/><path d="m931.6 513.3 2.7-.2.4 4.2c.8-3 3.3-5.3 6.5-4.7l-.2 2.4c-3.7-.2-6.1 2.5-5.8 6.2l.7 8.3-2.9.2z"/></g>
 		</svg>
 
 
@@ -607,12 +663,28 @@
 					>
 						<span v-html="infoPaneState === 'opened' ? 'Close' : 'Open'"></span>
 
-						<svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m13.5626 13.11-.4527.4526c-.2499.2499-.6552.2499-.9052 0l-5.20469-5.20484-5.20481 5.20474c-.24991.25-.65518.25-.905139 0l-.452593-.4526c-.249957-.2499-.249957-.6552 0-.9052l5.204792-5.20469-5.204792-5.20481c-.249957-.24991-.249957-.65518 0-.905139l.452583-.452583c.249959-.249958.655239-.249958.905149 0l5.20481 5.204782 5.20469-5.204792c.25-.249957.6553-.249957.9052 0l.4527.452583c.2499.249959.2499.655239 0 .905149l-5.20484 5.20481 5.20484 5.20469c.2499.25.2499.6553 0 .9053z" fill="#000"/></svg>
+						<div 
+							id="sp-info-pane__toggle-icon" 
+							:class="{
+								'open' : infoPaneState === 'opened',
+							}"
+						>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</div>
+						
 					</button>
-					<h2 class="sp-info-pane__heading">
-						{{ currentFloorPlan.name }}
-					</h2>
-					<span class="sp-info-pane__unit">Residence {{ activeUnit }}</span>
+					<div class="sp-info-pane__header-inner">
+						<h2 class="sp-info-pane__heading">
+							{{ floorPlanName }}
+						</h2>
+						<div class="sp-info-pane__unit">
+							<div class="sp-info-pane__unit-number">{{ activeUnit }}</div>
+							<div class="sp-info-pane__unit-type">{{ currentFloorPlan.type }}</div>
+						</div>
+					</div>
 				</header>
 				
 				<main class="sp-info-pane__body">
@@ -635,6 +707,7 @@
 								<li v-if="currentFloorPlan.sqft">{{ currentFloorPlan.sqft }} sq ft</li>
 								<li v-if="currentFloorPlan.bedrooms">{{ currentFloorPlan.bedrooms }} bedrooms</li>
 								<li v-if="currentFloorPlan.bathrooms">{{ currentFloorPlan.bathrooms }} bathrooms</li>
+								<li v-if="currentFloorPlan.otherFeature">{{ currentFloorPlan.otherFeature }}</li>
 								<li v-if="currentFloorPlan.views">{{ currentFloorPlan.views }} view(s)</li>
 								<li>Options available</li>
 							</ul>
