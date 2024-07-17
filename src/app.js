@@ -25,6 +25,7 @@ export default {
 			levelBottom: 3,
 
 			floorplans: {},
+			units: {},
 
 			isInfoPaneClosed: false
 		}
@@ -35,6 +36,7 @@ export default {
 	 * @return  {Null}
 	 */
 	created() {
+		this.getUnits();
 		this.getFloorPlans();
 	},
 
@@ -82,6 +84,39 @@ export default {
 			return unit === this.activeUnit
 		},
 
+		getUnits() {
+			const cmsUnits = document.querySelectorAll('.units-item')
+			let units = [];
+
+			// Loop through the residences
+			cmsUnits.forEach((item) => {
+				let unitData = {},
+					unitNumber;
+
+				for(let dataName in item.dataset) {
+					let dataValue = item.dataset[dataName];
+
+					if (dataName === 'number') {
+						unitNumber = item.dataset[dataName];
+					}
+
+					// Set Not Sold as default value if there is no data pulled
+					if (dataName === 'state') {
+						dataValue = dataValue == '' ? 'Not Sold' : dataValue;
+					}
+					
+					unitData[dataName] = dataValue;
+				}
+
+				// Formats Into:
+				// { 301: {Object Data},
+				//   302: {Object Data},
+				//   etc...
+				// }
+				this.units[unitNumber] = unitData
+			})
+		},
+
 		getFloorPlans() {
 			const cmsFloorplans = document.querySelectorAll('.fp-item')
 			let floorplans = [];
@@ -122,6 +157,19 @@ export default {
 				// }
 				this.floorplans[floorplanID] = floorplanData
 			})
+		},
+
+		getUnitState(unit) {
+			// console.log(unit)
+			// console.log(this.units[unit])
+			// console.log('--------')
+			unit = this.units[unit] ?? false;
+			return unit ? encodeURI(unit.state.toLowerCase()) : '';
+		},
+
+		getUnitFloorPlan(unit) {
+			unit = this.units[unit] ?? false;
+			return unit ? unit.floorplan : null;
 		},
 
 		toggleInfoPane() {
@@ -203,6 +251,11 @@ export default {
 	computed: {
 		currentFloorPlan() {
 			return this.floorplans[this.activeFloorPlanID]
+		},
+
+		floorPlanName() {
+			let floorplan = this.floorplans[this.activeFloorPlanID];
+			return floorplan.nameOverride != '' ? floorplan.nameOverride : floorplan.name;
 		},
 
 		infoPaneState() {
