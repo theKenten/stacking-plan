@@ -21,7 +21,8 @@
 			<div class="sp-interior-legend">
 				<div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--available"></div>
-					<span>Available</span>
+					<span v-if="isActiveLevel(9)">Just Released</span>
+					<span v-else>Available</span>
 				</div>
 				<div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--sold"></div>
