@@ -16,8 +16,8 @@ export default {
 	 */
 	data() {
 		return {
-			// Default to level 9
-			activeLevel: 9,
+			// Default to level 3
+			activeLevel: 3,
 			activeUnit: null,
 			activeFloorPlanID: 'the-bow-a',
 
