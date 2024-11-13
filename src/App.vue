@@ -18,11 +18,10 @@
 				</g>
 			</svg>
 
-			<div class="sp-interior-legend">
+			<!-- <div class="sp-interior-legend">
 				<div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--available"></div>
-					<span v-if="isActiveLevel(9)">Just Released</span>
-					<span v-else>Available</span>
+					<span>Available</span>
 				</div>
 				<div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--sold"></div>
@@ -32,7 +31,7 @@
 					<div class="sp-legend-marker sp-legend-marker--unreleased"></div>
 					<span>Unreleased</span>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="sp-interior__controls">
 				<span class="sp-interior__text">Floor {{ activeLevel }}</span>
