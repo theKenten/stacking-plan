@@ -676,9 +676,9 @@
 		background: var(--c-sold);
 	}
 
-	.sp-legend-marker--unreleased {
+	/* .sp-legend-marker--unreleased {
 		background: var(--c-unreleased);
-	}
+	} */
 
 .sp-interior__compass {
 	position: absolute;
@@ -830,10 +830,10 @@
 	fill: var(--c-sold);	
 }
 
-#app:not(.sp-sold-hidden) .sp-interior__unit.unreleased {
+/* #app:not(.sp-sold-hidden) .sp-interior__unit.unreleased {
 	pointer-events: none;
 	fill: var(--c-unreleased);
-}
+} */
 
 	.sp-interior__unit:hover {
 		cursor: pointer;

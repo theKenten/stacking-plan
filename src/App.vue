@@ -28,10 +28,10 @@
 					<div class="sp-legend-marker sp-legend-marker--sold"></div>
 					<span>Sold</span>
 				</div>
-				<div class="sp-interior-legend__item">
+				<!-- <div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--unreleased"></div>
 					<span>Unreleased</span>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="sp-interior__controls">
