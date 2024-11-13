@@ -672,9 +672,9 @@
 			}
 		}
 
-	.sp-legend-marker--sold {
+	/* .sp-legend-marker--sold {
 		background: var(--c-sold);
-	}
+	} */
 
 	/* .sp-legend-marker--unreleased {
 		background: var(--c-unreleased);
@@ -825,10 +825,10 @@
 	stroke-miterlimit:10;
 }
 
-#app:not(.sp-sold-hidden) .sp-interior__unit.sold {
+/* #app:not(.sp-sold-hidden) .sp-interior__unit.sold {
 	pointer-events:none;
 	fill: var(--c-sold);	
-}
+} */
 
 /* #app:not(.sp-sold-hidden) .sp-interior__unit.unreleased {
 	pointer-events: none;
