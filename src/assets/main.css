@@ -653,6 +653,10 @@
 	text-transform: uppercase;
 	color: #E5DDC7 ;
 }
+	.sp-interior-legend__item--text {
+		line-height: 1.4;
+		max-width: 12em;
+	}
 	@media (min-width: 768px) {
 		.sp-interior-legend__item {
 			justify-content: left;
@@ -672,13 +676,13 @@
 			}
 		}
 
-	.sp-legend-marker--sold {
+	/* .sp-legend-marker--sold {
 		background: var(--c-sold);
-	}
+	} */
 
-	.sp-legend-marker--unreleased {
+	/* .sp-legend-marker--unreleased {
 		background: var(--c-unreleased);
-	}
+	} */
 
 .sp-interior__compass {
 	position: absolute;
@@ -825,15 +829,15 @@
 	stroke-miterlimit:10;
 }
 
-#app:not(.sp-sold-hidden) .sp-interior__unit.sold {
+/* #app:not(.sp-sold-hidden) .sp-interior__unit.sold {
 	pointer-events:none;
 	fill: var(--c-sold);	
-}
+} */
 
-#app:not(.sp-sold-hidden) .sp-interior__unit.unreleased {
+/* #app:not(.sp-sold-hidden) .sp-interior__unit.unreleased {
 	pointer-events: none;
 	fill: var(--c-unreleased);
-}
+} */
 
 	.sp-interior__unit:hover {
 		cursor: pointer;
