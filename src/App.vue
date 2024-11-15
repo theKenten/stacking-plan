@@ -18,20 +18,24 @@
 				</g>
 			</svg>
 
-			<!-- <div class="sp-interior-legend">
-				<div class="sp-interior-legend__item">
+			<div class="sp-interior-legend">
+				<div class="sp-interior-legend__item sp-interior-legend__item--text">
+					<span>Please inquire about remaining inventory</span>
+				</div>
+
+				<!-- <div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--available"></div>
 					<span>Available</span>
-				</div>
-				<div class="sp-interior-legend__item">
+				</div> -->
+				<!-- <div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--sold"></div>
 					<span>Sold</span>
 				</div>
 				<div class="sp-interior-legend__item">
 					<div class="sp-legend-marker sp-legend-marker--unreleased"></div>
 					<span>Unreleased</span>
-				</div>
-			</div> -->
+				</div> -->
+			</div>
 
 			<div class="sp-interior__controls">
 				<span class="sp-interior__text">Floor {{ activeLevel }}</span>

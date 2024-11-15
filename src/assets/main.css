@@ -653,6 +653,10 @@
 	text-transform: uppercase;
 	color: #E5DDC7 ;
 }
+	.sp-interior-legend__item--text {
+		line-height: 1.4;
+		max-width: 15em;
+	}
 	@media (min-width: 768px) {
 		.sp-interior-legend__item {
 			justify-content: left;
