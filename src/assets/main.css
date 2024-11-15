@@ -655,7 +655,7 @@
 }
 	.sp-interior-legend__item--text {
 		line-height: 1.4;
-		max-width: 15em;
+		max-width: 12em;
 	}
 	@media (min-width: 768px) {
 		.sp-interior-legend__item {
