@@ -2,12 +2,13 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 import FormInquire from './components/FormInquire.vue'
-// import TheWelcome from './components/TheWelcome.vue'
+import PatioIcon from './components/icons/IconPatio.vue'
 
 export default {
 
 	components: {
-		FormInquire
+		FormInquire,
+		PatioIcon
 	},
 
 	/**
