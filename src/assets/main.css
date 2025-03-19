@@ -570,6 +570,14 @@
 }
 
 /**
+ * Gallery Buttons
+ */
+ .sp-info-pane__gallery-btns {
+	display: flex; 
+	gap: 1.5em;
+ }
+
+/**
  * Download floor plan button
  */
 .sp-info-pane__btn {

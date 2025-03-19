@@ -441,10 +441,8 @@
         <main class="sp-info-pane__body">
 
           <!-- Penthouse Icon -->
-          <div 
-            v-if="currentFloorPlan.type === 'Penthouse'"
-            class="sp-info-pane__patio"
-          >
+          <div v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
+            class="sp-info-pane__patio">
             <div class="sp-info-pane__patio-text">
               Private<br> Rooftop<br> Patio
             </div>
@@ -480,20 +478,39 @@
 
         </main>
 
-        <footer class="sp-info-pane__footer">
+        <div class="sp-info-pane__footer">
           <button class="sp-button" data-fancybox data-src="#spark-registration-form">
             Inquire for Availability
           </button>
-          <a v-if="currentFloorPlan.gallery" class="sp-button sp-button--alt" :href="currentFloorPlan.gallery[0].src"
-            :data-fancybox="currentFloorPlan.id">
-            View Gallery
-          </a>
-          <div v-if="currentFloorPlan.gallery" style="display: none;">
-            <!-- Slice 1 to remove the double first gallery image
-						which is pulled above in currentFloorPlan.gallery[0].src -->
-            <a v-for="(item, i) in currentFloorPlan.gallery.slice(1)" :key="`gallery-${i}`" :href="item.src"
-              :data-fancybox="currentFloorPlan.id" :data-caption="currentFloorPlan.gallery.alt"></a>
+
+          <div class="sp-info-pane__gallery-btns">
+            <!-- Floorplan Gallery -->
+            <a v-if="currentFloorPlan.gallery" class="sp-button sp-button--alt" :href="currentFloorPlan.gallery[0].src"
+              :data-fancybox="currentFloorPlan.id">
+              View Gallery
+            </a>
+            <div v-if="currentFloorPlan.gallery" style="display: none;">
+              <!-- Slice 1 to remove the double first gallery image
+                        which is pulled above in currentFloorPlan.gallery[0].src -->
+              <a v-for="(item, i) in currentFloorPlan.gallery.slice(1)" :key="`gallery-${i}`" :href="item.src"
+                :data-fancybox="currentFloorPlan.id"></a>
+            </div>
+            <!-- Rooftop Patio Gallery -->
+            <a v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
+              class="sp-button sp-button--alt" :href="rooftopPatioGallery[0].src" data-fancybox="rooftop-patio-gallery">
+              Rooftop Patio
+            </a>
+            <div
+              v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
+             style="display: none;"
+            >
+              <!-- Slice 1 to remove the double first gallery image
+                        which is pulled above in rooftopPatioGallery[0].src -->
+              <a v-for="(item, i) in rooftopPatioGallery.slice(1)" :key="`gallery-rooftop-patio`" :href="item.src"
+                data-fancybox="rooftop-patio-gallery"></a>
+            </div>
           </div>
+
           <a v-if="currentFloorPlan.pdf" :href="currentFloorPlan.pdf" target="_blank" class="sp-info-pane__btn">
             <div class="sp-info-pane__btn-inner">
               Download Floor Plan
@@ -505,7 +522,7 @@
               </svg>
             </div>
           </a>
-        </footer>
+        </div>
       </div>
     </article>
 

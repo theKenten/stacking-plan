@@ -27,6 +27,7 @@ export default {
 
 			floorplans: {},
 			units: {},
+			rooftopPatioGallery: [],
 
 			isInfoPaneClosed: false
 		}
@@ -39,6 +40,7 @@ export default {
 	created() {
 		this.getUnits();
 		this.getFloorPlans();
+		this.getRoofTopPatioGallery();
 	},
 
 	/**
@@ -158,6 +160,11 @@ export default {
 				// }
 				this.floorplans[floorplanID] = floorplanData
 			})
+		},
+
+		getRoofTopPatioGallery() {
+			// Get Gallery Images
+			this.rooftopPatioGallery = Array.from(document.querySelectorAll('.rp-gallery-cms-img'))
 		},
 
 		getUnitState(unit) {
