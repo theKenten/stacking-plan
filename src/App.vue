@@ -495,20 +495,12 @@
               <a v-for="(item, i) in currentFloorPlan.gallery.slice(1)" :key="`gallery-${i}`" :href="item.src"
                 :data-fancybox="currentFloorPlan.id"></a>
             </div>
+
             <!-- Rooftop Patio Gallery -->
             <a v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
-              class="sp-button sp-button--alt" :href="rooftopPatioGallery[0].src" data-fancybox="rooftop-patio-gallery">
+              class="sp-button sp-button--alt" href="#" @click.prevent.self="openRooftopPatioGallery">
               Rooftop Patio
             </a>
-            <div
-              v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
-             style="display: none;"
-            >
-              <!-- Slice 1 to remove the double first gallery image
-                        which is pulled above in rooftopPatioGallery[0].src -->
-              <a v-for="(item, i) in rooftopPatioGallery.slice(1)" :key="`gallery-rooftop-patio`" :href="item.src"
-                data-fancybox="rooftop-patio-gallery"></a>
-            </div>
           </div>
 
           <a v-if="currentFloorPlan.pdf" :href="currentFloorPlan.pdf" target="_blank" class="sp-info-pane__btn">
@@ -528,6 +520,12 @@
 
 
     <FormInquire :selectedResidence="currentFloorPlan.name" />
+
+    <!-- Rooftop Patio Gallery Images -->
+    <div style="display: none;">
+      <a v-for="(item, i) in rooftopPatioGallery" :class="`gallery-rooftop-patio-${i}`" :key="`gallery-rooftop-patio`"
+        :href="item.src" data-fancybox="rooftop-patio-gallery"></a>
+    </div>
   </div>
 
 </template>

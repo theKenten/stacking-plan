@@ -72,6 +72,8 @@ export default {
 		  // Your custom options
 		});
 
+		this.bindExternalGalleryBtns();
+
 	},
 
 	/**
@@ -248,6 +250,34 @@ export default {
 			this.activeFloorPlanID = unit.dataset.unitFloorplan
 			this.openInfoPane()
 		},
+
+		bindExternalGalleryBtns() {
+			const rpGalleryBtns = document.querySelectorAll('.js-open-rp-gallery');
+
+			// Loop through each button and add a click event listener
+			rpGalleryBtns.forEach((rpGalleryBtn) => {
+				rpGalleryBtn.addEventListener('click', (event) => {
+					event.preventDefault(); // Prevent default behavior if necessary
+
+					// Select the target element to trigger the click event on
+					const targetElement = document.querySelector('.gallery-rooftop-patio-0');
+
+					// Trigger a click event on the target element
+					if (targetElement) {
+						targetElement.click();
+					}
+				});	
+			});
+		},
+
+		openRooftopPatioGallery() {
+			const targetElement = document.querySelector('.gallery-rooftop-patio-0');
+
+			// Trigger a click event on the target element
+			if (targetElement) {
+				targetElement.click();
+			}
+		}
 	},
 
 	/**
