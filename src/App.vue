@@ -441,7 +441,7 @@
         <main class="sp-info-pane__body">
 
           <!-- Penthouse Icon -->
-          <div v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
+          <div v-if="currentFloorPlan.type == 'Penthouse'"
             class="sp-info-pane__patio">
             <div class="sp-info-pane__patio-text">
               Private<br> Rooftop<br> Patio
@@ -497,7 +497,7 @@
             </div>
 
             <!-- Rooftop Patio Gallery -->
-            <a v-if="currentFloorPlan.id === 'the-key' || currentFloorPlan.id === 'the-legacy'"
+            <a v-if="currentFloorPlan.type == 'Penthouse'"
               class="sp-button sp-button--alt" href="#" @click.prevent.self="openRooftopPatioGallery">
               Rooftop Patio
             </a>
