@@ -2,12 +2,13 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 import FormInquire from './components/FormInquire.vue'
-// import TheWelcome from './components/TheWelcome.vue'
+import PatioIcon from './components/icons/IconPatio.vue'
 
 export default {
 
 	components: {
-		FormInquire
+		FormInquire,
+		PatioIcon
 	},
 
 	/**
@@ -26,6 +27,7 @@ export default {
 
 			floorplans: {},
 			units: {},
+			rooftopPatioGallery: [],
 
 			isInfoPaneClosed: false
 		}
@@ -38,6 +40,7 @@ export default {
 	created() {
 		this.getUnits();
 		this.getFloorPlans();
+		this.getRoofTopPatioGallery();
 	},
 
 	/**
@@ -68,6 +71,8 @@ export default {
 		Fancybox.bind("[data-fancybox]", {
 		  // Your custom options
 		});
+
+		this.bindExternalGalleryBtns();
 
 	},
 
@@ -159,6 +164,11 @@ export default {
 			})
 		},
 
+		getRoofTopPatioGallery() {
+			// Get Gallery Images
+			this.rooftopPatioGallery = Array.from(document.querySelectorAll('.rp-gallery-cms-img'))
+		},
+
 		getUnitState(unit) {
 			// console.log(unit)
 			// console.log(this.units[unit])
@@ -240,6 +250,34 @@ export default {
 			this.activeFloorPlanID = unit.dataset.unitFloorplan
 			this.openInfoPane()
 		},
+
+		bindExternalGalleryBtns() {
+			const rpGalleryBtns = document.querySelectorAll('.js-open-rp-gallery');
+
+			// Loop through each button and add a click event listener
+			rpGalleryBtns.forEach((rpGalleryBtn) => {
+				rpGalleryBtn.addEventListener('click', (event) => {
+					event.preventDefault(); // Prevent default behavior if necessary
+
+					// Select the target element to trigger the click event on
+					const targetElement = document.querySelector('.gallery-rooftop-patio-0');
+
+					// Trigger a click event on the target element
+					if (targetElement) {
+						targetElement.click();
+					}
+				});	
+			});
+		},
+
+		openRooftopPatioGallery() {
+			const targetElement = document.querySelector('.gallery-rooftop-patio-0');
+
+			// Trigger a click event on the target element
+			if (targetElement) {
+				targetElement.click();
+			}
+		}
 	},
 
 	/**
